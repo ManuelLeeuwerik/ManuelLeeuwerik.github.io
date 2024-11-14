@@ -1,5 +1,3 @@
-tab:nice-tab
-project
-intro
+introductie
 CV
 vrijeopdracht
