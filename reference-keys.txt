@@ -1,5 +1,3 @@
-tab:unnamed-chunk-1
-tab:unnamed-chunk-9
 intro
 CV
 scRepertoire

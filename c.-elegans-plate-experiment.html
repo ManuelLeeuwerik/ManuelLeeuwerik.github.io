@@ -221,7 +221,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb10-23"><a href="c.-elegans-plate-experiment.html#cb10-23" tabindex="-1"></a>  <span class="fu">scale_x_log10</span>()<span class="sc">+</span> <span class="co"># Use a logarithmic scale for the x-axis</span></span>
 <span id="cb10-24"><a href="c.-elegans-plate-experiment.html#cb10-24" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">120</span>, <span class="at">by =</span> <span class="dv">20</span>)) </span>
 <span id="cb10-25"><a href="c.-elegans-plate-experiment.html#cb10-25" tabindex="-1"></a>scatter_plot</span></code></pre></div>
-<p><img src="_main_files/figure-html/scatterplot-1.png" width="672" /></p>
+<p><img src="_main_files/figure-html/scatterplot%20comp-1.png" width="672" /></p>
 <p><em>Figuur 1: Scatterplot resultaten. Met op de y-as het aantal C.elegans nakomelingen en op de x-as de log<sub>10</sub> van de compound concentratie. De compounds zijn per naam gekleurd en per experiment type is er een ander symbool gebruikt. De datapunten zijn iets verplaatst met jitter.</em></p>
 <p>In figuur 1 is te zien dat ethanol de positieve controle, en S-medium de negatieve controle is voor dit experiment.
 Er is duidelijk een negatieve correlatie tussen de compound concentratie en het aantal nakomelingen van <em>C.elegans</em>. Het valt op dat decane een sterke daling toont en dat bij de hoogste concentratie van naphthalene er zeer weinig nakomelingen zijn waargenomen.</p>
@@ -283,7 +283,7 @@ Hiervoor moet de data eerst genormaliseerd worden, dit om variatie door experime
 <span id="cb14-27"><a href="c.-elegans-plate-experiment.html#cb14-27" tabindex="-1"></a>  <span class="at">col =</span> <span class="fu">c</span>(<span class="st">&quot;red&quot;</span>, <span class="st">&quot;blue&quot;</span>, <span class="st">&quot;green&quot;</span>, <span class="st">&quot;purple&quot;</span>),</span>
 <span id="cb14-28"><a href="c.-elegans-plate-experiment.html#cb14-28" tabindex="-1"></a>  <span class="at">lty =</span> <span class="dv">1</span>, <span class="at">bty =</span> <span class="st">&quot;n&quot;</span>, <span class="at">cex =</span> <span class="fl">0.8</span></span>
 <span id="cb14-29"><a href="c.-elegans-plate-experiment.html#cb14-29" tabindex="-1"></a>)</span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<p><img src="_main_files/figure-html/plot%20all%20IC50-1.png" width="672" /></p>
 <p><em>Figuur 2: Dosis-response curves resultaten. Met op de y-as het genormaliseerde aantal C.elegans nakomelingen en op de x-as de log<sub>10</sub> van de compound concentratie. De compounds zijn per naam gekleurd en de IC50’s zijn aangegeven in de legenda.</em></p>
 <p>In figuur 2 is te zien dat de IC50 voor ethanol (de positieve controle), 1.19 is. De IC50 waardes voor de andere compounds zijn: 0.12 voor decane, 3.13 voor naphtalene en 0.03 voor 2,6-diisopropylnaphthalene. De relatief lage IC50 waarde van 2,6-diisopropylnaphthalene suggereert dat het een sterke toxiciteit heeft. Terwijl naphthalene een relatief hoge IC50 waarde heeft en dus een lage toxiciteit suggereert.</p>
 </div>
