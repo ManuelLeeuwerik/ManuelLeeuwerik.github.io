@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>11 Mediation Models | Portfolio Manuel Leeuwerik</title>
+  <meta name="description" content="11 Mediation Models | Portfolio Manuel Leeuwerik" />
+  <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="11 Mediation Models | Portfolio Manuel Leeuwerik" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="11 Mediation Models | Portfolio Manuel Leeuwerik" />
+  
+  
+  
+
+<meta name="author" content="Manuel Leeuwerik" />
+
+
+<meta name="date" content="2024-11-22" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="moderation-by-political-affliation.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introductie</a></li>
+<li class="chapter" data-level="2" data-path="CV.html"><a href="CV.html"><i class="fa fa-check"></i><b>2</b> Curriculum Vitae</a></li>
+<li class="chapter" data-level="3" data-path="scRepertoire.html"><a href="scRepertoire.html"><i class="fa fa-check"></i><b>3</b> Single-cell immune receptor profiling</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="scRepertoire.html"><a href="scRepertoire.html#planning"><i class="fa fa-check"></i><b>3.1</b> Planning</a></li>
+<li class="chapter" data-level="3.2" data-path="scRepertoire.html"><a href="scRepertoire.html#bronvermelding"><i class="fa fa-check"></i><b>3.2</b> Bronvermelding</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="Ga.html"><a href="Ga.html"><i class="fa fa-check"></i><b>4</b> Guerrila analytics</a></li>
+<li class="chapter" data-level="5" data-path="c.-elegans-plate-experiment.html"><a href="c.-elegans-plate-experiment.html"><i class="fa fa-check"></i><b>5</b> C. elegans plate experiment</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="c.-elegans-plate-experiment.html"><a href="c.-elegans-plate-experiment.html#inleiding"><i class="fa fa-check"></i><b>5.1</b> Inleiding</a></li>
+<li class="chapter" data-level="5.2" data-path="c.-elegans-plate-experiment.html"><a href="c.-elegans-plate-experiment.html#inspecteren-data-types"><i class="fa fa-check"></i><b>5.2</b> Inspecteren data types</a></li>
+<li class="chapter" data-level="5.3" data-path="c.-elegans-plate-experiment.html"><a href="c.-elegans-plate-experiment.html#scatterplot"><i class="fa fa-check"></i><b>5.3</b> Scatterplot</a></li>
+<li class="chapter" data-level="5.4" data-path="c.-elegans-plate-experiment.html"><a href="c.-elegans-plate-experiment.html#dosis-response-curves"><i class="fa fa-check"></i><b>5.4</b> Dosis-response curves</a></li>
+<li class="chapter" data-level="5.5" data-path="c.-elegans-plate-experiment.html"><a href="c.-elegans-plate-experiment.html#conclusie"><i class="fa fa-check"></i><b>5.5</b> Conclusie</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="peer.html"><a href="peer.html"><i class="fa fa-check"></i><b>6</b> Open Peer Review</a></li>
+<li class="chapter" data-level="7" data-path="setup.html"><a href="setup.html"><i class="fa fa-check"></i><b>7</b> Setup</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="setup.html"><a href="setup.html#load-data"><i class="fa fa-check"></i><b>7.1</b> Load Data</a></li>
+<li class="chapter" data-level="7.2" data-path="setup.html"><a href="setup.html#dvs"><i class="fa fa-check"></i><b>7.2</b> DVs</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="correlation-matrix.html"><a href="correlation-matrix.html"><i class="fa fa-check"></i><b>8</b> Correlation Matrix</a></li>
+<li class="chapter" data-level="9" data-path="regression-models.html"><a href="regression-models.html"><i class="fa fa-check"></i><b>9</b> Regression Models</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="regression-models.html"><a href="regression-models.html#preliminary-steps"><i class="fa fa-check"></i><b>9.1</b> Preliminary steps</a></li>
+<li class="chapter" data-level="9.2" data-path="regression-models.html"><a href="regression-models.html#predictors-of-likelihood-of-taking-the-covid-19-vaccine-under-standard-authorization"><i class="fa fa-check"></i><b>9.2</b> Predictors of likelihood of taking the COVID-19 vaccine under standard authorization</a></li>
+<li class="chapter" data-level="9.3" data-path="regression-models.html"><a href="regression-models.html#predictors-of-likelihood-of-taking-the-covid-19-vaccine-under-fast-authorization"><i class="fa fa-check"></i><b>9.3</b> Predictors of likelihood of taking the COVID-19 vaccine under fast authorization</a></li>
+<li class="chapter" data-level="9.4" data-path="regression-models.html"><a href="regression-models.html#predictors-of-the-difference-in-likelihood-of-taking-the-covid-19-vaccine-under-standard-and-fast-authorization"><i class="fa fa-check"></i><b>9.4</b> Predictors of the difference in likelihood of taking the COVID-19 vaccine under standard and fast authorization</a></li>
+<li class="chapter" data-level="9.5" data-path="regression-models.html"><a href="regression-models.html#predictors-of-getting-the-flu-shot-in-2019"><i class="fa fa-check"></i><b>9.5</b> Predictors of getting the flu shot in 2019</a></li>
+<li class="chapter" data-level="9.6" data-path="regression-models.html"><a href="regression-models.html#predictors-of-getting-the-flu-shot-in-2019-with-month"><i class="fa fa-check"></i><b>9.6</b> Predictors of getting the flu shot in 2019 with month</a></li>
+<li class="chapter" data-level="9.7" data-path="regression-models.html"><a href="regression-models.html#side-by-side-regression-table"><i class="fa fa-check"></i><b>9.7</b> Side-by-side regression table</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="moderation-by-political-affliation.html"><a href="moderation-by-political-affliation.html"><i class="fa fa-check"></i><b>10</b> Moderation by political affliation</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="moderation-by-political-affliation.html"><a href="moderation-by-political-affliation.html#covid-19-standard-vaccine"><i class="fa fa-check"></i><b>10.1</b> COVID-19 standard vaccine</a></li>
+<li class="chapter" data-level="10.2" data-path="moderation-by-political-affliation.html"><a href="moderation-by-political-affliation.html#figure"><i class="fa fa-check"></i><b>10.2</b> Figure</a></li>
+<li class="chapter" data-level="10.3" data-path="moderation-by-political-affliation.html"><a href="moderation-by-political-affliation.html#covid-19-fast-vaccine"><i class="fa fa-check"></i><b>10.3</b> COVID-19 fast vaccine</a></li>
+<li class="chapter" data-level="10.4" data-path="moderation-by-political-affliation.html"><a href="moderation-by-political-affliation.html#figure-1"><i class="fa fa-check"></i><b>10.4</b> Figure</a></li>
+<li class="chapter" data-level="10.5" data-path="moderation-by-political-affliation.html"><a href="moderation-by-political-affliation.html#side-by-side-regression-table-1"><i class="fa fa-check"></i><b>10.5</b> Side-by-side regression table</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="mediation-models.html"><a href="mediation-models.html"><i class="fa fa-check"></i><b>11</b> Mediation Models</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="mediation-models.html"><a href="mediation-models.html#income"><i class="fa fa-check"></i><b>11.1</b> income</a></li>
+<li class="chapter" data-level="11.2" data-path="mediation-models.html"><a href="mediation-models.html#education"><i class="fa fa-check"></i><b>11.2</b> education</a></li>
+<li class="chapter" data-level="11.3" data-path="mediation-models.html"><a href="mediation-models.html#age"><i class="fa fa-check"></i><b>11.3</b> age</a></li>
+<li class="chapter" data-level="11.4" data-path="mediation-models.html"><a href="mediation-models.html#political-affliation"><i class="fa fa-check"></i><b>11.4</b> political affliation</a></li>
+<li class="chapter" data-level="11.5" data-path="mediation-models.html"><a href="mediation-models.html#gender"><i class="fa fa-check"></i><b>11.5</b> gender</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Portfolio Manuel Leeuwerik</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="mediation-models" class="section level1 hasAnchor" number="11">
+<h1><span class="header-section-number">11</span> Mediation Models<a href="mediation-models.html#mediation-models" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="income" class="section level2 hasAnchor" number="11.1">
+<h2><span class="header-section-number">11.1</span> income<a href="mediation-models.html#income" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="mediation-models.html#cb37-1" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="st">&#39;</span></span>
+<span id="cb37-2"><a href="mediation-models.html#cb37-2" tabindex="-1"></a><span class="st"># direct effect</span></span>
+<span id="cb37-3"><a href="mediation-models.html#cb37-3" tabindex="-1"></a><span class="st">vaccine_standard  ~  b1_stand*risky_choices + b2_stand*lotto_tickets +  c_stand*income</span></span>
+<span id="cb37-4"><a href="mediation-models.html#cb37-4" tabindex="-1"></a><span class="st">vaccine_fast  ~  b1_fast*risky_choices + b2_fast*lotto_tickets +  c_fast*income</span></span>
+<span id="cb37-5"><a href="mediation-models.html#cb37-5" tabindex="-1"></a><span class="st">flu_vaccine ~ b1_flu*risky_choices + b2_flu*lotto_tickets +  c_flu*income</span></span>
+<span id="cb37-6"><a href="mediation-models.html#cb37-6" tabindex="-1"></a></span>
+<span id="cb37-7"><a href="mediation-models.html#cb37-7" tabindex="-1"></a><span class="st"># mediator</span></span>
+<span id="cb37-8"><a href="mediation-models.html#cb37-8" tabindex="-1"></a><span class="st">risky_choices ~ a1 * income</span></span>
+<span id="cb37-9"><a href="mediation-models.html#cb37-9" tabindex="-1"></a><span class="st">lotto_tickets  ~ a2 * income</span></span>
+<span id="cb37-10"><a href="mediation-models.html#cb37-10" tabindex="-1"></a></span>
+<span id="cb37-11"><a href="mediation-models.html#cb37-11" tabindex="-1"></a><span class="st"># direct effect</span></span>
+<span id="cb37-12"><a href="mediation-models.html#cb37-12" tabindex="-1"></a><span class="st">direct_stand := c_stand</span></span>
+<span id="cb37-13"><a href="mediation-models.html#cb37-13" tabindex="-1"></a><span class="st">direct_fast := c_fast</span></span>
+<span id="cb37-14"><a href="mediation-models.html#cb37-14" tabindex="-1"></a><span class="st">direct_flu := c_flu</span></span>
+<span id="cb37-15"><a href="mediation-models.html#cb37-15" tabindex="-1"></a></span>
+<span id="cb37-16"><a href="mediation-models.html#cb37-16" tabindex="-1"></a><span class="st"># indirect effect (a*b)</span></span>
+<span id="cb37-17"><a href="mediation-models.html#cb37-17" tabindex="-1"></a><span class="st">indirect1_stand := a1*b1_stand</span></span>
+<span id="cb37-18"><a href="mediation-models.html#cb37-18" tabindex="-1"></a><span class="st">indirect2_stand := a2*b2_stand</span></span>
+<span id="cb37-19"><a href="mediation-models.html#cb37-19" tabindex="-1"></a><span class="st">indirect1_fast := a1*b1_fast</span></span>
+<span id="cb37-20"><a href="mediation-models.html#cb37-20" tabindex="-1"></a><span class="st">indirect2_fast := a2*b2_fast</span></span>
+<span id="cb37-21"><a href="mediation-models.html#cb37-21" tabindex="-1"></a><span class="st">indirect1_flu := a1*b1_flu</span></span>
+<span id="cb37-22"><a href="mediation-models.html#cb37-22" tabindex="-1"></a><span class="st">indirect2_flu := a2*b2_flu</span></span>
+<span id="cb37-23"><a href="mediation-models.html#cb37-23" tabindex="-1"></a></span>
+<span id="cb37-24"><a href="mediation-models.html#cb37-24" tabindex="-1"></a><span class="st"># total effect</span></span>
+<span id="cb37-25"><a href="mediation-models.html#cb37-25" tabindex="-1"></a><span class="st">total_stand := c_stand + (a1 * b1_stand) + (a2 * b2_stand) </span></span>
+<span id="cb37-26"><a href="mediation-models.html#cb37-26" tabindex="-1"></a><span class="st">total_fast := c_fast + (a1 * b1_fast) + (a2 * b2_fast)</span></span>
+<span id="cb37-27"><a href="mediation-models.html#cb37-27" tabindex="-1"></a><span class="st">total_flu := c_flu + (a1 * b1_flu) + (a2 * b2_flu)</span></span>
+<span id="cb37-28"><a href="mediation-models.html#cb37-28" tabindex="-1"></a></span>
+<span id="cb37-29"><a href="mediation-models.html#cb37-29" tabindex="-1"></a><span class="st"># percentage mediation</span></span>
+<span id="cb37-30"><a href="mediation-models.html#cb37-30" tabindex="-1"></a><span class="st">perc_stand := ((indirect1_stand + indirect2_stand) / total_stand)*100</span></span>
+<span id="cb37-31"><a href="mediation-models.html#cb37-31" tabindex="-1"></a><span class="st">perc_fast := ((indirect1_fast + indirect2_fast) / total_fast)*100</span></span>
+<span id="cb37-32"><a href="mediation-models.html#cb37-32" tabindex="-1"></a><span class="st">perc_flu := ((indirect1_flu + indirect2_flu) / total_flu)*100</span></span>
+<span id="cb37-33"><a href="mediation-models.html#cb37-33" tabindex="-1"></a></span>
+<span id="cb37-34"><a href="mediation-models.html#cb37-34" tabindex="-1"></a><span class="st">risky_choices ~~ lotto_tickets</span></span>
+<span id="cb37-35"><a href="mediation-models.html#cb37-35" tabindex="-1"></a><span class="st">&#39;</span></span>
+<span id="cb37-36"><a href="mediation-models.html#cb37-36" tabindex="-1"></a></span>
+<span id="cb37-37"><a href="mediation-models.html#cb37-37" tabindex="-1"></a>fit <span class="ot">&lt;-</span> <span class="fu">sem</span>(model, <span class="at">data =</span> df_study1)</span>
+<span id="cb37-38"><a href="mediation-models.html#cb37-38" tabindex="-1"></a></span>
+<span id="cb37-39"><a href="mediation-models.html#cb37-39" tabindex="-1"></a><span class="fu">summary</span>(fit, <span class="at">standardized=</span><span class="cn">TRUE</span>, <span class="at">fit.measures =</span> T, <span class="at">rsq =</span> T)</span></code></pre></div>
+<pre><code>## lavaan 0.6-19 ended normally after 42 iterations
+## 
+##   Estimator                                         ML
+##   Optimization method                           NLMINB
+##   Number of model parameters                        20
+## 
+##                                                   Used       Total
+##   Number of observations                         33194       34200
+## 
+## Model Test User Model:
+##                                                       
+##   Test statistic                                 0.000
+##   Degrees of freedom                                 0
+## 
+## Model Test Baseline Model:
+## 
+##   Test statistic                             34825.387
+##   Degrees of freedom                                15
+##   P-value                                        0.000
+## 
+## User Model versus Baseline Model:
+## 
+##   Comparative Fit Index (CFI)                    1.000
+##   Tucker-Lewis Index (TLI)                       1.000
+## 
+## Loglikelihood and Information Criteria:
+## 
+##   Loglikelihood user model (H0)            -262600.223
+##   Loglikelihood unrestricted model (H1)    -262600.223
+##                                                       
+##   Akaike (AIC)                              525240.446
+##   Bayesian (BIC)                            525408.649
+##   Sample-size adjusted Bayesian (SABIC)     525345.089
+## 
+## Root Mean Square Error of Approximation:
+## 
+##   RMSEA                                          0.000
+##   90 Percent confidence interval - lower         0.000
+##   90 Percent confidence interval - upper         0.000
+##   P-value H_0: RMSEA &lt;= 0.050                       NA
+##   P-value H_0: RMSEA &gt;= 0.080                       NA
+## 
+## Standardized Root Mean Square Residual:
+## 
+##   SRMR                                           0.000
+## 
+## Parameter Estimates:
+## 
+##   Standard errors                             Standard
+##   Information                                 Expected
+##   Information saturated (h1) model          Structured
+## 
+## Regressions:
+##                      Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+##   vaccine_standard ~                                                      
+##     rsky_c  (b1_s)      0.020    0.004    5.472    0.000    0.020    0.030
+##     ltt_tc  (b2_s)      0.005    0.003    1.546    0.122    0.005    0.008
+##     income  (c_st)      0.068    0.002   37.472    0.000    0.068    0.204
+##   vaccine_fast ~                                                          
+##     rsky_c (b1_fs)      0.057    0.004   14.845    0.000    0.057    0.081
+##     ltt_tc (b2_fs)      0.033    0.004    9.473    0.000    0.033    0.051
+##     income  (c_fs)      0.066    0.002   34.847    0.000    0.066    0.189
+##   flu_vaccine ~                                                           
+##     rsky_c (b1_fl)      0.007    0.001    4.830    0.000    0.007    0.027
+##     ltt_tc (b2_fl)      0.008    0.001    6.034    0.000    0.008    0.033
+##     income  (c_fl)      0.019    0.001   27.325    0.000    0.019    0.150
+##   risky_choices ~                                                         
+##     income    (a1)      0.077    0.003   28.433    0.000    0.077    0.154
+##   lotto_tickets ~                                                         
+##     income    (a2)      0.050    0.003   16.971    0.000    0.050    0.093
+## 
+## Covariances:
+##                       Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+##  .risky_choices ~~                                                         
+##    .lotto_tickets        0.459    0.023   20.218    0.000    0.459    0.112
+##  .vaccine_standard ~~                                                      
+##    .vaccine_fast         1.275    0.012  107.455    0.000    1.275    0.730
+##    .flu_vaccine          0.207    0.004   56.317    0.000    0.207    0.325
+##  .vaccine_fast ~~                                                          
+##    .flu_vaccine          0.181    0.004   48.137    0.000    0.181    0.274
+## 
+## Variances:
+##                    Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+##    .vaccine_stndrd    1.680    0.013  128.829    0.000    1.680    0.955
+##    .vaccine_fast      1.816    0.014  128.829    0.000    1.816    0.948
+##    .flu_vaccine       0.242    0.002  128.829    0.000    0.242    0.973
+##    .risky_choices     3.805    0.030  128.829    0.000    3.805    0.976
+##    .lotto_tickets     4.445    0.034  128.829    0.000    4.445    0.991
+## 
+## R-Square:
+##                    Estimate
+##     vaccine_stndrd    0.045
+##     vaccine_fast      0.052
+##     flu_vaccine       0.027
+##     risky_choices     0.024
+##     lotto_tickets     0.009
+## 
+## Defined Parameters:
+##                    Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+##     direct_stand      0.068    0.002   37.472    0.000    0.068    0.204
+##     direct_fast       0.066    0.002   34.847    0.000    0.066    0.189
+##     direct_flu        0.019    0.001   27.325    0.000    0.019    0.150
+##     indirect1_stnd    0.002    0.000    5.374    0.000    0.002    0.005
+##     indirect2_stnd    0.000    0.000    1.540    0.124    0.000    0.001
+##     indirect1_fast    0.004    0.000   13.160    0.000    0.004    0.012
+##     indirect2_fast    0.002    0.000    8.271    0.000    0.002    0.005
+##     indirect1_flu     0.001    0.000    4.762    0.000    0.001    0.004
+##     indirect2_flu     0.000    0.000    5.686    0.000    0.000    0.003
+##     total_stand       0.070    0.002   39.016    0.000    0.070    0.209
+##     total_fast        0.072    0.002   38.388    0.000    0.072    0.206
+##     total_flu         0.020    0.001   29.029    0.000    0.020    0.157
+##     perc_stand        2.573    0.457    5.631    0.000    2.573    2.573
+##     perc_fast         8.343    0.555   15.030    0.000    8.343    8.343
+##     perc_flu          4.557    0.635    7.173    0.000    4.557    4.557</code></pre>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="mediation-models.html#cb39-1" tabindex="-1"></a><span class="co">#semTable(fit, </span></span>
+<span id="cb39-2"><a href="mediation-models.html#cb39-2" tabindex="-1"></a><span class="co">#        type = &quot;tex&quot;, </span></span>
+<span id="cb39-3"><a href="mediation-models.html#cb39-3" tabindex="-1"></a><span class="co">#         file = &quot;mediation_income.tex&quot;)</span></span></code></pre></div>
+</div>
+<div id="education" class="section level2 hasAnchor" number="11.2">
+<h2><span class="header-section-number">11.2</span> education<a href="mediation-models.html#education" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="mediation-models.html#cb40-1" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="st">&#39;</span></span>
+<span id="cb40-2"><a href="mediation-models.html#cb40-2" tabindex="-1"></a><span class="st"># direct effect</span></span>
+<span id="cb40-3"><a href="mediation-models.html#cb40-3" tabindex="-1"></a><span class="st">vaccine_standard  ~  b1_stand*risky_choices + b2_stand*lotto_tickets +  c_stand*education</span></span>
+<span id="cb40-4"><a href="mediation-models.html#cb40-4" tabindex="-1"></a><span class="st">vaccine_fast  ~  b1_fast*risky_choices + b2_fast*lotto_tickets +  c_fast*education</span></span>
+<span id="cb40-5"><a href="mediation-models.html#cb40-5" tabindex="-1"></a><span class="st">flu_vaccine ~ b1_flu*risky_choices + b2_flu*lotto_tickets +  c_flu*education</span></span>
+<span id="cb40-6"><a href="mediation-models.html#cb40-6" tabindex="-1"></a></span>
+<span id="cb40-7"><a href="mediation-models.html#cb40-7" tabindex="-1"></a><span class="st"># mediator</span></span>
+<span id="cb40-8"><a href="mediation-models.html#cb40-8" tabindex="-1"></a><span class="st">risky_choices ~ a1 * education</span></span>
+<span id="cb40-9"><a href="mediation-models.html#cb40-9" tabindex="-1"></a><span class="st">lotto_tickets  ~ a2 * education</span></span>
+<span id="cb40-10"><a href="mediation-models.html#cb40-10" tabindex="-1"></a></span>
+<span id="cb40-11"><a href="mediation-models.html#cb40-11" tabindex="-1"></a><span class="st"># direct effect</span></span>
+<span id="cb40-12"><a href="mediation-models.html#cb40-12" tabindex="-1"></a><span class="st">direct_stand := c_stand</span></span>
+<span id="cb40-13"><a href="mediation-models.html#cb40-13" tabindex="-1"></a><span class="st">direct_fast := c_fast</span></span>
+<span id="cb40-14"><a href="mediation-models.html#cb40-14" tabindex="-1"></a><span class="st">direct_flu := c_flu</span></span>
+<span id="cb40-15"><a href="mediation-models.html#cb40-15" tabindex="-1"></a></span>
+<span id="cb40-16"><a href="mediation-models.html#cb40-16" tabindex="-1"></a><span class="st"># indirect effect (a*b)</span></span>
+<span id="cb40-17"><a href="mediation-models.html#cb40-17" tabindex="-1"></a><span class="st">indirect1_stand := a1*b1_stand</span></span>
+<span id="cb40-18"><a href="mediation-models.html#cb40-18" tabindex="-1"></a><span class="st">indirect2_stand := a2*b2_stand</span></span>
+<span id="cb40-19"><a href="mediation-models.html#cb40-19" tabindex="-1"></a><span class="st">indirect1_fast := a1*b1_fast</span></span>
+<span id="cb40-20"><a href="mediation-models.html#cb40-20" tabindex="-1"></a><span class="st">indirect2_fast := a2*b2_fast</span></span>
+<span id="cb40-21"><a href="mediation-models.html#cb40-21" tabindex="-1"></a><span class="st">indirect1_flu := a1*b1_flu</span></span>
+<span id="cb40-22"><a href="mediation-models.html#cb40-22" tabindex="-1"></a><span class="st">indirect2_flu := a2*b2_flu</span></span>
+<span id="cb40-23"><a href="mediation-models.html#cb40-23" tabindex="-1"></a></span>
+<span id="cb40-24"><a href="mediation-models.html#cb40-24" tabindex="-1"></a><span class="st"># total effect</span></span>
+<span id="cb40-25"><a href="mediation-models.html#cb40-25" tabindex="-1"></a><span class="st">total_stand := c_stand + (a1 * b1_stand) + (a2 * b2_stand) </span></span>
+<span id="cb40-26"><a href="mediation-models.html#cb40-26" tabindex="-1"></a><span class="st">total_fast := c_fast + (a1 * b1_fast) + (a2 * b2_fast)</span></span>
+<span id="cb40-27"><a href="mediation-models.html#cb40-27" tabindex="-1"></a><span class="st">total_flu := c_flu + (a1 * b1_flu) + (a2 * b2_flu)</span></span>
+<span id="cb40-28"><a href="mediation-models.html#cb40-28" tabindex="-1"></a></span>
+<span id="cb40-29"><a href="mediation-models.html#cb40-29" tabindex="-1"></a><span class="st"># percentage mediation</span></span>
+<span id="cb40-30"><a href="mediation-models.html#cb40-30" tabindex="-1"></a><span class="st">perc_stand := ((indirect1_stand + indirect2_stand) / total_stand)*100</span></span>
+<span id="cb40-31"><a href="mediation-models.html#cb40-31" tabindex="-1"></a><span class="st">perc_fast := ((indirect1_fast + indirect2_fast) / total_fast)*100</span></span>
+<span id="cb40-32"><a href="mediation-models.html#cb40-32" tabindex="-1"></a><span class="st">perc_flu := ((indirect1_flu + indirect2_flu) / total_flu)*100</span></span>
+<span id="cb40-33"><a href="mediation-models.html#cb40-33" tabindex="-1"></a></span>
+<span id="cb40-34"><a href="mediation-models.html#cb40-34" tabindex="-1"></a><span class="st">risky_choices ~~ lotto_tickets</span></span>
+<span id="cb40-35"><a href="mediation-models.html#cb40-35" tabindex="-1"></a><span class="st">&#39;</span></span>
+<span id="cb40-36"><a href="mediation-models.html#cb40-36" tabindex="-1"></a></span>
+<span id="cb40-37"><a href="mediation-models.html#cb40-37" tabindex="-1"></a>fit <span class="ot">&lt;-</span> <span class="fu">sem</span>(model, <span class="at">data =</span> df_study1)</span>
+<span id="cb40-38"><a href="mediation-models.html#cb40-38" tabindex="-1"></a></span>
+<span id="cb40-39"><a href="mediation-models.html#cb40-39" tabindex="-1"></a><span class="fu">summary</span>(fit, <span class="at">standardized=</span><span class="cn">TRUE</span>, <span class="at">fit.measures =</span> T, <span class="at">rsq =</span> T)</span></code></pre></div>
+<pre><code>## lavaan 0.6-19 ended normally after 39 iterations
+## 
+##   Estimator                                         ML
+##   Optimization method                           NLMINB
+##   Number of model parameters                        20
+## 
+##                                                   Used       Total
+##   Number of observations                         33194       34200
+## 
+## Model Test User Model:
+##                                                       
+##   Test statistic                                 0.000
+##   Degrees of freedom                                 0
+## 
+## Model Test Baseline Model:
+## 
+##   Test statistic                             34106.063
+##   Degrees of freedom                                15
+##   P-value                                        0.000
+## 
+## User Model versus Baseline Model:
+## 
+##   Comparative Fit Index (CFI)                    1.000
+##   Tucker-Lewis Index (TLI)                       1.000
+## 
+## Loglikelihood and Information Criteria:
+## 
+##   Loglikelihood user model (H0)            -262959.885
+##   Loglikelihood unrestricted model (H1)    -262959.885
+##                                                       
+##   Akaike (AIC)                              525959.770
+##   Bayesian (BIC)                            526127.973
+##   Sample-size adjusted Bayesian (SABIC)     526064.413
+## 
+## Root Mean Square Error of Approximation:
+## 
+##   RMSEA                                          0.000
+##   90 Percent confidence interval - lower         0.000
+##   90 Percent confidence interval - upper         0.000
+##   P-value H_0: RMSEA &lt;= 0.050                       NA
+##   P-value H_0: RMSEA &gt;= 0.080                       NA
+## 
+## Standardized Root Mean Square Residual:
+## 
+##   SRMR                                           0.000
+## 
+## Parameter Estimates:
+## 
+##   Standard errors                             Standard
+##   Information                                 Expected
+##   Information saturated (h1) model          Structured
+## 
+## Regressions:
+##                      Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+##   vaccine_standard ~                                                      
+##     rsky_c  (b1_s)      0.027    0.004    7.383    0.000    0.027    0.040
+##     ltt_tc  (b2_s)      0.012    0.003    3.474    0.001    0.012    0.019
+##     eductn  (c_st)      0.140    0.004   38.679    0.000    0.140    0.208
+##   vaccine_fast ~                                                          
+##     rsky_c (b1_fs)      0.065    0.004   16.993    0.000    0.065    0.092
+##     ltt_tc (b2_fs)      0.040    0.004   11.341    0.000    0.040    0.061
+##     eductn  (c_fs)      0.121    0.004   31.848    0.000    0.121    0.172
+##   flu_vaccine ~                                                           
+##     rsky_c (b1_fl)      0.009    0.001    6.464    0.000    0.009    0.035
+##     ltt_tc (b2_fl)      0.010    0.001    7.502    0.000    0.010    0.041
+##     eductn  (c_fl)      0.035    0.001   25.418    0.000    0.035    0.139
+##   risky_choices ~                                                         
+##     eductn    (a1)      0.097    0.005   17.609    0.000    0.097    0.096
+##   lotto_tickets ~                                                         
+##     eductn    (a2)      0.038    0.006    6.377    0.000    0.038    0.035
+## 
+## Covariances:
+##                       Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+##  .risky_choices ~~                                                         
+##    .lotto_tickets        0.505    0.023   21.961    0.000    0.505    0.121
+##  .vaccine_standard ~~                                                      
+##    .vaccine_fast         1.279    0.012  107.551    0.000    1.279    0.731
+##    .flu_vaccine          0.208    0.004   56.501    0.000    0.208    0.326
+##  .vaccine_fast ~~                                                          
+##    .flu_vaccine          0.184    0.004   48.622    0.000    0.184    0.277
+## 
+## Variances:
+##                    Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+##    .vaccine_stndrd    1.675    0.013  128.829    0.000    1.675    0.953
+##    .vaccine_fast      1.827    0.014  128.829    0.000    1.827    0.953
+##    .flu_vaccine       0.242    0.002  128.829    0.000    0.242    0.976
+##    .risky_choices     3.861    0.030  128.829    0.000    3.861    0.991
+##    .lotto_tickets     4.478    0.035  128.829    0.000    4.478    0.999
+## 
+## R-Square:
+##                    Estimate
+##     vaccine_stndrd    0.047
+##     vaccine_fast      0.047
+##     flu_vaccine       0.024
+##     risky_choices     0.009
+##     lotto_tickets     0.001
+## 
+## Defined Parameters:
+##                    Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+##     direct_stand      0.140    0.004   38.679    0.000    0.140    0.208
+##     direct_fast       0.121    0.004   31.848    0.000    0.121    0.172
+##     direct_flu        0.035    0.001   25.418    0.000    0.035    0.139
+##     indirect1_stnd    0.003    0.000    6.809    0.000    0.003    0.004
+##     indirect2_stnd    0.000    0.000    3.051    0.002    0.000    0.001
+##     indirect1_fast    0.006    0.001   12.228    0.000    0.006    0.009
+##     indirect2_fast    0.002    0.000    5.559    0.000    0.002    0.002
+##     indirect1_flu     0.001    0.000    6.068    0.000    0.001    0.003
+##     indirect2_flu     0.000    0.000    4.859    0.000    0.000    0.001
+##     total_stand       0.143    0.004   39.667    0.000    0.143    0.213
+##     total_fast        0.129    0.004   33.821    0.000    0.129    0.183
+##     total_flu         0.036    0.001   26.393    0.000    0.036    0.143
+##     perc_stand        2.119    0.281    7.534    0.000    2.119    2.119
+##     perc_fast         6.032    0.474   12.727    0.000    6.032    6.032
+##     perc_flu          3.381    0.450    7.510    0.000    3.381    3.381</code></pre>
+<div class="sourceCode" id="cb42"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb42-1"><a href="mediation-models.html#cb42-1" tabindex="-1"></a><span class="co">#semTable(fit, </span></span>
+<span id="cb42-2"><a href="mediation-models.html#cb42-2" tabindex="-1"></a><span class="co">#        type = &quot;tex&quot;, </span></span>
+<span id="cb42-3"><a href="mediation-models.html#cb42-3" tabindex="-1"></a><span class="co">#         file = &quot;mediation_education.tex&quot;)</span></span></code></pre></div>
+</div>
+<div id="age" class="section level2 hasAnchor" number="11.3">
+<h2><span class="header-section-number">11.3</span> age<a href="mediation-models.html#age" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="mediation-models.html#cb43-1" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="st">&#39;</span></span>
+<span id="cb43-2"><a href="mediation-models.html#cb43-2" tabindex="-1"></a><span class="st"># direct effect</span></span>
+<span id="cb43-3"><a href="mediation-models.html#cb43-3" tabindex="-1"></a><span class="st">vaccine_standard  ~  b1_stand*risky_choices + b2_stand*lotto_tickets +  c_stand*age</span></span>
+<span id="cb43-4"><a href="mediation-models.html#cb43-4" tabindex="-1"></a><span class="st">vaccine_fast  ~  b1_fast*risky_choices + b2_fast*lotto_tickets +  c_fast*age</span></span>
+<span id="cb43-5"><a href="mediation-models.html#cb43-5" tabindex="-1"></a><span class="st">flu_vaccine ~ b1_flu*risky_choices + b2_flu*lotto_tickets +  c_flu*age</span></span>
+<span id="cb43-6"><a href="mediation-models.html#cb43-6" tabindex="-1"></a></span>
+<span id="cb43-7"><a href="mediation-models.html#cb43-7" tabindex="-1"></a><span class="st"># mediator</span></span>
+<span id="cb43-8"><a href="mediation-models.html#cb43-8" tabindex="-1"></a><span class="st">risky_choices ~ a1 * age</span></span>
+<span id="cb43-9"><a href="mediation-models.html#cb43-9" tabindex="-1"></a><span class="st">lotto_tickets  ~ a2 * age</span></span>
+<span id="cb43-10"><a href="mediation-models.html#cb43-10" tabindex="-1"></a></span>
+<span id="cb43-11"><a href="mediation-models.html#cb43-11" tabindex="-1"></a><span class="st"># direct effect</span></span>
+<span id="cb43-12"><a href="mediation-models.html#cb43-12" tabindex="-1"></a><span class="st">direct_stand := c_stand</span></span>
+<span id="cb43-13"><a href="mediation-models.html#cb43-13" tabindex="-1"></a><span class="st">direct_fast := c_fast</span></span>
+<span id="cb43-14"><a href="mediation-models.html#cb43-14" tabindex="-1"></a><span class="st">direct_flu := c_flu</span></span>
+<span id="cb43-15"><a href="mediation-models.html#cb43-15" tabindex="-1"></a></span>
+<span id="cb43-16"><a href="mediation-models.html#cb43-16" tabindex="-1"></a><span class="st"># indirect effect (a*b)</span></span>
+<span id="cb43-17"><a href="mediation-models.html#cb43-17" tabindex="-1"></a><span class="st">indirect1_stand := a1*b1_stand</span></span>
+<span id="cb43-18"><a href="mediation-models.html#cb43-18" tabindex="-1"></a><span class="st">indirect2_stand := a2*b2_stand</span></span>
+<span id="cb43-19"><a href="mediation-models.html#cb43-19" tabindex="-1"></a><span class="st">indirect1_fast := a1*b1_fast</span></span>
+<span id="cb43-20"><a href="mediation-models.html#cb43-20" tabindex="-1"></a><span class="st">indirect2_fast := a2*b2_fast</span></span>
+<span id="cb43-21"><a href="mediation-models.html#cb43-21" tabindex="-1"></a><span class="st">indirect1_flu := a1*b1_flu</span></span>
+<span id="cb43-22"><a href="mediation-models.html#cb43-22" tabindex="-1"></a><span class="st">indirect2_flu := a2*b2_flu</span></span>
+<span id="cb43-23"><a href="mediation-models.html#cb43-23" tabindex="-1"></a></span>
+<span id="cb43-24"><a href="mediation-models.html#cb43-24" tabindex="-1"></a><span class="st"># total effect</span></span>
+<span id="cb43-25"><a href="mediation-models.html#cb43-25" tabindex="-1"></a><span class="st">total_stand := c_stand + (a1 * b1_stand) + (a2 * b2_stand) </span></span>
+<span id="cb43-26"><a href="mediation-models.html#cb43-26" tabindex="-1"></a><span class="st">total_fast := c_fast + (a1 * b1_fast) + (a2 * b2_fast)</span></span>
+<span id="cb43-27"><a href="mediation-models.html#cb43-27" tabindex="-1"></a><span class="st">total_flu := c_flu + (a1 * b1_flu) + (a2 * b2_flu)</span></span>
+<span id="cb43-28"><a href="mediation-models.html#cb43-28" tabindex="-1"></a></span>
+<span id="cb43-29"><a href="mediation-models.html#cb43-29" tabindex="-1"></a><span class="st"># percentage mediation</span></span>
+<span id="cb43-30"><a href="mediation-models.html#cb43-30" tabindex="-1"></a><span class="st">perc_stand := (abs(indirect1_stand + indirect2_stand) / (abs(indirect1_stand + indirect2_stand) + abs(direct_stand)))*100</span></span>
+<span id="cb43-31"><a href="mediation-models.html#cb43-31" tabindex="-1"></a><span class="st">perc_fast := (abs(indirect1_fast + indirect2_fast) / (abs(indirect1_fast + indirect2_fast) + abs(direct_fast)))*100</span></span>
+<span id="cb43-32"><a href="mediation-models.html#cb43-32" tabindex="-1"></a><span class="st">perc_flu := (abs(indirect1_flu + indirect2_flu) / (abs(indirect1_flu + indirect2_flu) + abs(direct_flu)))*100</span></span>
+<span id="cb43-33"><a href="mediation-models.html#cb43-33" tabindex="-1"></a></span>
+<span id="cb43-34"><a href="mediation-models.html#cb43-34" tabindex="-1"></a><span class="st">risky_choices ~~ lotto_tickets</span></span>
+<span id="cb43-35"><a href="mediation-models.html#cb43-35" tabindex="-1"></a><span class="st">&#39;</span></span>
+<span id="cb43-36"><a href="mediation-models.html#cb43-36" tabindex="-1"></a></span>
+<span id="cb43-37"><a href="mediation-models.html#cb43-37" tabindex="-1"></a>fit <span class="ot">&lt;-</span> <span class="fu">sem</span>(model, <span class="at">data =</span> df_study1)</span>
+<span id="cb43-38"><a href="mediation-models.html#cb43-38" tabindex="-1"></a></span>
+<span id="cb43-39"><a href="mediation-models.html#cb43-39" tabindex="-1"></a><span class="fu">summary</span>(fit, <span class="at">standardized=</span><span class="cn">TRUE</span>, <span class="at">fit.measures =</span> T, <span class="at">rsq =</span> T)</span></code></pre></div>
+<pre><code>## lavaan 0.6-19 ended normally after 49 iterations
+## 
+##   Estimator                                         ML
+##   Optimization method                           NLMINB
+##   Number of model parameters                        20
+## 
+##                                                   Used       Total
+##   Number of observations                         33194       34200
+## 
+## Model Test User Model:
+##                                                       
+##   Test statistic                                 0.000
+##   Degrees of freedom                                 0
+## 
+## Model Test Baseline Model:
+## 
+##   Test statistic                             33875.620
+##   Degrees of freedom                                15
+##   P-value                                        0.000
+## 
+## User Model versus Baseline Model:
+## 
+##   Comparative Fit Index (CFI)                    1.000
+##   Tucker-Lewis Index (TLI)                       1.000
+## 
+## Loglikelihood and Information Criteria:
+## 
+##   Loglikelihood user model (H0)            -263075.106
+##   Loglikelihood unrestricted model (H1)    -263075.106
+##                                                       
+##   Akaike (AIC)                              526190.213
+##   Bayesian (BIC)                            526358.415
+##   Sample-size adjusted Bayesian (SABIC)     526294.856
+## 
+## Root Mean Square Error of Approximation:
+## 
+##   RMSEA                                          0.000
+##   90 Percent confidence interval - lower         0.000
+##   90 Percent confidence interval - upper         0.000
+##   P-value H_0: RMSEA &lt;= 0.050                       NA
+##   P-value H_0: RMSEA &gt;= 0.080                       NA
+## 
+## Standardized Root Mean Square Residual:
+## 
+##   SRMR                                           0.000
+## 
+## Parameter Estimates:
+## 
+##   Standard errors                             Standard
+##   Information                                 Expected
+##   Information saturated (h1) model          Structured
+## 
+## Regressions:
+##                      Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+##   vaccine_standard ~                                                      
+##     rsky_c  (b1_s)      0.049    0.004   13.159    0.000    0.049    0.073
+##     ltt_tc  (b2_s)      0.016    0.003    4.628    0.000    0.016    0.025
+##     age     (c_st)      0.007    0.000   16.537    0.000    0.007    0.091
+##   vaccine_fast ~                                                          
+##     rsky_c (b1_fs)      0.079    0.004   20.205    0.000    0.079    0.112
+##     ltt_tc (b2_fs)      0.043    0.004   12.000    0.000    0.043    0.066
+##     age     (c_fs)      0.002    0.000    4.622    0.000    0.002    0.025
+##   flu_vaccine ~                                                           
+##     rsky_c (b1_fl)      0.018    0.001   12.829    0.000    0.018    0.071
+##     ltt_tc (b2_fl)      0.011    0.001    8.649    0.000    0.011    0.047
+##     age     (c_fl)      0.004    0.000   27.263    0.000    0.004    0.149
+##   risky_choices ~                                                         
+##     age       (a1)     -0.018    0.001  -28.095    0.000   -0.018   -0.152
+##   lotto_tickets ~                                                         
+##     age       (a2)     -0.005    0.001   -7.003    0.000   -0.005   -0.038
+## 
+## Covariances:
+##                       Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+##  .risky_choices ~~                                                         
+##    .lotto_tickets        0.494    0.023   21.668    0.000    0.494    0.120
+##  .vaccine_standard ~~                                                      
+##    .vaccine_fast         1.340    0.012  108.513    0.000    1.340    0.741
+##    .flu_vaccine          0.218    0.004   58.092    0.000    0.218    0.336
+##  .vaccine_fast ~~                                                          
+##    .flu_vaccine          0.198    0.004   51.314    0.000    0.198    0.294
+## 
+## Variances:
+##                    Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+##    .vaccine_stndrd    1.736    0.013  128.829    0.000    1.736    0.987
+##    .vaccine_fast      1.881    0.015  128.829    0.000    1.881    0.982
+##    .flu_vaccine       0.242    0.002  128.829    0.000    0.242    0.973
+##    .risky_choices     3.807    0.030  128.829    0.000    3.807    0.977
+##    .lotto_tickets     4.476    0.035  128.829    0.000    4.476    0.999
+## 
+## R-Square:
+##                    Estimate
+##     vaccine_stndrd    0.013
+##     vaccine_fast      0.018
+##     flu_vaccine       0.027
+##     risky_choices     0.023
+##     lotto_tickets     0.001
+## 
+## Defined Parameters:
+##                    Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+##     direct_stand      0.007    0.000   16.537    0.000    0.007    0.091
+##     direct_fast       0.002    0.000    4.622    0.000    0.002    0.025
+##     direct_flu        0.004    0.000   27.263    0.000    0.004    0.149
+##     indirect1_stnd   -0.001    0.000  -11.917    0.000   -0.001   -0.011
+##     indirect2_stnd   -0.000    0.000   -3.861    0.000   -0.000   -0.001
+##     indirect1_fast   -0.001    0.000  -16.403    0.000   -0.001   -0.017
+##     indirect2_fast   -0.000    0.000   -6.049    0.000   -0.000   -0.003
+##     indirect1_flu    -0.000    0.000  -11.670    0.000   -0.000   -0.011
+##     indirect2_flu    -0.000    0.000   -5.443    0.000   -0.000   -0.002
+##     total_stand       0.006    0.000   14.466    0.000    0.006    0.079
+##     total_fast        0.000    0.000    1.064    0.287    0.000    0.006
+##     total_flu         0.004    0.000   25.161    0.000    0.004    0.137
+##     perc_stand       11.726                              11.726   11.726
+##     perc_fast        43.512                              43.512   43.512
+##     perc_flu          7.780                               7.780    7.780</code></pre>
+<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="mediation-models.html#cb45-1" tabindex="-1"></a><span class="co">#semTable(fit, </span></span>
+<span id="cb45-2"><a href="mediation-models.html#cb45-2" tabindex="-1"></a><span class="co">#        type = &quot;tex&quot;, </span></span>
+<span id="cb45-3"><a href="mediation-models.html#cb45-3" tabindex="-1"></a><span class="co">#         file = &quot;mediation_age.tex&quot;)</span></span></code></pre></div>
+</div>
+<div id="political-affliation" class="section level2 hasAnchor" number="11.4">
+<h2><span class="header-section-number">11.4</span> political affliation<a href="mediation-models.html#political-affliation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb46-1"><a href="mediation-models.html#cb46-1" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="st">&#39;</span></span>
+<span id="cb46-2"><a href="mediation-models.html#cb46-2" tabindex="-1"></a><span class="st"># direct effect</span></span>
+<span id="cb46-3"><a href="mediation-models.html#cb46-3" tabindex="-1"></a><span class="st">vaccine_standard  ~  b1_stand*risky_choices + b2_stand*lotto_tickets +  c_stand*political_affliation</span></span>
+<span id="cb46-4"><a href="mediation-models.html#cb46-4" tabindex="-1"></a><span class="st">vaccine_fast  ~  b1_fast*risky_choices + b2_fast*lotto_tickets +  c_fast*political_affliation</span></span>
+<span id="cb46-5"><a href="mediation-models.html#cb46-5" tabindex="-1"></a><span class="st">flu_vaccine ~ b1_flu*risky_choices + b2_flu*lotto_tickets +  c_flu*political_affliation</span></span>
+<span id="cb46-6"><a href="mediation-models.html#cb46-6" tabindex="-1"></a></span>
+<span id="cb46-7"><a href="mediation-models.html#cb46-7" tabindex="-1"></a><span class="st"># mediator</span></span>
+<span id="cb46-8"><a href="mediation-models.html#cb46-8" tabindex="-1"></a><span class="st">risky_choices ~ a1 * political_affliation</span></span>
+<span id="cb46-9"><a href="mediation-models.html#cb46-9" tabindex="-1"></a><span class="st">lotto_tickets  ~ a2 * political_affliation</span></span>
+<span id="cb46-10"><a href="mediation-models.html#cb46-10" tabindex="-1"></a></span>
+<span id="cb46-11"><a href="mediation-models.html#cb46-11" tabindex="-1"></a><span class="st"># direct effect</span></span>
+<span id="cb46-12"><a href="mediation-models.html#cb46-12" tabindex="-1"></a><span class="st">direct_stand := c_stand</span></span>
+<span id="cb46-13"><a href="mediation-models.html#cb46-13" tabindex="-1"></a><span class="st">direct_fast := c_fast</span></span>
+<span id="cb46-14"><a href="mediation-models.html#cb46-14" tabindex="-1"></a><span class="st">direct_flu := c_flu</span></span>
+<span id="cb46-15"><a href="mediation-models.html#cb46-15" tabindex="-1"></a></span>
+<span id="cb46-16"><a href="mediation-models.html#cb46-16" tabindex="-1"></a><span class="st"># indirect effect (a*b)</span></span>
+<span id="cb46-17"><a href="mediation-models.html#cb46-17" tabindex="-1"></a><span class="st">indirect1_stand := a1*b1_stand</span></span>
+<span id="cb46-18"><a href="mediation-models.html#cb46-18" tabindex="-1"></a><span class="st">indirect2_stand := a2*b2_stand</span></span>
+<span id="cb46-19"><a href="mediation-models.html#cb46-19" tabindex="-1"></a><span class="st">indirect1_fast := a1*b1_fast</span></span>
+<span id="cb46-20"><a href="mediation-models.html#cb46-20" tabindex="-1"></a><span class="st">indirect2_fast := a2*b2_fast</span></span>
+<span id="cb46-21"><a href="mediation-models.html#cb46-21" tabindex="-1"></a><span class="st">indirect1_flu := a1*b1_flu</span></span>
+<span id="cb46-22"><a href="mediation-models.html#cb46-22" tabindex="-1"></a><span class="st">indirect2_flu := a2*b2_flu</span></span>
+<span id="cb46-23"><a href="mediation-models.html#cb46-23" tabindex="-1"></a></span>
+<span id="cb46-24"><a href="mediation-models.html#cb46-24" tabindex="-1"></a><span class="st"># total effect</span></span>
+<span id="cb46-25"><a href="mediation-models.html#cb46-25" tabindex="-1"></a><span class="st">total_stand := c_stand + (a1 * b1_stand) + (a2 * b2_stand) </span></span>
+<span id="cb46-26"><a href="mediation-models.html#cb46-26" tabindex="-1"></a><span class="st">total_fast := c_fast + (a1 * b1_fast) + (a2 * b2_fast)</span></span>
+<span id="cb46-27"><a href="mediation-models.html#cb46-27" tabindex="-1"></a><span class="st">total_flu := c_flu + (a1 * b1_flu) + (a2 * b2_flu)</span></span>
+<span id="cb46-28"><a href="mediation-models.html#cb46-28" tabindex="-1"></a></span>
+<span id="cb46-29"><a href="mediation-models.html#cb46-29" tabindex="-1"></a><span class="st"># percentage mediation</span></span>
+<span id="cb46-30"><a href="mediation-models.html#cb46-30" tabindex="-1"></a><span class="st">perc_stand := (abs(indirect1_stand + indirect2_stand) / (abs(indirect1_stand + indirect2_stand) + abs(direct_stand)))*100</span></span>
+<span id="cb46-31"><a href="mediation-models.html#cb46-31" tabindex="-1"></a><span class="st">perc_fast := (abs(indirect1_fast + indirect2_fast) / (abs(indirect1_fast + indirect2_fast) + abs(direct_fast)))*100</span></span>
+<span id="cb46-32"><a href="mediation-models.html#cb46-32" tabindex="-1"></a><span class="st">perc_flu := (abs(indirect1_flu + indirect2_flu) / (abs(indirect1_flu + indirect2_flu) + abs(direct_flu)))*100</span></span>
+<span id="cb46-33"><a href="mediation-models.html#cb46-33" tabindex="-1"></a></span>
+<span id="cb46-34"><a href="mediation-models.html#cb46-34" tabindex="-1"></a><span class="st">risky_choices ~~ lotto_tickets</span></span>
+<span id="cb46-35"><a href="mediation-models.html#cb46-35" tabindex="-1"></a><span class="st">&#39;</span></span>
+<span id="cb46-36"><a href="mediation-models.html#cb46-36" tabindex="-1"></a></span>
+<span id="cb46-37"><a href="mediation-models.html#cb46-37" tabindex="-1"></a>fit <span class="ot">&lt;-</span> <span class="fu">sem</span>(model, <span class="at">data =</span> df_study1)</span>
+<span id="cb46-38"><a href="mediation-models.html#cb46-38" tabindex="-1"></a></span>
+<span id="cb46-39"><a href="mediation-models.html#cb46-39" tabindex="-1"></a><span class="fu">summary</span>(fit, <span class="at">standardized=</span><span class="cn">TRUE</span>, <span class="at">fit.measures =</span> T, <span class="at">rsq =</span> T)</span></code></pre></div>
+<pre><code>## lavaan 0.6-19 ended normally after 40 iterations
+## 
+##   Estimator                                         ML
+##   Optimization method                           NLMINB
+##   Number of model parameters                        20
+## 
+##                                                   Used       Total
+##   Number of observations                         33194       34200
+## 
+## Model Test User Model:
+##                                                       
+##   Test statistic                                 0.000
+##   Degrees of freedom                                 0
+## 
+## Model Test Baseline Model:
+## 
+##   Test statistic                             32807.739
+##   Degrees of freedom                                15
+##   P-value                                        0.000
+## 
+## User Model versus Baseline Model:
+## 
+##   Comparative Fit Index (CFI)                    1.000
+##   Tucker-Lewis Index (TLI)                       1.000
+## 
+## Loglikelihood and Information Criteria:
+## 
+##   Loglikelihood user model (H0)            -263609.047
+##   Loglikelihood unrestricted model (H1)    -263609.047
+##                                                       
+##   Akaike (AIC)                              527258.094
+##   Bayesian (BIC)                            527426.296
+##   Sample-size adjusted Bayesian (SABIC)     527362.736
+## 
+## Root Mean Square Error of Approximation:
+## 
+##   RMSEA                                          0.000
+##   90 Percent confidence interval - lower         0.000
+##   90 Percent confidence interval - upper         0.000
+##   P-value H_0: RMSEA &lt;= 0.050                       NA
+##   P-value H_0: RMSEA &gt;= 0.080                       NA
+## 
+## Standardized Root Mean Square Residual:
+## 
+##   SRMR                                           0.000
+## 
+## Parameter Estimates:
+## 
+##   Standard errors                             Standard
+##   Information                                 Expected
+##   Information saturated (h1) model          Structured
+## 
+## Regressions:
+##                      Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+##   vaccine_standard ~                                                      
+##     rsky_c  (b1_s)      0.042    0.004   11.465    0.000    0.042    0.063
+##     ltt_tc  (b2_s)      0.015    0.003    4.415    0.000    0.015    0.024
+##     pltcl_  (c_st)      0.104    0.005   22.840    0.000    0.104    0.124
+##   vaccine_fast ~                                                          
+##     rsky_c (b1_fs)      0.077    0.004   19.984    0.000    0.077    0.109
+##     ltt_tc (b2_fs)      0.043    0.004   11.960    0.000    0.043    0.065
+##     pltcl_  (c_fs)      0.042    0.005    8.862    0.000    0.042    0.048
+##   flu_vaccine ~                                                           
+##     rsky_c (b1_fl)      0.012    0.001    8.954    0.000    0.012    0.049
+##     ltt_tc (b2_fl)      0.010    0.001    8.054    0.000    0.010    0.044
+##     pltcl_  (c_fl)      0.012    0.002    6.705    0.000    0.012    0.037
+##   risky_choices ~                                                         
+##     pltcl_    (a1)     -0.034    0.007   -5.016    0.000   -0.034   -0.028
+##   lotto_tickets ~                                                         
+##     pltcl_    (a2)     -0.010    0.007   -1.412    0.158   -0.010   -0.008
+## 
+## Covariances:
+##                       Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+##  .risky_choices ~~                                                         
+##    .lotto_tickets        0.518    0.023   22.418    0.000    0.518    0.124
+##  .vaccine_standard ~~                                                      
+##    .vaccine_fast         1.333    0.012  108.475    0.000    1.333    0.741
+##    .flu_vaccine          0.224    0.004   59.118    0.000    0.224    0.343
+##  .vaccine_fast ~~                                                          
+##    .flu_vaccine          0.199    0.004   51.183    0.000    0.199    0.293
+## 
+## Variances:
+##                    Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+##    .vaccine_stndrd    1.723    0.013  128.829    0.000    1.723    0.980
+##    .vaccine_fast      1.878    0.015  128.829    0.000    1.878    0.980
+##    .flu_vaccine       0.247    0.002  128.829    0.000    0.247    0.994
+##    .risky_choices     3.894    0.030  128.829    0.000    3.894    0.999
+##    .lotto_tickets     4.483    0.035  128.829    0.000    4.483    1.000
+## 
+## R-Square:
+##                    Estimate
+##     vaccine_stndrd    0.020
+##     vaccine_fast      0.020
+##     flu_vaccine       0.006
+##     risky_choices     0.001
+##     lotto_tickets     0.000
+## 
+## Defined Parameters:
+##                    Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+##     direct_stand      0.104    0.005   22.840    0.000    0.104    0.124
+##     direct_fast       0.042    0.005    8.862    0.000    0.042    0.048
+##     direct_flu        0.012    0.002    6.705    0.000    0.012    0.037
+##     indirect1_stnd   -0.001    0.000   -4.596    0.000   -0.001   -0.002
+##     indirect2_stnd   -0.000    0.000   -1.345    0.179   -0.000   -0.000
+##     indirect1_fast   -0.003    0.001   -4.865    0.000   -0.003   -0.003
+##     indirect2_fast   -0.000    0.000   -1.402    0.161   -0.000   -0.001
+##     indirect1_flu    -0.000    0.000   -4.376    0.000   -0.000   -0.001
+##     indirect2_flu    -0.000    0.000   -1.391    0.164   -0.000   -0.000
+##     total_stand       0.102    0.005   22.441    0.000    0.102    0.122
+##     total_fast        0.039    0.005    8.143    0.000    0.039    0.045
+##     total_flu         0.011    0.002    6.380    0.000    0.011    0.035
+##     perc_stand        1.520                               1.520    1.520
+##     perc_fast         6.810                               6.810    6.810
+##     perc_flu          4.436                               4.436    4.436</code></pre>
+<div class="sourceCode" id="cb48"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb48-1"><a href="mediation-models.html#cb48-1" tabindex="-1"></a><span class="co">#semTable(fit, </span></span>
+<span id="cb48-2"><a href="mediation-models.html#cb48-2" tabindex="-1"></a><span class="co">#        type = &quot;tex&quot;, </span></span>
+<span id="cb48-3"><a href="mediation-models.html#cb48-3" tabindex="-1"></a><span class="co">#         file = &quot;mediation_political.tex&quot;)</span></span></code></pre></div>
+</div>
+<div id="gender" class="section level2 hasAnchor" number="11.5">
+<h2><span class="header-section-number">11.5</span> gender<a href="mediation-models.html#gender" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="mediation-models.html#cb49-1" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="st">&#39;</span></span>
+<span id="cb49-2"><a href="mediation-models.html#cb49-2" tabindex="-1"></a><span class="st"># direct effect</span></span>
+<span id="cb49-3"><a href="mediation-models.html#cb49-3" tabindex="-1"></a><span class="st">vaccine_standard  ~  b1_stand*risky_choices + b2_stand*lotto_tickets +  c_stand*gender</span></span>
+<span id="cb49-4"><a href="mediation-models.html#cb49-4" tabindex="-1"></a><span class="st">vaccine_fast  ~  b1_fast*risky_choices + b2_fast*lotto_tickets +  c_fast*gender</span></span>
+<span id="cb49-5"><a href="mediation-models.html#cb49-5" tabindex="-1"></a><span class="st">flu_vaccine ~ b1_flu*risky_choices + b2_flu*lotto_tickets +  c_flu*gender</span></span>
+<span id="cb49-6"><a href="mediation-models.html#cb49-6" tabindex="-1"></a></span>
+<span id="cb49-7"><a href="mediation-models.html#cb49-7" tabindex="-1"></a><span class="st"># mediator</span></span>
+<span id="cb49-8"><a href="mediation-models.html#cb49-8" tabindex="-1"></a><span class="st">risky_choices ~ a1 * gender</span></span>
+<span id="cb49-9"><a href="mediation-models.html#cb49-9" tabindex="-1"></a><span class="st">lotto_tickets  ~ a2 * gender</span></span>
+<span id="cb49-10"><a href="mediation-models.html#cb49-10" tabindex="-1"></a></span>
+<span id="cb49-11"><a href="mediation-models.html#cb49-11" tabindex="-1"></a><span class="st"># direct effect</span></span>
+<span id="cb49-12"><a href="mediation-models.html#cb49-12" tabindex="-1"></a><span class="st">direct_stand := c_stand</span></span>
+<span id="cb49-13"><a href="mediation-models.html#cb49-13" tabindex="-1"></a><span class="st">direct_fast := c_fast</span></span>
+<span id="cb49-14"><a href="mediation-models.html#cb49-14" tabindex="-1"></a><span class="st">direct_flu := c_flu</span></span>
+<span id="cb49-15"><a href="mediation-models.html#cb49-15" tabindex="-1"></a></span>
+<span id="cb49-16"><a href="mediation-models.html#cb49-16" tabindex="-1"></a><span class="st"># indirect effect (a*b)</span></span>
+<span id="cb49-17"><a href="mediation-models.html#cb49-17" tabindex="-1"></a><span class="st">indirect1_stand := a1*b1_stand</span></span>
+<span id="cb49-18"><a href="mediation-models.html#cb49-18" tabindex="-1"></a><span class="st">indirect2_stand := a2*b2_stand</span></span>
+<span id="cb49-19"><a href="mediation-models.html#cb49-19" tabindex="-1"></a><span class="st">indirect1_fast := a1*b1_fast</span></span>
+<span id="cb49-20"><a href="mediation-models.html#cb49-20" tabindex="-1"></a><span class="st">indirect2_fast := a2*b2_fast</span></span>
+<span id="cb49-21"><a href="mediation-models.html#cb49-21" tabindex="-1"></a><span class="st">indirect1_flu := a1*b1_flu</span></span>
+<span id="cb49-22"><a href="mediation-models.html#cb49-22" tabindex="-1"></a><span class="st">indirect2_flu := a2*b2_flu</span></span>
+<span id="cb49-23"><a href="mediation-models.html#cb49-23" tabindex="-1"></a></span>
+<span id="cb49-24"><a href="mediation-models.html#cb49-24" tabindex="-1"></a><span class="st"># total effect</span></span>
+<span id="cb49-25"><a href="mediation-models.html#cb49-25" tabindex="-1"></a><span class="st">total_stand := c_stand + (a1 * b1_stand) + (a2 * b2_stand) </span></span>
+<span id="cb49-26"><a href="mediation-models.html#cb49-26" tabindex="-1"></a><span class="st">total_fast := c_fast + (a1 * b1_fast) + (a2 * b2_fast)</span></span>
+<span id="cb49-27"><a href="mediation-models.html#cb49-27" tabindex="-1"></a><span class="st">total_flu := c_flu + (a1 * b1_flu) + (a2 * b2_flu)</span></span>
+<span id="cb49-28"><a href="mediation-models.html#cb49-28" tabindex="-1"></a></span>
+<span id="cb49-29"><a href="mediation-models.html#cb49-29" tabindex="-1"></a><span class="st"># percentage mediation</span></span>
+<span id="cb49-30"><a href="mediation-models.html#cb49-30" tabindex="-1"></a><span class="st">perc_stand := (abs(indirect1_stand + indirect2_stand) / (abs(indirect1_stand + indirect2_stand) + abs(direct_stand)))*100</span></span>
+<span id="cb49-31"><a href="mediation-models.html#cb49-31" tabindex="-1"></a><span class="st">perc_fast := (abs(indirect1_fast + indirect2_fast) / (abs(indirect1_fast + indirect2_fast) + abs(direct_fast)))*100</span></span>
+<span id="cb49-32"><a href="mediation-models.html#cb49-32" tabindex="-1"></a><span class="st">perc_flu := (abs(indirect1_flu + indirect2_flu) / (abs(indirect1_flu + indirect2_flu) + abs(direct_flu)))*100</span></span>
+<span id="cb49-33"><a href="mediation-models.html#cb49-33" tabindex="-1"></a></span>
+<span id="cb49-34"><a href="mediation-models.html#cb49-34" tabindex="-1"></a><span class="st">risky_choices ~~ lotto_tickets</span></span>
+<span id="cb49-35"><a href="mediation-models.html#cb49-35" tabindex="-1"></a><span class="st">&#39;</span></span>
+<span id="cb49-36"><a href="mediation-models.html#cb49-36" tabindex="-1"></a></span>
+<span id="cb49-37"><a href="mediation-models.html#cb49-37" tabindex="-1"></a>fit <span class="ot">&lt;-</span> <span class="fu">sem</span>(model, <span class="at">data =</span> df_study1)</span>
+<span id="cb49-38"><a href="mediation-models.html#cb49-38" tabindex="-1"></a></span>
+<span id="cb49-39"><a href="mediation-models.html#cb49-39" tabindex="-1"></a><span class="fu">summary</span>(fit, <span class="at">standardized=</span><span class="cn">TRUE</span>, <span class="at">fit.measures =</span> T, <span class="at">rsq =</span> T)</span></code></pre></div>
+<pre><code>## lavaan 0.6-19 ended normally after 35 iterations
+## 
+##   Estimator                                         ML
+##   Optimization method                           NLMINB
+##   Number of model parameters                        20
+## 
+##                                                   Used       Total
+##   Number of observations                         33194       34200
+## 
+## Model Test User Model:
+##                                                       
+##   Test statistic                                 0.000
+##   Degrees of freedom                                 0
+## 
+## Model Test Baseline Model:
+## 
+##   Test statistic                             34080.105
+##   Degrees of freedom                                15
+##   P-value                                        0.000
+## 
+## User Model versus Baseline Model:
+## 
+##   Comparative Fit Index (CFI)                    1.000
+##   Tucker-Lewis Index (TLI)                       1.000
+## 
+## Loglikelihood and Information Criteria:
+## 
+##   Loglikelihood user model (H0)            -262972.864
+##   Loglikelihood unrestricted model (H1)    -262972.864
+##                                                       
+##   Akaike (AIC)                              525985.728
+##   Bayesian (BIC)                            526153.930
+##   Sample-size adjusted Bayesian (SABIC)     526090.370
+## 
+## Root Mean Square Error of Approximation:
+## 
+##   RMSEA                                          0.000
+##   90 Percent confidence interval - lower         0.000
+##   90 Percent confidence interval - upper         0.000
+##   P-value H_0: RMSEA &lt;= 0.050                       NA
+##   P-value H_0: RMSEA &gt;= 0.080                       NA
+## 
+## Standardized Root Mean Square Residual:
+## 
+##   SRMR                                           0.000
+## 
+## Parameter Estimates:
+## 
+##   Standard errors                             Standard
+##   Information                                 Expected
+##   Information saturated (h1) model          Structured
+## 
+## Regressions:
+##                      Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+##   vaccine_standard ~                                                      
+##     rsky_c  (b1_s)      0.028    0.004    7.434    0.000    0.028    0.041
+##     ltt_tc  (b2_s)      0.008    0.003    2.266    0.023    0.008    0.012
+##     gender  (c_st)     -0.335    0.015  -22.686    0.000   -0.335   -0.125
+##   vaccine_fast ~                                                          
+##     rsky_c (b1_fs)      0.060    0.004   15.523    0.000    0.060    0.085
+##     ltt_tc (b2_fs)      0.033    0.004    9.402    0.000    0.033    0.051
+##     gender  (c_fs)     -0.444    0.015  -29.115    0.000   -0.444   -0.159
+##   flu_vaccine ~                                                           
+##     rsky_c (b1_fl)      0.011    0.001    8.004    0.000    0.011    0.045
+##     ltt_tc (b2_fl)      0.010    0.001    7.574    0.000    0.010    0.042
+##     gender  (c_fl)     -0.026    0.006   -4.641    0.000   -0.026   -0.026
+##   risky_choices ~                                                         
+##     gender    (a1)     -0.626    0.022  -28.987    0.000   -0.626   -0.157
+##   lotto_tickets ~                                                         
+##     gender    (a2)     -0.458    0.023  -19.656    0.000   -0.458   -0.107
+## 
+## Covariances:
+##                       Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+##  .risky_choices ~~                                                         
+##    .lotto_tickets        0.448    0.023   19.791    0.000    0.448    0.109
+##  .vaccine_standard ~~                                                      
+##    .vaccine_fast         1.309    0.012  107.973    0.000    1.309    0.736
+##    .flu_vaccine          0.225    0.004   59.315    0.000    0.225    0.344
+##  .vaccine_fast ~~                                                          
+##    .flu_vaccine          0.198    0.004   51.343    0.000    0.198    0.294
+## 
+## Variances:
+##                    Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+##    .vaccine_stndrd    1.724    0.013  128.829    0.000    1.724    0.980
+##    .vaccine_fast      1.836    0.014  128.829    0.000    1.836    0.958
+##    .flu_vaccine       0.247    0.002  128.829    0.000    0.247    0.995
+##    .risky_choices     3.801    0.030  128.829    0.000    3.801    0.975
+##    .lotto_tickets     4.432    0.034  128.829    0.000    4.432    0.988
+## 
+## R-Square:
+##                    Estimate
+##     vaccine_stndrd    0.020
+##     vaccine_fast      0.042
+##     flu_vaccine       0.005
+##     risky_choices     0.025
+##     lotto_tickets     0.012
+## 
+## Defined Parameters:
+##                    Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+##     direct_stand     -0.335    0.015  -22.686    0.000   -0.335   -0.125
+##     direct_fast      -0.444    0.015  -29.115    0.000   -0.444   -0.159
+##     direct_flu       -0.026    0.006   -4.641    0.000   -0.026   -0.026
+##     indirect1_stnd   -0.017    0.002   -7.201    0.000   -0.017   -0.006
+##     indirect2_stnd   -0.004    0.002   -2.251    0.024   -0.004   -0.001
+##     indirect1_fast   -0.037    0.003  -13.685    0.000   -0.037   -0.013
+##     indirect2_fast   -0.015    0.002   -8.482    0.000   -0.015   -0.005
+##     indirect1_flu    -0.007    0.001   -7.715    0.000   -0.007   -0.007
+##     indirect2_flu    -0.005    0.001   -7.067    0.000   -0.005   -0.004
+##     total_stand      -0.356    0.015  -24.476    0.000   -0.356   -0.133
+##     total_fast       -0.497    0.015  -32.924    0.000   -0.497   -0.178
+##     total_flu        -0.038    0.006   -6.808    0.000   -0.038   -0.037
+##     perc_stand        5.861                               5.861    5.861
+##     perc_fast        10.588                              10.588   10.588
+##     perc_flu         30.829                              30.829   30.829</code></pre>
+<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="mediation-models.html#cb51-1" tabindex="-1"></a><span class="co">#semTable(fit, </span></span>
+<span id="cb51-2"><a href="mediation-models.html#cb51-2" tabindex="-1"></a><span class="co">#        type = &quot;tex&quot;, </span></span>
+<span id="cb51-3"><a href="mediation-models.html#cb51-3" tabindex="-1"></a><span class="co">#         file = &quot;mediation_gender.tex&quot;)</span></span></code></pre></div>
+<p>Article refrence:
+<em>Hinte, L. C., Castellano-Castillo, D., Ghosh, A., Melrose, K., Gasser, E., Noé, F., Massier, L., Dong, H., Sun, W., Hoffmann, A., Wolfrum, C., Rydén, M., Mejhert, N., Blüher, M., &amp; Von Meyenn, F. (2024). Adipose tissue retains an epigenetic memory of obesity after weight loss. Nature. <a href="https://doi.org/10.1038/s41586-024-08165-7">https://doi.org/10.1038/s41586-024-08165-7</a></em></p>
+<p>Project refrence:
+<em>Trueblood, J. S., Sussman, A. B., O’Leary, D. (accepted). The Role of Risk Preferences in Responses to Mesaging about COVID-19 Vaccine Take-up. Social Psychological and Personality Science. <a href="https://osf.io/nkuzp/">https://osf.io/nkuzp/</a></em></p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="moderation-by-political-affliation.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

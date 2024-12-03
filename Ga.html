@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page not found | Portfolio Manuel Leeuwerik</title>
-  <meta name="description" content="Page not found | Portfolio Manuel Leeuwerik" />
+  <title>4 Guerrila analytics | Portfolio Manuel Leeuwerik</title>
+  <meta name="description" content="4 Guerrila analytics | Portfolio Manuel Leeuwerik" />
   <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Page not found | Portfolio Manuel Leeuwerik" />
+  <meta property="og:title" content="4 Guerrila analytics | Portfolio Manuel Leeuwerik" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Page not found | Portfolio Manuel Leeuwerik" />
+  <meta name="twitter:title" content="4 Guerrila analytics | Portfolio Manuel Leeuwerik" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-
+<link rel="prev" href="scRepertoire.html"/>
+<link rel="next" href="c.-elegans-plate-experiment.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -177,19 +177,68 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="page-not-found" class="section level1">
-<h1>Page not found</h1>
-<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
-<p>You may want to try searching to find the page's new location, or use
-the table of contents to find the page you are looking for.</p>
+<div id="Ga" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">4</span> Guerrila analytics<a href="Ga.html#Ga" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Om meer structuur in de folders te creëren en mijn project beter te organiseren, is de Guerrilla Analytics-framework toegepast op mijn DAUR II RStudio-project. Er zijn bijvoorbeeld readme.txt-bestanden toegevoegd en de folders zijn ingedeeld op basis van projecten. Er zijn tijdens DAUR II, twee algemene projecten uitgevoerd: één gericht op metagenomics en één op RNA-sequencing (rna_seq). Bovendien zijn er formatieve opdrachten uitgevoerd voor beide, en binnen RNA-sequencing is ook een eindopdracht afgerond.
+Aan de hand van het {fs} pakket in R, is er een overzicht van de mapstructuur gemaakt. Voor de leesbaarheid is de diepte van de folderboom beperkt tot 2 niveaus (recurse = 2). Hieronder de code en het bijbehorende resultaat.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="Ga.html#cb6-1" tabindex="-1"></a><span class="co">#install.packages(&quot;fs&quot;) </span></span>
+<span id="cb6-2"><a href="Ga.html#cb6-2" tabindex="-1"></a><span class="fu">library</span>(fs)</span>
+<span id="cb6-3"><a href="Ga.html#cb6-3" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="Ga.html#cb6-4" tabindex="-1"></a><span class="co"># Set the path to your desired directory</span></span>
+<span id="cb6-5"><a href="Ga.html#cb6-5" tabindex="-1"></a>path <span class="ot">&lt;-</span> <span class="st">&quot;C:/Users/manue/OneDrive/Documents/DAUR&quot;</span></span>
+<span id="cb6-6"><a href="Ga.html#cb6-6" tabindex="-1"></a></span>
+<span id="cb6-7"><a href="Ga.html#cb6-7" tabindex="-1"></a><span class="co"># Visualize the folder structure</span></span>
+<span id="cb6-8"><a href="Ga.html#cb6-8" tabindex="-1"></a><span class="fu">dir_tree</span>(path, <span class="at">recurse =</span> <span class="dv">2</span>)</span></code></pre></div>
+<pre><code>## C:/Users/manue/OneDrive/Documents/DAUR
+## ├── metagenomics
+## │   ├── code
+## │   │   ├── Bracken-master
+## │   │   └── daur2metagenomics
+## │   ├── data
+## │   │   └── README
+## │   └── data_raw
+## │       ├── kraken
+## │       └── README
+## ├── metagenomics_formatieve_opdracht
+## │   ├── Formatieve_opdracht_metagenomics.html
+## │   ├── Formatieve_opdracht_metagenomics.Rmd
+## │   └── README
+## ├── README
+## ├── rna_seq
+## │   ├── code
+## │   │   ├── bigwig
+## │   │   ├── lessons
+## │   │   ├── README
+## │   │   └── samscripts
+## │   └── data_raw
+## │       ├── fastqc_outputdaur2
+## │       └── README
+## ├── rna_seq_eindopdracht
+## │   ├── code
+## │   │   ├── Eindopdracht_daur2_Manuel_Leeuwerik_Philine_van_Bekkum (2).Rmd
+## │   │   ├── Eindopdracht_daur2_Manuel_Leeuwerik_Philine_van_Bekkum (3).html
+## │   │   └── README
+## │   └── data_raw
+## │       ├── assignment_desc
+## │       └── fastqcfiles
+## └── rna_seq_formatieve_opdracht
+##     ├── code
+##     │   ├── formatieve_opdracht_Manuel_Leeuwerik.html
+##     │   ├── formatieve_opdracht_Manuel_Leeuwerik.Rmd
+##     │   └── README
+##     └── data_raw
+##         ├── fastqc_output
+##         ├── README
+##         └── read_counts_OC2.rds</code></pre>
+
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-
+<a href="scRepertoire.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="c.-elegans-plate-experiment.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
