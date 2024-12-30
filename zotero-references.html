@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>7 A new R package | COVID-19 Report</title>
-  <meta name="description" content="7 A new R package | COVID-19 Report" />
+  <title>10 Zotero References | COVID-19 Report</title>
+  <meta name="description" content="10 Zotero References | COVID-19 Report" />
   <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="7 A new R package | COVID-19 Report" />
+  <meta property="og:title" content="10 Zotero References | COVID-19 Report" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="7 A new R package | COVID-19 Report" />
+  <meta name="twitter:title" content="10 Zotero References | COVID-19 Report" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="peer.html"/>
-<link rel="next" href="projecticum.html"/>
+<link rel="prev" href="covidc.html"/>
+
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -199,36 +199,46 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="package" class="section level1 hasAnchor" number="7">
-<h1><span class="header-section-number">7</span> A new R package<a href="package.html#package" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="spotting-penguins" class="section level2 hasAnchor" number="7.1">
-<h2><span class="header-section-number">7.1</span> Spotting penguins<a href="package.html#spotting-penguins" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>De <code>spottingpenguins</code> package is gemaakt om de visualisatie van de dataset <code>palmerpenguins</code> te vergemakkelijken. Deze dataset bevat metingen van verschillende pinguïnsoorten. Er zijn verschillende visualisatiefuncties beschikbaar in het pakket, waaronder scatterplots, staafdiagrammen met standaardafwijking en boxplots. Om te beginnen moet je het spottingpenguins pakket installeren. Je kunt dit doen met het devtools pakket:</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="package.html#cb15-1" tabindex="-1"></a><span class="co"># Install devtools als je die nog niet hebt.</span></span>
-<span id="cb15-2"><a href="package.html#cb15-2" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;devtools&quot;</span>)</span></code></pre></div>
-<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="package.html#cb16-1" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;ManuelLeeuwerik/spottingpenguins&quot;</span>, <span class="at">build_vignettes =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
-<p>De vignette kan vervolgens bekeken worden met het volgende command:</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="package.html#cb17-1" tabindex="-1"></a><span class="fu">browseVignettes</span>(<span class="st">&quot;spottingpenguins&quot;</span>)</span></code></pre></div>
-<p>Zodra de package geïnstalleerd is kan deze, samen met de benodigde dataset <code>palmerpenguins</code>ingeladen worden:</p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="package.html#cb18-1" tabindex="-1"></a><span class="fu">library</span>(spottingpenguins)</span>
-<span id="cb18-2"><a href="package.html#cb18-2" tabindex="-1"></a><span class="fu">library</span>(palmerpenguins)</span></code></pre></div>
-<p>Barspecies visualiseert de pinguïn soorten in een bargraph met aantal (“counts”) of de proportie (“proportion”), met keuze voor kleur van de graph. Voor meer info: ?barspecies.</p>
-<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="package.html#cb19-1" tabindex="-1"></a><span class="co">#Voorbeeld</span></span>
-<span id="cb19-2"><a href="package.html#cb19-2" tabindex="-1"></a><span class="fu">barspecies</span>(<span class="st">&quot;magenta&quot;</span>, <span class="st">&quot;proportion&quot;</span>)</span></code></pre></div>
-<p><img src="figures/barspecies-1.png" width="672" />
-Scatterpenguins genereert een scatterplot voor de gewenste pinguïnmetingen (bill length, bill depth, flipper length, or body mass) en toont de Pearson correlatiecoëfficiënt in het plot. Voor meer info ?scatterpenguins.</p>
-<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="package.html#cb20-1" tabindex="-1"></a><span class="co"># Voorbeeld</span></span>
-<span id="cb20-2"><a href="package.html#cb20-2" tabindex="-1"></a><span class="fu">scatterpenguins</span>(<span class="st">&quot;body_mass_g&quot;</span>, <span class="st">&quot;flipper_length_mm&quot;</span>)</span></code></pre></div>
-<p><img src="figures/scatterpenguins-1.png" width="672" />
-Penguin_avg_bar genereert een staafdiagram met het gemiddelde van een bepaalde pinguïnmeting voor elke soort, met errorbars. Voor meer info ?penguin_avg_bar.</p>
-<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="package.html#cb21-1" tabindex="-1"></a><span class="co">#Voorbeeld</span></span>
-<span id="cb21-2"><a href="package.html#cb21-2" tabindex="-1"></a><span class="fu">penguin_avg_bar</span>(<span class="st">&quot;flipper_length_mm&quot;</span>)</span></code></pre></div>
-<p><img src="figures/penguin%20bar-1.png" width="672" />
-Penguin_measurement_boxplot genereert een boxplot met de verdeling van een bepaalde pinguïnmeting voor elke soort. Met als rode punt de outliers. Voor meer info ?penguin_measurement_boxplot</p>
-<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="package.html#cb22-1" tabindex="-1"></a><span class="co">#Voorbeeld</span></span>
-<span id="cb22-2"><a href="package.html#cb22-2" tabindex="-1"></a><span class="fu">penguin_measurement_boxplot</span>(<span class="st">&quot;body_mass_g&quot;</span>)</span></code></pre></div>
-<p><img src="figures/penguin%20boxplot-1.png" width="672" /></p>
+<div id="zotero-references" class="section level1 hasAnchor" number="10">
+<h1><span class="header-section-number">10</span> Zotero References<a href="zotero-references.html#zotero-references" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
+<div class="csl-entry">
+<span>“Adipose Tissue Retains an Epigenetic Memory of Obesity After Weight Loss <span></span> <span>Nature</span>.”</span> n.d. https://www.nature.com/articles/s41586-024-08165-7. Accessed December 30, 2024.
+</div>
+<div class="csl-entry">
+Cecilia G. Carvalhaes, Leah N. Woosley, Dee Shortridge. 2024. <span>“<span>Performance</span> of the <span>Vitek</span> 2 <span>Advanced Expert System</span> (<span>AES</span>) as a <span>Rapid Tool</span> for <span>Reporting Antimicrobial Susceptibility Testing</span> (<span>AST</span>) in <span>Enterobacterales</span> from <span>North</span> and <span>Latin America</span>.”</span> <em>ResearchGate</em> 11 (1): 1–11. <a href="https://doi.org/10.1128/spectrum.04673-22">https://doi.org/10.1128/spectrum.04673-22</a>.
+</div>
+<div class="csl-entry">
+<span>“Data on the Daily Number of New Reported <span>COVID-19</span> Cases and Deaths by <span>EU</span>/<span>EEA</span> Country.”</span> 2022. https://www.ecdc.europa.eu/en/publications-data/data-daily-new-cases-covid-19-eueea-country.
+</div>
+<div class="csl-entry">
+Kavipriya, D., Suman Susan Prakash, Sarumathi Dhandapani, Deepashree Rajshekar, and Apurba Sankar Sastry. 2021. <span>“Evaluation of the <span>Performance</span> of <span>Direct Susceptibility Test</span> by <span>VITEK-2</span> from <span>Positively Flagged Blood Culture Broth</span> for <span>Gram-Negative Bacilli</span>.”</span> <em>Journal of Laboratory Physicians</em> 13 (4): 374–79. <a href="https://doi.org/10.1055/s-0041-1732489">https://doi.org/10.1055/s-0041-1732489</a>.
+</div>
+<div class="csl-entry">
+Ligozzi, Marco, Cinzia Bernini, Maria Grazia Bonora, Maria De Fatima, Jessica Zuliani, and Roberta Fontana. 2002. <span>“Evaluation of the <span>VITEK</span> 2 System for Identification and Antimicrobial Susceptibility Testing of Medically Relevant Gram-Positive Cocci.”</span> <em>Journal of Clinical Microbiology</em> 40 (5): 1681–86. <a href="https://doi.org/10.1128/JCM.40.5.1681-1686.2002">https://doi.org/10.1128/JCM.40.5.1681-1686.2002</a>.
+</div>
+<div class="csl-entry">
+Nakasone, Isamu, Tohru Kinjo, Nobuhisa Yamane, Kyoko Kisanuki, and Chika M. Shiohira. 2007. <span>“Laboratory-Based Evaluation of the Colorimetric <span>VITEK-2 Compact</span> System for Species Identification and of the <span>Advanced Expert System</span> for Detection of Antimicrobial Resistances: <span>VITEK-2 Compact</span> System Identification and Antimicrobial Susceptibility Testing.”</span> <em>Diagnostic Microbiology and Infectious Disease</em> 58 (2): 191–98. <a href="https://doi.org/10.1016/j.diagmicrobio.2006.12.008">https://doi.org/10.1016/j.diagmicrobio.2006.12.008</a>.
+</div>
+<div class="csl-entry">
+<span>“<span>OSF</span> <span></span> <span>The Role</span> of <span>Risk Preferences</span> in <span>Responses</span> to <span>Messaging</span> about <span class="nocase">COVID-19 Vaccine Take-up</span>.”</span> n.d. https://osf.io/nkuzp/. Accessed December 30, 2024.
+</div>
+<div class="csl-entry">
+<span>“(<span>PDF</span>) <span>Reproducibility</span> and Reporting Practices in <span>COVID-19</span> Preprint Manuscripts.”</span> 2024. <em>ResearchGate</em>. https://www.researchgate.net/publication/340244621_Reproducibility_and_reporting_practices_in_COVID-19_preprint_manuscripts. <a href="https://doi.org/10.1101/2020.03.24.20042796">https://doi.org/10.1101/2020.03.24.20042796</a>.
+</div>
+<div class="csl-entry">
+Pincus, David H. n.d. <span>“<span>MICROBIAL IDENTIFICATION USING THE BIOM<span>É</span>RIEUX VITEK</span><span></span> 2 <span>SYSTEM</span>.”</span> <em>Biomerieux</em>, 1–27.
+</div>
+<div class="csl-entry">
+<span>“Single-<span>Cell Immune Profiling</span>.”</span> n.d. <em>CeGaT GmbH</em>. Accessed December 30, 2024.
+</div>
+<div class="csl-entry">
+<span>“Starting Work with <span class="nocase">scRepertoire</span>.”</span> n.d. https://www.bioconductor.org/packages/devel/bioc/vignettes/scRepertoire/inst/doc/vignette.html. Accessed December 30, 2024.
+</div>
+<div class="csl-entry">
+theHumanBorch. 2024. <span>“Ncborcherding/<span class="nocase">scRepertoire</span>.”</span>
+</div>
 </div>
 </div>
             </section>
@@ -236,8 +246,8 @@ Penguin_measurement_boxplot genereert een boxplot met de verdeling van een bepaa
           </div>
         </div>
       </div>
-<a href="peer.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="projecticum.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="covidc.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
