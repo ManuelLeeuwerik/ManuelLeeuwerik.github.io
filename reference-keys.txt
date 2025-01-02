@@ -4,7 +4,7 @@ CV
 scRepertoire
 planning
 Ga
-c.-elegans-plate-experiment
+elegans
 inleiding
 inspecteren-data-types
 scatterplot
@@ -15,4 +15,4 @@ package
 spotting-penguins
 projecticum
 covidc
-zotero-references
+zotero

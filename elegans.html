@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>5 C. elegans plate experiment | Portfolio Manuel Leeuwerik</title>
+  <meta name="description" content="5 C. elegans plate experiment | Portfolio Manuel Leeuwerik" />
+  <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="5 C. elegans plate experiment | Portfolio Manuel Leeuwerik" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="5 C. elegans plate experiment | Portfolio Manuel Leeuwerik" />
+  
+  
+  
+
+<meta name="author" content="Manuel Leeuwerik" />
+
+
+<meta name="date" content="2025-01-02" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="Ga.html"/>
+<link rel="next" href="peer.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<link href="libs/bsTable-3.3.7/bootstrapTable.min.css" rel="stylesheet" />
+<script src="libs/bsTable-3.3.7/bootstrapTable.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introductie</a></li>
+<li class="chapter" data-level="2" data-path="CV.html"><a href="CV.html"><i class="fa fa-check"></i><b>2</b> Curriculum Vitae</a></li>
+<li class="chapter" data-level="3" data-path="scRepertoire.html"><a href="scRepertoire.html"><i class="fa fa-check"></i><b>3</b> Single-cell immune receptor profiling</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="scRepertoire.html"><a href="scRepertoire.html#planning"><i class="fa fa-check"></i><b>3.1</b> Planning</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="Ga.html"><a href="Ga.html"><i class="fa fa-check"></i><b>4</b> Guerrila analytics</a></li>
+<li class="chapter" data-level="5" data-path="elegans.html"><a href="elegans.html"><i class="fa fa-check"></i><b>5</b> C. elegans plate experiment</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="elegans.html"><a href="elegans.html#inleiding"><i class="fa fa-check"></i><b>5.1</b> Inleiding</a></li>
+<li class="chapter" data-level="5.2" data-path="elegans.html"><a href="elegans.html#inspecteren-data-types"><i class="fa fa-check"></i><b>5.2</b> Inspecteren data types</a></li>
+<li class="chapter" data-level="5.3" data-path="elegans.html"><a href="elegans.html#scatterplot"><i class="fa fa-check"></i><b>5.3</b> Scatterplot</a></li>
+<li class="chapter" data-level="5.4" data-path="elegans.html"><a href="elegans.html#dosis-response-curves"><i class="fa fa-check"></i><b>5.4</b> Dosis-response curves</a></li>
+<li class="chapter" data-level="5.5" data-path="elegans.html"><a href="elegans.html#conclusie"><i class="fa fa-check"></i><b>5.5</b> Conclusie</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="peer.html"><a href="peer.html"><i class="fa fa-check"></i><b>6</b> Open Peer Review</a></li>
+<li class="chapter" data-level="7" data-path="package.html"><a href="package.html"><i class="fa fa-check"></i><b>7</b> A new R package</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="package.html"><a href="package.html#spotting-penguins"><i class="fa fa-check"></i><b>7.1</b> Spotting penguins</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="projecticum.html"><a href="projecticum.html"><i class="fa fa-check"></i><b>8</b> Projecticum</a></li>
+<li class="chapter" data-level="9" data-path="covidc.html"><a href="covidc.html"><i class="fa fa-check"></i><b>9</b> COVID rapport</a></li>
+<li class="chapter" data-level="10" data-path="zotero.html"><a href="zotero.html"><i class="fa fa-check"></i><b>10</b> Zotero Referenties</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Portfolio Manuel Leeuwerik</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="elegans" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">5</span> C. elegans plate experiment<a href="elegans.html#elegans" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="inleiding" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> Inleiding<a href="elegans.html#inleiding" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>De data is afkomstig van een <em>C.elegans</em> experiment waarbij nematodes werden blootgesteld aan de volgende chemicaliën (oftewel compounds): S-medium, ethanol, decane, naphthalene en 2,6-diisopropylnaphthalene. Na incubatie met verschillende concentraties van de compounds zijn de nakomelingen van de <em>C.elegans</em> geteld (de RawData). Met dit experiment wordt er gekeken naar het effect van de verschillende compounds op het vormen van nakomelingen bij <em>C.elegans</em>. Voor de visualisatie stappen van deze analyse worden de R-packages {drc} en {ggplot2} gebruikt.</p>
+</div>
+<div id="inspecteren-data-types" class="section level2 hasAnchor" number="5.2">
+<h2><span class="header-section-number">5.2</span> Inspecteren data types<a href="elegans.html#inspecteren-data-types" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Om te bepalen of de data correct is geïmporteerd in Rstudio worden de data types van RawData, compName (naam van compound) en compConcentration (concentratie van compound) bekeken.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="elegans.html#cb8-1" tabindex="-1"></a><span class="fu">str</span>(tidy_data[, <span class="fu">c</span>(<span class="st">&quot;RawData&quot;</span>, <span class="st">&quot;compName&quot;</span>, <span class="st">&quot;compConcentration&quot;</span>)])</span></code></pre></div>
+<pre><code>## tibble [360 × 3] (S3: tbl_df/tbl/data.frame)
+##  $ RawData          : num [1:360] 44 37 45 47 41 35 41 36 40 38 ...
+##  $ compName         : chr [1:360] &quot;2,6-diisopropylnaphthalene&quot; &quot;2,6-diisopropylnaphthalene&quot; &quot;2,6-diisopropylnaphthalene&quot; &quot;2,6-diisopropylnaphthalene&quot; ...
+##  $ compConcentration: chr [1:360] &quot;4.99&quot; &quot;4.99&quot; &quot;4.99&quot; &quot;4.99&quot; ...</code></pre>
+<p>Het datatype van RawData is numeric, die van compName is character en die van compConcentration is character. Het datatype van CompConcentration zou numeric moeten zijn, wat betekent dat de data niet geheel correct geïmporteerd is in Rstudio.</p>
+</div>
+<div id="scatterplot" class="section level2 hasAnchor" number="5.3">
+<h2><span class="header-section-number">5.3</span> Scatterplot<a href="elegans.html#scatterplot" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Als eerst is de data in de kolom compConcentration omgezet tot het datatype numeric. Vervolgens is de data gevisualiseerd in een scatterplot, zie figuur 1.</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="elegans.html#cb10-1" tabindex="-1"></a><span class="co"># fixing compConcentration to numeric</span></span>
+<span id="cb10-2"><a href="elegans.html#cb10-2" tabindex="-1"></a>tidy_data<span class="sc">$</span>compConcentration<span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(tidy_data<span class="sc">$</span>compConcentration)</span>
+<span id="cb10-3"><a href="elegans.html#cb10-3" tabindex="-1"></a></span>
+<span id="cb10-4"><a href="elegans.html#cb10-4" tabindex="-1"></a><span class="co"># plotting</span></span>
+<span id="cb10-5"><a href="elegans.html#cb10-5" tabindex="-1"></a>scatter_plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(tidy_data, <span class="fu">aes</span>(</span>
+<span id="cb10-6"><a href="elegans.html#cb10-6" tabindex="-1"></a>  <span class="at">x =</span> compConcentration,</span>
+<span id="cb10-7"><a href="elegans.html#cb10-7" tabindex="-1"></a>  <span class="at">y =</span> RawData,</span>
+<span id="cb10-8"><a href="elegans.html#cb10-8" tabindex="-1"></a>  <span class="at">color =</span> compName,</span>
+<span id="cb10-9"><a href="elegans.html#cb10-9" tabindex="-1"></a>  <span class="at">shape =</span> expType</span>
+<span id="cb10-10"><a href="elegans.html#cb10-10" tabindex="-1"></a>)) <span class="sc">+</span></span>
+<span id="cb10-11"><a href="elegans.html#cb10-11" tabindex="-1"></a>  <span class="fu">geom_jitter</span>(<span class="at">position =</span> <span class="fu">position_jitter</span>(<span class="at">width =</span> <span class="fl">0.1</span>, <span class="at">seed =</span> <span class="dv">0</span>)) <span class="sc">+</span> <span class="co"># With jitter</span></span>
+<span id="cb10-12"><a href="elegans.html#cb10-12" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb10-13"><a href="elegans.html#cb10-13" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">&quot;Scatterplot van compounds&quot;</span>,</span>
+<span id="cb10-14"><a href="elegans.html#cb10-14" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">&quot;Compound concentratie (log)&quot;</span>, </span>
+<span id="cb10-15"><a href="elegans.html#cb10-15" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">&quot;Aantal C.elegans nakomelingen&quot;</span>,</span>
+<span id="cb10-16"><a href="elegans.html#cb10-16" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">&quot;Naam van compound&quot;</span>,</span>
+<span id="cb10-17"><a href="elegans.html#cb10-17" tabindex="-1"></a>    <span class="at">shape =</span> <span class="st">&quot;Experiment Type&quot;</span></span>
+<span id="cb10-18"><a href="elegans.html#cb10-18" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb10-19"><a href="elegans.html#cb10-19" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span> <span class="co"># Apply a minimal theme</span></span>
+<span id="cb10-20"><a href="elegans.html#cb10-20" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb10-21"><a href="elegans.html#cb10-21" tabindex="-1"></a>    <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>) <span class="co"># Rotate x-axis labels</span></span>
+<span id="cb10-22"><a href="elegans.html#cb10-22" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb10-23"><a href="elegans.html#cb10-23" tabindex="-1"></a>  <span class="fu">scale_x_log10</span>()<span class="sc">+</span> <span class="co"># Use a logarithmic scale for the x-axis</span></span>
+<span id="cb10-24"><a href="elegans.html#cb10-24" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">120</span>, <span class="at">by =</span> <span class="dv">20</span>)) </span>
+<span id="cb10-25"><a href="elegans.html#cb10-25" tabindex="-1"></a>scatter_plot</span></code></pre></div>
+<p><img src="figures/scatterplot%20comp-1.png" width="672" /></p>
+<p><em>Figuur 1: Scatterplot resultaten. Met op de y-as het aantal C.elegans nakomelingen en op de x-as de log<sub>10</sub> van de compound concentratie. De compounds zijn per naam gekleurd en per experiment type is er een ander symbool gebruikt. De datapunten zijn iets verplaatst met jitter.</em></p>
+<p>In figuur 1 is te zien dat ethanol de positieve controle, en S-medium de negatieve controle is voor dit experiment.
+Er is duidelijk een negatieve correlatie tussen de compound concentratie en het aantal nakomelingen van <em>C.elegans</em>. Het valt op dat decane een sterke daling toont en dat bij de hoogste concentratie van naphthalene er zeer weinig nakomelingen zijn waargenomen.</p>
+<p>Om te bepalen wat het effect is van ethanol, decane, naphtalene en 2,6-diisopropylnaphthalene op het aantal nakomelingen van <em>C.elegans</em> wordt er voor elke compound een dosis-respons curve gemaakt.
+Hiervoor moet de data eerst genormaliseerd worden, dit om variatie door experimentele omstandigheden te verminderen. Vervolgens wordt de data gefilterd op afwezige datapunten en wordt er voor elke compound een apart object gemaakt. Hierna wordt de data gefit en worden alle curves in één grafiek geplot. Om de IC50’s aan te geven worden deze ook berekend. De dosis-response curves en de bijbehorende IC50’s zijn weergegeven in figuur 2.</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="elegans.html#cb11-1" tabindex="-1"></a><span class="co">#Calculating mean</span></span>
+<span id="cb11-2"><a href="elegans.html#cb11-2" tabindex="-1"></a>control_mean <span class="ot">&lt;-</span> <span class="fu">mean</span>(tidy_data<span class="sc">$</span>RawData[tidy_data<span class="sc">$</span>expType <span class="sc">==</span> <span class="st">&quot;controlNegative&quot;</span>], <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb11-3"><a href="elegans.html#cb11-3" tabindex="-1"></a></span>
+<span id="cb11-4"><a href="elegans.html#cb11-4" tabindex="-1"></a><span class="co"># Normalize the data</span></span>
+<span id="cb11-5"><a href="elegans.html#cb11-5" tabindex="-1"></a>tidy_data<span class="sc">$</span>normalized_RawData <span class="ot">&lt;-</span> tidy_data<span class="sc">$</span>RawData <span class="sc">/</span> control_mean</span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="elegans.html#cb12-1" tabindex="-1"></a><span class="co"># Filter out NA values from the dataset</span></span>
+<span id="cb12-2"><a href="elegans.html#cb12-2" tabindex="-1"></a>tidy_data_without_NA <span class="ot">&lt;-</span> tidy_data <span class="sc">%&gt;%</span> <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(normalized_RawData) <span class="sc">&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(compConcentration) <span class="sc">&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(compName))</span>
+<span id="cb12-3"><a href="elegans.html#cb12-3" tabindex="-1"></a></span>
+<span id="cb12-4"><a href="elegans.html#cb12-4" tabindex="-1"></a><span class="co"># Isolate compounds</span></span>
+<span id="cb12-5"><a href="elegans.html#cb12-5" tabindex="-1"></a>ethanol_data <span class="ot">&lt;-</span> tidy_data_without_NA <span class="sc">%&gt;%</span> <span class="fu">filter</span>(compName <span class="sc">==</span> <span class="st">&quot;Ethanol&quot;</span>)</span>
+<span id="cb12-6"><a href="elegans.html#cb12-6" tabindex="-1"></a>decane_data <span class="ot">&lt;-</span> tidy_data_without_NA <span class="sc">%&gt;%</span> <span class="fu">filter</span>(compName <span class="sc">==</span> <span class="st">&quot;decane&quot;</span>)</span>
+<span id="cb12-7"><a href="elegans.html#cb12-7" tabindex="-1"></a>naphthalene_data <span class="ot">&lt;-</span> tidy_data_without_NA <span class="sc">%&gt;%</span> <span class="fu">filter</span>(compName <span class="sc">==</span> <span class="st">&quot;naphthalene&quot;</span>)</span>
+<span id="cb12-8"><a href="elegans.html#cb12-8" tabindex="-1"></a>dii_data <span class="ot">&lt;-</span> tidy_data_without_NA <span class="sc">%&gt;%</span> <span class="fu">filter</span>(compName <span class="sc">==</span> <span class="st">&quot;2,6-diisopropylnaphthalene&quot;</span>)</span>
+<span id="cb12-9"><a href="elegans.html#cb12-9" tabindex="-1"></a></span>
+<span id="cb12-10"><a href="elegans.html#cb12-10" tabindex="-1"></a><span class="co"># Fit models for each compound</span></span>
+<span id="cb12-11"><a href="elegans.html#cb12-11" tabindex="-1"></a>fit_ethanol <span class="ot">&lt;-</span> <span class="fu">drm</span>(normalized_RawData <span class="sc">~</span> compConcentration, <span class="at">data =</span> ethanol_data, <span class="at">fct =</span> <span class="fu">LL.4</span>())</span>
+<span id="cb12-12"><a href="elegans.html#cb12-12" tabindex="-1"></a>fit_decane <span class="ot">&lt;-</span> <span class="fu">drm</span>(normalized_RawData <span class="sc">~</span> compConcentration, <span class="at">data =</span> decane_data, <span class="at">fct =</span> <span class="fu">LL.4</span>())</span>
+<span id="cb12-13"><a href="elegans.html#cb12-13" tabindex="-1"></a>fit_naphthalene <span class="ot">&lt;-</span> <span class="fu">drm</span>(normalized_RawData <span class="sc">~</span> compConcentration, <span class="at">data =</span> naphthalene_data, <span class="at">fct =</span> <span class="fu">LL.4</span>())</span>
+<span id="cb12-14"><a href="elegans.html#cb12-14" tabindex="-1"></a>fit_dii <span class="ot">&lt;-</span> <span class="fu">drm</span>(normalized_RawData <span class="sc">~</span> compConcentration, <span class="at">data =</span> dii_data, <span class="at">fct =</span> <span class="fu">LL.4</span>())</span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="elegans.html#cb13-1" tabindex="-1"></a><span class="co"># Calculate IC50 values</span></span>
+<span id="cb13-2"><a href="elegans.html#cb13-2" tabindex="-1"></a>ethanol_ic50 <span class="ot">&lt;-</span> <span class="fu">ED</span>(fit_ethanol, <span class="dv">50</span>)[<span class="dv">1</span>]</span>
+<span id="cb13-3"><a href="elegans.html#cb13-3" tabindex="-1"></a>decane_ic50 <span class="ot">&lt;-</span> <span class="fu">ED</span>(fit_decane, <span class="dv">50</span>)[<span class="dv">1</span>]</span>
+<span id="cb13-4"><a href="elegans.html#cb13-4" tabindex="-1"></a>naphthalene_ic50 <span class="ot">&lt;-</span> <span class="fu">ED</span>(fit_naphthalene, <span class="dv">50</span>)[<span class="dv">1</span>]</span>
+<span id="cb13-5"><a href="elegans.html#cb13-5" tabindex="-1"></a>compound_26_ic50 <span class="ot">&lt;-</span> <span class="fu">ED</span>(fit_dii, <span class="dv">50</span>)[<span class="dv">1</span>]</span></code></pre></div>
+</div>
+<div id="dosis-response-curves" class="section level2 hasAnchor" number="5.4">
+<h2><span class="header-section-number">5.4</span> Dosis-response curves<a href="elegans.html#dosis-response-curves" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="elegans.html#cb14-1" tabindex="-1"></a><span class="co"># Set up the base plot for ethanol with extended x-axis</span></span>
+<span id="cb14-2"><a href="elegans.html#cb14-2" tabindex="-1"></a><span class="fu">plot</span>(</span>
+<span id="cb14-3"><a href="elegans.html#cb14-3" tabindex="-1"></a>  fit_ethanol, <span class="at">type =</span> <span class="st">&quot;all&quot;</span>, <span class="at">log =</span> <span class="st">&quot;x&quot;</span>,</span>
+<span id="cb14-4"><a href="elegans.html#cb14-4" tabindex="-1"></a>  <span class="at">col =</span> <span class="st">&quot;red&quot;</span>, <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">1.5</span>),</span>
+<span id="cb14-5"><a href="elegans.html#cb14-5" tabindex="-1"></a>  <span class="at">xlim =</span> <span class="fu">c</span>(<span class="fl">0.01</span>, <span class="fu">max</span>(tidy_data_without_NA<span class="sc">$</span>compConcentration, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)), </span>
+<span id="cb14-6"><a href="elegans.html#cb14-6" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="st">&quot;Compound concentratie (log)&quot;</span>, <span class="at">ylab =</span> <span class="st">&quot;Gernomaliseerde response&quot;</span>,</span>
+<span id="cb14-7"><a href="elegans.html#cb14-7" tabindex="-1"></a>  <span class="at">main =</span> <span class="st">&quot;Dosis-response curves&quot;</span></span>
+<span id="cb14-8"><a href="elegans.html#cb14-8" tabindex="-1"></a>)</span>
+<span id="cb14-9"><a href="elegans.html#cb14-9" tabindex="-1"></a></span>
+<span id="cb14-10"><a href="elegans.html#cb14-10" tabindex="-1"></a><span class="co"># Add curves for other compounds</span></span>
+<span id="cb14-11"><a href="elegans.html#cb14-11" tabindex="-1"></a><span class="fu">plot</span>(fit_decane, <span class="at">add =</span> <span class="cn">TRUE</span>, <span class="at">col =</span> <span class="st">&quot;blue&quot;</span>, <span class="at">type =</span> <span class="st">&quot;all&quot;</span>)</span>
+<span id="cb14-12"><a href="elegans.html#cb14-12" tabindex="-1"></a><span class="fu">plot</span>(fit_naphthalene, <span class="at">add =</span> <span class="cn">TRUE</span>, <span class="at">col =</span> <span class="st">&quot;green&quot;</span>, <span class="at">type =</span> <span class="st">&quot;all&quot;</span>)</span>
+<span id="cb14-13"><a href="elegans.html#cb14-13" tabindex="-1"></a><span class="fu">plot</span>(fit_dii, <span class="at">add =</span> <span class="cn">TRUE</span>, <span class="at">col =</span> <span class="st">&quot;purple&quot;</span>, <span class="at">type =</span> <span class="st">&quot;all&quot;</span>)</span>
+<span id="cb14-14"><a href="elegans.html#cb14-14" tabindex="-1"></a></span>
+<span id="cb14-15"><a href="elegans.html#cb14-15" tabindex="-1"></a><span class="co"># Create legend labels with IC50 values</span></span>
+<span id="cb14-16"><a href="elegans.html#cb14-16" tabindex="-1"></a>legend_labels <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb14-17"><a href="elegans.html#cb14-17" tabindex="-1"></a>  <span class="fu">paste</span>(<span class="st">&quot;Ethanol (IC50 =&quot;</span>, <span class="fu">round</span>(ethanol_ic50, <span class="dv">2</span>), <span class="st">&quot;)&quot;</span>),</span>
+<span id="cb14-18"><a href="elegans.html#cb14-18" tabindex="-1"></a>  <span class="fu">paste</span>(<span class="st">&quot;Decane (IC50 =&quot;</span>, <span class="fu">round</span>(decane_ic50, <span class="dv">2</span>), <span class="st">&quot;)&quot;</span>),</span>
+<span id="cb14-19"><a href="elegans.html#cb14-19" tabindex="-1"></a>  <span class="fu">paste</span>(<span class="st">&quot;Naphthalene (IC50 =&quot;</span>, <span class="fu">round</span>(naphthalene_ic50, <span class="dv">2</span>), <span class="st">&quot;)&quot;</span>),</span>
+<span id="cb14-20"><a href="elegans.html#cb14-20" tabindex="-1"></a>  <span class="fu">paste</span>(<span class="st">&quot;2,6-diisopropylnaphthalene (IC50 =&quot;</span>, <span class="fu">round</span>(compound_26_ic50, <span class="dv">2</span>), <span class="st">&quot;)&quot;</span>)</span>
+<span id="cb14-21"><a href="elegans.html#cb14-21" tabindex="-1"></a>)</span>
+<span id="cb14-22"><a href="elegans.html#cb14-22" tabindex="-1"></a></span>
+<span id="cb14-23"><a href="elegans.html#cb14-23" tabindex="-1"></a><span class="co"># Add legend</span></span>
+<span id="cb14-24"><a href="elegans.html#cb14-24" tabindex="-1"></a><span class="fu">legend</span>(</span>
+<span id="cb14-25"><a href="elegans.html#cb14-25" tabindex="-1"></a>  <span class="st">&quot;topright&quot;</span>,</span>
+<span id="cb14-26"><a href="elegans.html#cb14-26" tabindex="-1"></a>  <span class="at">legend =</span> legend_labels,</span>
+<span id="cb14-27"><a href="elegans.html#cb14-27" tabindex="-1"></a>  <span class="at">col =</span> <span class="fu">c</span>(<span class="st">&quot;red&quot;</span>, <span class="st">&quot;blue&quot;</span>, <span class="st">&quot;green&quot;</span>, <span class="st">&quot;purple&quot;</span>),</span>
+<span id="cb14-28"><a href="elegans.html#cb14-28" tabindex="-1"></a>  <span class="at">lty =</span> <span class="dv">1</span>, <span class="at">bty =</span> <span class="st">&quot;n&quot;</span>, <span class="at">cex =</span> <span class="fl">0.8</span></span>
+<span id="cb14-29"><a href="elegans.html#cb14-29" tabindex="-1"></a>)</span></code></pre></div>
+<p><img src="figures/plot%20all%20IC50-1.png" width="672" /></p>
+<p><em>Figuur 2: Dosis-response curves resultaten. Met op de y-as het genormaliseerde aantal C.elegans nakomelingen en op de x-as de log<sub>10</sub> van de compound concentratie. De compounds zijn per naam gekleurd en de IC50’s zijn aangegeven in de legenda.</em></p>
+<p>In figuur 2 is te zien dat de IC50 voor ethanol (de positieve controle), 1.19 is. De IC50 waardes voor de andere compounds zijn: 0.12 voor decane, 3.13 voor naphtalene en 0.03 voor 2,6-diisopropylnaphthalene. De relatief lage IC50 waarde van 2,6-diisopropylnaphthalene suggereert dat het een sterke toxiciteit heeft. Terwijl naphthalene een relatief hoge IC50 waarde heeft en dus een lage toxiciteit suggereert.</p>
+</div>
+<div id="conclusie" class="section level2 hasAnchor" number="5.5">
+<h2><span class="header-section-number">5.5</span> Conclusie<a href="elegans.html#conclusie" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In dit experiment is er gekeken naar het effect van ethanol, decane, naphtalene en 2,6-diisopropylnaphthalene op het aantal nakomelingen van <em>C.elegans</em>. Op basis van het scatterplot bleek dat decane en naphthalene een sterk negatief effect hadden op het aantal nakomelingen van <em>C.elegans</em>. Terwijl de dosis-response curves suggereert dat 2,6-diisopropylnaphthalene het meest negatief effect heeft met een IC50 = 0.03. Er zouden meer analyses uitgevoerd moeten worden om wellicht een duidelijke conclusie te kunnen trekken, zoals een ANOVA test. Het is aan te bevelen om het experiment volledig te herhalen met een uitgebreidere concentratiereeks, inclusief hogere concentraties van de compounds.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="Ga.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="peer.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
