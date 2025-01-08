@@ -23,7 +23,7 @@
 <meta name="author" content="Manuel Leeuwerik" />
 
 
-<meta name="date" content="2025-01-05" />
+<meta name="date" content="2025-01-08" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -168,7 +168,10 @@ div.csl-indent {
 <li class="chapter" data-level="3" data-path="scRepertoire.html"><a href="scRepertoire.html"><i class="fa fa-check"></i><b>3</b> Single-cell immune receptor profiling</a>
 <ul>
 <li class="chapter" data-level="3.1" data-path="scRepertoire.html"><a href="scRepertoire.html#planning"><i class="fa fa-check"></i><b>3.1</b> Planning</a></li>
-<li class="chapter" data-level="3.2" data-path="scRepertoire.html"><a href="scRepertoire.html#analyse-op-dataset"><i class="fa fa-check"></i><b>3.2</b> Analyse op dataset</a></li>
+<li class="chapter" data-level="3.2" data-path="scRepertoire.html"><a href="scRepertoire.html#experiment-opzet"><i class="fa fa-check"></i><b>3.2</b> Experiment opzet</a></li>
+<li class="chapter" data-level="3.3" data-path="scRepertoire.html"><a href="scRepertoire.html#data-voorbereiding"><i class="fa fa-check"></i><b>3.3</b> Data voorbereiding</a></li>
+<li class="chapter" data-level="3.4" data-path="scRepertoire.html"><a href="scRepertoire.html#analyse"><i class="fa fa-check"></i><b>3.4</b> Analyse</a></li>
+<li class="chapter" data-level="3.5" data-path="scRepertoire.html"><a href="scRepertoire.html#conclusie"><i class="fa fa-check"></i><b>3.5</b> Conclusie</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="Ga.html"><a href="Ga.html"><i class="fa fa-check"></i><b>4</b> Guerrila analytics</a></li>
 <li class="chapter" data-level="5" data-path="elegans.html"><a href="elegans.html"><i class="fa fa-check"></i><b>5</b> C. elegans plate experiment</a>
@@ -177,7 +180,7 @@ div.csl-indent {
 <li class="chapter" data-level="5.2" data-path="elegans.html"><a href="elegans.html#inspecteren-data-types"><i class="fa fa-check"></i><b>5.2</b> Inspecteren data types</a></li>
 <li class="chapter" data-level="5.3" data-path="elegans.html"><a href="elegans.html#scatterplot"><i class="fa fa-check"></i><b>5.3</b> Scatterplot</a></li>
 <li class="chapter" data-level="5.4" data-path="elegans.html"><a href="elegans.html#dosis-response-curves"><i class="fa fa-check"></i><b>5.4</b> Dosis-response curves</a></li>
-<li class="chapter" data-level="5.5" data-path="elegans.html"><a href="elegans.html#conclusie"><i class="fa fa-check"></i><b>5.5</b> Conclusie</a></li>
+<li class="chapter" data-level="5.5" data-path="elegans.html"><a href="elegans.html#conclusie-1"><i class="fa fa-check"></i><b>5.5</b> Conclusie</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="peer.html"><a href="peer.html"><i class="fa fa-check"></i><b>6</b> Open Peer Review</a></li>
 <li class="chapter" data-level="7" data-path="package.html"><a href="package.html"><i class="fa fa-check"></i><b>7</b> A new R package</a>
@@ -208,14 +211,14 @@ div.csl-indent {
 <h1><span class="header-section-number">4</span> Guerrila analytics<a href="Ga.html#Ga" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>Om meer structuur in de folders te creëren en mijn project beter te organiseren, is de Guerrilla Analytics-framework toegepast op mijn DAUR II RStudio-project. Er zijn bijvoorbeeld readme.txt-bestanden toegevoegd en de folders zijn ingedeeld op basis van projecten. Er zijn tijdens DAUR II, twee algemene projecten uitgevoerd: één gericht op metagenomics en één op RNA-sequencing (rna_seq). Bovendien zijn er formatieve opdrachten uitgevoerd voor beide, en binnen RNA-sequencing is ook een eindopdracht afgerond.
 Aan de hand van het <code>fs</code> pakket in R, is er een overzicht van de mapstructuur gemaakt. Voor de leesbaarheid is de diepte van de folderboom beperkt tot 2 niveaus (recurse = 2). Hieronder de code en het bijbehorende resultaat.</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="Ga.html#cb10-1" tabindex="-1"></a><span class="co">#install.packages(&quot;fs&quot;) </span></span>
-<span id="cb10-2"><a href="Ga.html#cb10-2" tabindex="-1"></a><span class="fu">library</span>(fs)</span>
-<span id="cb10-3"><a href="Ga.html#cb10-3" tabindex="-1"></a></span>
-<span id="cb10-4"><a href="Ga.html#cb10-4" tabindex="-1"></a><span class="co"># Set the path to your desired directory</span></span>
-<span id="cb10-5"><a href="Ga.html#cb10-5" tabindex="-1"></a>path <span class="ot">&lt;-</span> <span class="st">&quot;C:/Users/manue/OneDrive/Documents/DAUR&quot;</span></span>
-<span id="cb10-6"><a href="Ga.html#cb10-6" tabindex="-1"></a></span>
-<span id="cb10-7"><a href="Ga.html#cb10-7" tabindex="-1"></a><span class="co"># Visualize the folder structure</span></span>
-<span id="cb10-8"><a href="Ga.html#cb10-8" tabindex="-1"></a><span class="fu">dir_tree</span>(path, <span class="at">recurse =</span> <span class="dv">2</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="Ga.html#cb18-1" tabindex="-1"></a><span class="co">#install.packages(&quot;fs&quot;) </span></span>
+<span id="cb18-2"><a href="Ga.html#cb18-2" tabindex="-1"></a><span class="fu">library</span>(fs)</span>
+<span id="cb18-3"><a href="Ga.html#cb18-3" tabindex="-1"></a></span>
+<span id="cb18-4"><a href="Ga.html#cb18-4" tabindex="-1"></a><span class="co"># Set the path to your desired directory</span></span>
+<span id="cb18-5"><a href="Ga.html#cb18-5" tabindex="-1"></a>path <span class="ot">&lt;-</span> <span class="st">&quot;C:/Users/manue/OneDrive/Documents/DAUR&quot;</span></span>
+<span id="cb18-6"><a href="Ga.html#cb18-6" tabindex="-1"></a></span>
+<span id="cb18-7"><a href="Ga.html#cb18-7" tabindex="-1"></a><span class="co"># Visualize the folder structure</span></span>
+<span id="cb18-8"><a href="Ga.html#cb18-8" tabindex="-1"></a><span class="fu">dir_tree</span>(path, <span class="at">recurse =</span> <span class="dv">2</span>)</span></code></pre></div>
 <pre><code>## C:/Users/manue/OneDrive/Documents/DAUR
 ## ├── example_data.Rmd
 ## ├── metagenomics

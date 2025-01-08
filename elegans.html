@@ -23,7 +23,7 @@
 <meta name="author" content="Manuel Leeuwerik" />
 
 
-<meta name="date" content="2025-01-05" />
+<meta name="date" content="2025-01-08" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -168,7 +168,10 @@ div.csl-indent {
 <li class="chapter" data-level="3" data-path="scRepertoire.html"><a href="scRepertoire.html"><i class="fa fa-check"></i><b>3</b> Single-cell immune receptor profiling</a>
 <ul>
 <li class="chapter" data-level="3.1" data-path="scRepertoire.html"><a href="scRepertoire.html#planning"><i class="fa fa-check"></i><b>3.1</b> Planning</a></li>
-<li class="chapter" data-level="3.2" data-path="scRepertoire.html"><a href="scRepertoire.html#analyse-op-dataset"><i class="fa fa-check"></i><b>3.2</b> Analyse op dataset</a></li>
+<li class="chapter" data-level="3.2" data-path="scRepertoire.html"><a href="scRepertoire.html#experiment-opzet"><i class="fa fa-check"></i><b>3.2</b> Experiment opzet</a></li>
+<li class="chapter" data-level="3.3" data-path="scRepertoire.html"><a href="scRepertoire.html#data-voorbereiding"><i class="fa fa-check"></i><b>3.3</b> Data voorbereiding</a></li>
+<li class="chapter" data-level="3.4" data-path="scRepertoire.html"><a href="scRepertoire.html#analyse"><i class="fa fa-check"></i><b>3.4</b> Analyse</a></li>
+<li class="chapter" data-level="3.5" data-path="scRepertoire.html"><a href="scRepertoire.html#conclusie"><i class="fa fa-check"></i><b>3.5</b> Conclusie</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="Ga.html"><a href="Ga.html"><i class="fa fa-check"></i><b>4</b> Guerrila analytics</a></li>
 <li class="chapter" data-level="5" data-path="elegans.html"><a href="elegans.html"><i class="fa fa-check"></i><b>5</b> C. elegans plate experiment</a>
@@ -177,7 +180,7 @@ div.csl-indent {
 <li class="chapter" data-level="5.2" data-path="elegans.html"><a href="elegans.html#inspecteren-data-types"><i class="fa fa-check"></i><b>5.2</b> Inspecteren data types</a></li>
 <li class="chapter" data-level="5.3" data-path="elegans.html"><a href="elegans.html#scatterplot"><i class="fa fa-check"></i><b>5.3</b> Scatterplot</a></li>
 <li class="chapter" data-level="5.4" data-path="elegans.html"><a href="elegans.html#dosis-response-curves"><i class="fa fa-check"></i><b>5.4</b> Dosis-response curves</a></li>
-<li class="chapter" data-level="5.5" data-path="elegans.html"><a href="elegans.html#conclusie"><i class="fa fa-check"></i><b>5.5</b> Conclusie</a></li>
+<li class="chapter" data-level="5.5" data-path="elegans.html"><a href="elegans.html#conclusie-1"><i class="fa fa-check"></i><b>5.5</b> Conclusie</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="peer.html"><a href="peer.html"><i class="fa fa-check"></i><b>6</b> Open Peer Review</a></li>
 <li class="chapter" data-level="7" data-path="package.html"><a href="package.html"><i class="fa fa-check"></i><b>7</b> A new R package</a>
@@ -213,7 +216,7 @@ div.csl-indent {
 <div id="inspecteren-data-types" class="section level2 hasAnchor" number="5.2">
 <h2><span class="header-section-number">5.2</span> Inspecteren data types<a href="elegans.html#inspecteren-data-types" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Om te bepalen of de data correct is geïmporteerd in Rstudio worden de data types van RawData, compName (naam van compound) en compConcentration (concentratie van compound) bekeken.</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="elegans.html#cb12-1" tabindex="-1"></a><span class="fu">str</span>(tidy_data[, <span class="fu">c</span>(<span class="st">&quot;RawData&quot;</span>, <span class="st">&quot;compName&quot;</span>, <span class="st">&quot;compConcentration&quot;</span>)])</span></code></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="elegans.html#cb20-1" tabindex="-1"></a><span class="fu">str</span>(tidy_data[, <span class="fu">c</span>(<span class="st">&quot;RawData&quot;</span>, <span class="st">&quot;compName&quot;</span>, <span class="st">&quot;compConcentration&quot;</span>)])</span></code></pre></div>
 <pre><code>## tibble [360 × 3] (S3: tbl_df/tbl/data.frame)
 ##  $ RawData          : num [1:360] 44 37 45 47 41 35 41 36 40 38 ...
 ##  $ compName         : chr [1:360] &quot;2,6-diisopropylnaphthalene&quot; &quot;2,6-diisopropylnaphthalene&quot; &quot;2,6-diisopropylnaphthalene&quot; &quot;2,6-diisopropylnaphthalene&quot; ...
@@ -223,99 +226,99 @@ div.csl-indent {
 <div id="scatterplot" class="section level2 hasAnchor" number="5.3">
 <h2><span class="header-section-number">5.3</span> Scatterplot<a href="elegans.html#scatterplot" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Als eerst is de data in de kolom compConcentration omgezet tot het datatype numeric. Vervolgens is de data gevisualiseerd in een scatterplot, zie figuur 1.</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="elegans.html#cb14-1" tabindex="-1"></a><span class="co"># fixing compConcentration to numeric</span></span>
-<span id="cb14-2"><a href="elegans.html#cb14-2" tabindex="-1"></a>tidy_data<span class="sc">$</span>compConcentration<span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(tidy_data<span class="sc">$</span>compConcentration)</span>
-<span id="cb14-3"><a href="elegans.html#cb14-3" tabindex="-1"></a></span>
-<span id="cb14-4"><a href="elegans.html#cb14-4" tabindex="-1"></a><span class="co"># plotting</span></span>
-<span id="cb14-5"><a href="elegans.html#cb14-5" tabindex="-1"></a>scatter_plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(tidy_data, <span class="fu">aes</span>(</span>
-<span id="cb14-6"><a href="elegans.html#cb14-6" tabindex="-1"></a>  <span class="at">x =</span> compConcentration,</span>
-<span id="cb14-7"><a href="elegans.html#cb14-7" tabindex="-1"></a>  <span class="at">y =</span> RawData,</span>
-<span id="cb14-8"><a href="elegans.html#cb14-8" tabindex="-1"></a>  <span class="at">color =</span> compName,</span>
-<span id="cb14-9"><a href="elegans.html#cb14-9" tabindex="-1"></a>  <span class="at">shape =</span> expType</span>
-<span id="cb14-10"><a href="elegans.html#cb14-10" tabindex="-1"></a>)) <span class="sc">+</span></span>
-<span id="cb14-11"><a href="elegans.html#cb14-11" tabindex="-1"></a>  <span class="fu">geom_jitter</span>(<span class="at">position =</span> <span class="fu">position_jitter</span>(<span class="at">width =</span> <span class="fl">0.1</span>, <span class="at">seed =</span> <span class="dv">0</span>)) <span class="sc">+</span> <span class="co"># With jitter</span></span>
-<span id="cb14-12"><a href="elegans.html#cb14-12" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
-<span id="cb14-13"><a href="elegans.html#cb14-13" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">&quot;Scatterplot van compounds&quot;</span>,</span>
-<span id="cb14-14"><a href="elegans.html#cb14-14" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">&quot;Compound concentratie (log)&quot;</span>, </span>
-<span id="cb14-15"><a href="elegans.html#cb14-15" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">&quot;Aantal C.elegans nakomelingen&quot;</span>,</span>
-<span id="cb14-16"><a href="elegans.html#cb14-16" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">&quot;Naam van compound&quot;</span>,</span>
-<span id="cb14-17"><a href="elegans.html#cb14-17" tabindex="-1"></a>    <span class="at">shape =</span> <span class="st">&quot;Experiment Type&quot;</span></span>
-<span id="cb14-18"><a href="elegans.html#cb14-18" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb14-19"><a href="elegans.html#cb14-19" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span> <span class="co"># Apply a minimal theme</span></span>
-<span id="cb14-20"><a href="elegans.html#cb14-20" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
-<span id="cb14-21"><a href="elegans.html#cb14-21" tabindex="-1"></a>    <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>) <span class="co"># Rotate x-axis labels</span></span>
-<span id="cb14-22"><a href="elegans.html#cb14-22" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb14-23"><a href="elegans.html#cb14-23" tabindex="-1"></a>  <span class="fu">scale_x_log10</span>()<span class="sc">+</span> <span class="co"># Use a logarithmic scale for the x-axis</span></span>
-<span id="cb14-24"><a href="elegans.html#cb14-24" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">120</span>, <span class="at">by =</span> <span class="dv">20</span>)) </span>
-<span id="cb14-25"><a href="elegans.html#cb14-25" tabindex="-1"></a>scatter_plot</span></code></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="elegans.html#cb22-1" tabindex="-1"></a><span class="co"># fixing compConcentration to numeric</span></span>
+<span id="cb22-2"><a href="elegans.html#cb22-2" tabindex="-1"></a>tidy_data<span class="sc">$</span>compConcentration<span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(tidy_data<span class="sc">$</span>compConcentration)</span>
+<span id="cb22-3"><a href="elegans.html#cb22-3" tabindex="-1"></a></span>
+<span id="cb22-4"><a href="elegans.html#cb22-4" tabindex="-1"></a><span class="co"># plotting</span></span>
+<span id="cb22-5"><a href="elegans.html#cb22-5" tabindex="-1"></a>scatter_plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(tidy_data, <span class="fu">aes</span>(</span>
+<span id="cb22-6"><a href="elegans.html#cb22-6" tabindex="-1"></a>  <span class="at">x =</span> compConcentration,</span>
+<span id="cb22-7"><a href="elegans.html#cb22-7" tabindex="-1"></a>  <span class="at">y =</span> RawData,</span>
+<span id="cb22-8"><a href="elegans.html#cb22-8" tabindex="-1"></a>  <span class="at">color =</span> compName,</span>
+<span id="cb22-9"><a href="elegans.html#cb22-9" tabindex="-1"></a>  <span class="at">shape =</span> expType</span>
+<span id="cb22-10"><a href="elegans.html#cb22-10" tabindex="-1"></a>)) <span class="sc">+</span></span>
+<span id="cb22-11"><a href="elegans.html#cb22-11" tabindex="-1"></a>  <span class="fu">geom_jitter</span>(<span class="at">position =</span> <span class="fu">position_jitter</span>(<span class="at">width =</span> <span class="fl">0.1</span>, <span class="at">seed =</span> <span class="dv">0</span>)) <span class="sc">+</span> <span class="co"># With jitter</span></span>
+<span id="cb22-12"><a href="elegans.html#cb22-12" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb22-13"><a href="elegans.html#cb22-13" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">&quot;Scatterplot van compounds&quot;</span>,</span>
+<span id="cb22-14"><a href="elegans.html#cb22-14" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">&quot;Compound concentratie (log)&quot;</span>, </span>
+<span id="cb22-15"><a href="elegans.html#cb22-15" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">&quot;Aantal C.elegans nakomelingen&quot;</span>,</span>
+<span id="cb22-16"><a href="elegans.html#cb22-16" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">&quot;Naam van compound&quot;</span>,</span>
+<span id="cb22-17"><a href="elegans.html#cb22-17" tabindex="-1"></a>    <span class="at">shape =</span> <span class="st">&quot;Experiment Type&quot;</span></span>
+<span id="cb22-18"><a href="elegans.html#cb22-18" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb22-19"><a href="elegans.html#cb22-19" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span> <span class="co"># Apply a minimal theme</span></span>
+<span id="cb22-20"><a href="elegans.html#cb22-20" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb22-21"><a href="elegans.html#cb22-21" tabindex="-1"></a>    <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>) <span class="co"># Rotate x-axis labels</span></span>
+<span id="cb22-22"><a href="elegans.html#cb22-22" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb22-23"><a href="elegans.html#cb22-23" tabindex="-1"></a>  <span class="fu">scale_x_log10</span>()<span class="sc">+</span> <span class="co"># Use a logarithmic scale for the x-axis</span></span>
+<span id="cb22-24"><a href="elegans.html#cb22-24" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">120</span>, <span class="at">by =</span> <span class="dv">20</span>)) </span>
+<span id="cb22-25"><a href="elegans.html#cb22-25" tabindex="-1"></a>scatter_plot</span></code></pre></div>
 <p><img src="figures/scatterplot%20comp-1.png" width="672" /></p>
 <p><em>Figuur 1: Scatterplot resultaten. Met op de y-as het aantal C.elegans nakomelingen en op de x-as de log<sub>10</sub> van de compound concentratie. De compounds zijn per naam gekleurd en per experiment type is er een ander symbool gebruikt. De datapunten zijn iets verplaatst met jitter.</em></p>
 <p>In figuur 1 is te zien dat ethanol de positieve controle, en S-medium de negatieve controle is voor dit experiment.
 Er is duidelijk een negatieve correlatie tussen de compound concentratie en het aantal nakomelingen van <em>C.elegans</em>. Het valt op dat decane een sterke daling toont en dat bij de hoogste concentratie van naphthalene er zeer weinig nakomelingen zijn waargenomen.</p>
 <p>Om te bepalen wat het effect is van ethanol, decane, naphtalene en 2,6-diisopropylnaphthalene op het aantal nakomelingen van <em>C.elegans</em> wordt er voor elke compound een dosis-respons curve gemaakt.
 Hiervoor moet de data eerst genormaliseerd worden, dit om variatie door experimentele omstandigheden te verminderen. Vervolgens wordt de data gefilterd op afwezige datapunten en wordt er voor elke compound een apart object gemaakt. Hierna wordt de data gefit en worden alle curves in één grafiek geplot. Om de IC50’s aan te geven worden deze ook berekend. De dosis-response curves en de bijbehorende IC50’s zijn weergegeven in figuur 2.</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="elegans.html#cb15-1" tabindex="-1"></a><span class="co">#Calculating mean</span></span>
-<span id="cb15-2"><a href="elegans.html#cb15-2" tabindex="-1"></a>control_mean <span class="ot">&lt;-</span> <span class="fu">mean</span>(tidy_data<span class="sc">$</span>RawData[tidy_data<span class="sc">$</span>expType <span class="sc">==</span> <span class="st">&quot;controlNegative&quot;</span>], <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb15-3"><a href="elegans.html#cb15-3" tabindex="-1"></a></span>
-<span id="cb15-4"><a href="elegans.html#cb15-4" tabindex="-1"></a><span class="co"># Normalize the data</span></span>
-<span id="cb15-5"><a href="elegans.html#cb15-5" tabindex="-1"></a>tidy_data<span class="sc">$</span>normalized_RawData <span class="ot">&lt;-</span> tidy_data<span class="sc">$</span>RawData <span class="sc">/</span> control_mean</span></code></pre></div>
-<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="elegans.html#cb16-1" tabindex="-1"></a><span class="co"># Filter out NA values from the dataset</span></span>
-<span id="cb16-2"><a href="elegans.html#cb16-2" tabindex="-1"></a>tidy_data_without_NA <span class="ot">&lt;-</span> tidy_data <span class="sc">%&gt;%</span> <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(normalized_RawData) <span class="sc">&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(compConcentration) <span class="sc">&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(compName))</span>
-<span id="cb16-3"><a href="elegans.html#cb16-3" tabindex="-1"></a></span>
-<span id="cb16-4"><a href="elegans.html#cb16-4" tabindex="-1"></a><span class="co"># Isolate compounds</span></span>
-<span id="cb16-5"><a href="elegans.html#cb16-5" tabindex="-1"></a>ethanol_data <span class="ot">&lt;-</span> tidy_data_without_NA <span class="sc">%&gt;%</span> <span class="fu">filter</span>(compName <span class="sc">==</span> <span class="st">&quot;Ethanol&quot;</span>)</span>
-<span id="cb16-6"><a href="elegans.html#cb16-6" tabindex="-1"></a>decane_data <span class="ot">&lt;-</span> tidy_data_without_NA <span class="sc">%&gt;%</span> <span class="fu">filter</span>(compName <span class="sc">==</span> <span class="st">&quot;decane&quot;</span>)</span>
-<span id="cb16-7"><a href="elegans.html#cb16-7" tabindex="-1"></a>naphthalene_data <span class="ot">&lt;-</span> tidy_data_without_NA <span class="sc">%&gt;%</span> <span class="fu">filter</span>(compName <span class="sc">==</span> <span class="st">&quot;naphthalene&quot;</span>)</span>
-<span id="cb16-8"><a href="elegans.html#cb16-8" tabindex="-1"></a>dii_data <span class="ot">&lt;-</span> tidy_data_without_NA <span class="sc">%&gt;%</span> <span class="fu">filter</span>(compName <span class="sc">==</span> <span class="st">&quot;2,6-diisopropylnaphthalene&quot;</span>)</span>
-<span id="cb16-9"><a href="elegans.html#cb16-9" tabindex="-1"></a></span>
-<span id="cb16-10"><a href="elegans.html#cb16-10" tabindex="-1"></a><span class="co"># Fit models for each compound</span></span>
-<span id="cb16-11"><a href="elegans.html#cb16-11" tabindex="-1"></a>fit_ethanol <span class="ot">&lt;-</span> <span class="fu">drm</span>(normalized_RawData <span class="sc">~</span> compConcentration, <span class="at">data =</span> ethanol_data, <span class="at">fct =</span> <span class="fu">LL.4</span>())</span>
-<span id="cb16-12"><a href="elegans.html#cb16-12" tabindex="-1"></a>fit_decane <span class="ot">&lt;-</span> <span class="fu">drm</span>(normalized_RawData <span class="sc">~</span> compConcentration, <span class="at">data =</span> decane_data, <span class="at">fct =</span> <span class="fu">LL.4</span>())</span>
-<span id="cb16-13"><a href="elegans.html#cb16-13" tabindex="-1"></a>fit_naphthalene <span class="ot">&lt;-</span> <span class="fu">drm</span>(normalized_RawData <span class="sc">~</span> compConcentration, <span class="at">data =</span> naphthalene_data, <span class="at">fct =</span> <span class="fu">LL.4</span>())</span>
-<span id="cb16-14"><a href="elegans.html#cb16-14" tabindex="-1"></a>fit_dii <span class="ot">&lt;-</span> <span class="fu">drm</span>(normalized_RawData <span class="sc">~</span> compConcentration, <span class="at">data =</span> dii_data, <span class="at">fct =</span> <span class="fu">LL.4</span>())</span></code></pre></div>
-<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="elegans.html#cb17-1" tabindex="-1"></a><span class="co"># Calculate IC50 values</span></span>
-<span id="cb17-2"><a href="elegans.html#cb17-2" tabindex="-1"></a>ethanol_ic50 <span class="ot">&lt;-</span> <span class="fu">ED</span>(fit_ethanol, <span class="dv">50</span>)[<span class="dv">1</span>]</span>
-<span id="cb17-3"><a href="elegans.html#cb17-3" tabindex="-1"></a>decane_ic50 <span class="ot">&lt;-</span> <span class="fu">ED</span>(fit_decane, <span class="dv">50</span>)[<span class="dv">1</span>]</span>
-<span id="cb17-4"><a href="elegans.html#cb17-4" tabindex="-1"></a>naphthalene_ic50 <span class="ot">&lt;-</span> <span class="fu">ED</span>(fit_naphthalene, <span class="dv">50</span>)[<span class="dv">1</span>]</span>
-<span id="cb17-5"><a href="elegans.html#cb17-5" tabindex="-1"></a>compound_26_ic50 <span class="ot">&lt;-</span> <span class="fu">ED</span>(fit_dii, <span class="dv">50</span>)[<span class="dv">1</span>]</span></code></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="elegans.html#cb23-1" tabindex="-1"></a><span class="co">#Calculating mean</span></span>
+<span id="cb23-2"><a href="elegans.html#cb23-2" tabindex="-1"></a>control_mean <span class="ot">&lt;-</span> <span class="fu">mean</span>(tidy_data<span class="sc">$</span>RawData[tidy_data<span class="sc">$</span>expType <span class="sc">==</span> <span class="st">&quot;controlNegative&quot;</span>], <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb23-3"><a href="elegans.html#cb23-3" tabindex="-1"></a></span>
+<span id="cb23-4"><a href="elegans.html#cb23-4" tabindex="-1"></a><span class="co"># Normalize the data</span></span>
+<span id="cb23-5"><a href="elegans.html#cb23-5" tabindex="-1"></a>tidy_data<span class="sc">$</span>normalized_RawData <span class="ot">&lt;-</span> tidy_data<span class="sc">$</span>RawData <span class="sc">/</span> control_mean</span></code></pre></div>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="elegans.html#cb24-1" tabindex="-1"></a><span class="co"># Filter out NA values from the dataset</span></span>
+<span id="cb24-2"><a href="elegans.html#cb24-2" tabindex="-1"></a>tidy_data_without_NA <span class="ot">&lt;-</span> tidy_data <span class="sc">%&gt;%</span> <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(normalized_RawData) <span class="sc">&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(compConcentration) <span class="sc">&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(compName))</span>
+<span id="cb24-3"><a href="elegans.html#cb24-3" tabindex="-1"></a></span>
+<span id="cb24-4"><a href="elegans.html#cb24-4" tabindex="-1"></a><span class="co"># Isolate compounds</span></span>
+<span id="cb24-5"><a href="elegans.html#cb24-5" tabindex="-1"></a>ethanol_data <span class="ot">&lt;-</span> tidy_data_without_NA <span class="sc">%&gt;%</span> <span class="fu">filter</span>(compName <span class="sc">==</span> <span class="st">&quot;Ethanol&quot;</span>)</span>
+<span id="cb24-6"><a href="elegans.html#cb24-6" tabindex="-1"></a>decane_data <span class="ot">&lt;-</span> tidy_data_without_NA <span class="sc">%&gt;%</span> <span class="fu">filter</span>(compName <span class="sc">==</span> <span class="st">&quot;decane&quot;</span>)</span>
+<span id="cb24-7"><a href="elegans.html#cb24-7" tabindex="-1"></a>naphthalene_data <span class="ot">&lt;-</span> tidy_data_without_NA <span class="sc">%&gt;%</span> <span class="fu">filter</span>(compName <span class="sc">==</span> <span class="st">&quot;naphthalene&quot;</span>)</span>
+<span id="cb24-8"><a href="elegans.html#cb24-8" tabindex="-1"></a>dii_data <span class="ot">&lt;-</span> tidy_data_without_NA <span class="sc">%&gt;%</span> <span class="fu">filter</span>(compName <span class="sc">==</span> <span class="st">&quot;2,6-diisopropylnaphthalene&quot;</span>)</span>
+<span id="cb24-9"><a href="elegans.html#cb24-9" tabindex="-1"></a></span>
+<span id="cb24-10"><a href="elegans.html#cb24-10" tabindex="-1"></a><span class="co"># Fit models for each compound</span></span>
+<span id="cb24-11"><a href="elegans.html#cb24-11" tabindex="-1"></a>fit_ethanol <span class="ot">&lt;-</span> <span class="fu">drm</span>(normalized_RawData <span class="sc">~</span> compConcentration, <span class="at">data =</span> ethanol_data, <span class="at">fct =</span> <span class="fu">LL.4</span>())</span>
+<span id="cb24-12"><a href="elegans.html#cb24-12" tabindex="-1"></a>fit_decane <span class="ot">&lt;-</span> <span class="fu">drm</span>(normalized_RawData <span class="sc">~</span> compConcentration, <span class="at">data =</span> decane_data, <span class="at">fct =</span> <span class="fu">LL.4</span>())</span>
+<span id="cb24-13"><a href="elegans.html#cb24-13" tabindex="-1"></a>fit_naphthalene <span class="ot">&lt;-</span> <span class="fu">drm</span>(normalized_RawData <span class="sc">~</span> compConcentration, <span class="at">data =</span> naphthalene_data, <span class="at">fct =</span> <span class="fu">LL.4</span>())</span>
+<span id="cb24-14"><a href="elegans.html#cb24-14" tabindex="-1"></a>fit_dii <span class="ot">&lt;-</span> <span class="fu">drm</span>(normalized_RawData <span class="sc">~</span> compConcentration, <span class="at">data =</span> dii_data, <span class="at">fct =</span> <span class="fu">LL.4</span>())</span></code></pre></div>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="elegans.html#cb25-1" tabindex="-1"></a><span class="co"># Calculate IC50 values</span></span>
+<span id="cb25-2"><a href="elegans.html#cb25-2" tabindex="-1"></a>ethanol_ic50 <span class="ot">&lt;-</span> <span class="fu">ED</span>(fit_ethanol, <span class="dv">50</span>)[<span class="dv">1</span>]</span>
+<span id="cb25-3"><a href="elegans.html#cb25-3" tabindex="-1"></a>decane_ic50 <span class="ot">&lt;-</span> <span class="fu">ED</span>(fit_decane, <span class="dv">50</span>)[<span class="dv">1</span>]</span>
+<span id="cb25-4"><a href="elegans.html#cb25-4" tabindex="-1"></a>naphthalene_ic50 <span class="ot">&lt;-</span> <span class="fu">ED</span>(fit_naphthalene, <span class="dv">50</span>)[<span class="dv">1</span>]</span>
+<span id="cb25-5"><a href="elegans.html#cb25-5" tabindex="-1"></a>compound_26_ic50 <span class="ot">&lt;-</span> <span class="fu">ED</span>(fit_dii, <span class="dv">50</span>)[<span class="dv">1</span>]</span></code></pre></div>
 </div>
 <div id="dosis-response-curves" class="section level2 hasAnchor" number="5.4">
 <h2><span class="header-section-number">5.4</span> Dosis-response curves<a href="elegans.html#dosis-response-curves" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="elegans.html#cb18-1" tabindex="-1"></a><span class="co"># Set up the base plot for ethanol with extended x-axis</span></span>
-<span id="cb18-2"><a href="elegans.html#cb18-2" tabindex="-1"></a><span class="fu">plot</span>(</span>
-<span id="cb18-3"><a href="elegans.html#cb18-3" tabindex="-1"></a>  fit_ethanol, <span class="at">type =</span> <span class="st">&quot;all&quot;</span>, <span class="at">log =</span> <span class="st">&quot;x&quot;</span>,</span>
-<span id="cb18-4"><a href="elegans.html#cb18-4" tabindex="-1"></a>  <span class="at">col =</span> <span class="st">&quot;red&quot;</span>, <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">1.5</span>),</span>
-<span id="cb18-5"><a href="elegans.html#cb18-5" tabindex="-1"></a>  <span class="at">xlim =</span> <span class="fu">c</span>(<span class="fl">0.01</span>, <span class="fu">max</span>(tidy_data_without_NA<span class="sc">$</span>compConcentration, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)), </span>
-<span id="cb18-6"><a href="elegans.html#cb18-6" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="st">&quot;Compound concentratie (log)&quot;</span>, <span class="at">ylab =</span> <span class="st">&quot;Gernomaliseerde response&quot;</span>,</span>
-<span id="cb18-7"><a href="elegans.html#cb18-7" tabindex="-1"></a>  <span class="at">main =</span> <span class="st">&quot;Dosis-response curves&quot;</span></span>
-<span id="cb18-8"><a href="elegans.html#cb18-8" tabindex="-1"></a>)</span>
-<span id="cb18-9"><a href="elegans.html#cb18-9" tabindex="-1"></a></span>
-<span id="cb18-10"><a href="elegans.html#cb18-10" tabindex="-1"></a><span class="co"># Add curves for other compounds</span></span>
-<span id="cb18-11"><a href="elegans.html#cb18-11" tabindex="-1"></a><span class="fu">plot</span>(fit_decane, <span class="at">add =</span> <span class="cn">TRUE</span>, <span class="at">col =</span> <span class="st">&quot;blue&quot;</span>, <span class="at">type =</span> <span class="st">&quot;all&quot;</span>)</span>
-<span id="cb18-12"><a href="elegans.html#cb18-12" tabindex="-1"></a><span class="fu">plot</span>(fit_naphthalene, <span class="at">add =</span> <span class="cn">TRUE</span>, <span class="at">col =</span> <span class="st">&quot;green&quot;</span>, <span class="at">type =</span> <span class="st">&quot;all&quot;</span>)</span>
-<span id="cb18-13"><a href="elegans.html#cb18-13" tabindex="-1"></a><span class="fu">plot</span>(fit_dii, <span class="at">add =</span> <span class="cn">TRUE</span>, <span class="at">col =</span> <span class="st">&quot;purple&quot;</span>, <span class="at">type =</span> <span class="st">&quot;all&quot;</span>)</span>
-<span id="cb18-14"><a href="elegans.html#cb18-14" tabindex="-1"></a></span>
-<span id="cb18-15"><a href="elegans.html#cb18-15" tabindex="-1"></a><span class="co"># Create legend labels with IC50 values</span></span>
-<span id="cb18-16"><a href="elegans.html#cb18-16" tabindex="-1"></a>legend_labels <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
-<span id="cb18-17"><a href="elegans.html#cb18-17" tabindex="-1"></a>  <span class="fu">paste</span>(<span class="st">&quot;Ethanol (IC50 =&quot;</span>, <span class="fu">round</span>(ethanol_ic50, <span class="dv">2</span>), <span class="st">&quot;)&quot;</span>),</span>
-<span id="cb18-18"><a href="elegans.html#cb18-18" tabindex="-1"></a>  <span class="fu">paste</span>(<span class="st">&quot;Decane (IC50 =&quot;</span>, <span class="fu">round</span>(decane_ic50, <span class="dv">2</span>), <span class="st">&quot;)&quot;</span>),</span>
-<span id="cb18-19"><a href="elegans.html#cb18-19" tabindex="-1"></a>  <span class="fu">paste</span>(<span class="st">&quot;Naphthalene (IC50 =&quot;</span>, <span class="fu">round</span>(naphthalene_ic50, <span class="dv">2</span>), <span class="st">&quot;)&quot;</span>),</span>
-<span id="cb18-20"><a href="elegans.html#cb18-20" tabindex="-1"></a>  <span class="fu">paste</span>(<span class="st">&quot;2,6-diisopropylnaphthalene (IC50 =&quot;</span>, <span class="fu">round</span>(compound_26_ic50, <span class="dv">2</span>), <span class="st">&quot;)&quot;</span>)</span>
-<span id="cb18-21"><a href="elegans.html#cb18-21" tabindex="-1"></a>)</span>
-<span id="cb18-22"><a href="elegans.html#cb18-22" tabindex="-1"></a></span>
-<span id="cb18-23"><a href="elegans.html#cb18-23" tabindex="-1"></a><span class="co"># Add legend</span></span>
-<span id="cb18-24"><a href="elegans.html#cb18-24" tabindex="-1"></a><span class="fu">legend</span>(</span>
-<span id="cb18-25"><a href="elegans.html#cb18-25" tabindex="-1"></a>  <span class="st">&quot;topright&quot;</span>,</span>
-<span id="cb18-26"><a href="elegans.html#cb18-26" tabindex="-1"></a>  <span class="at">legend =</span> legend_labels,</span>
-<span id="cb18-27"><a href="elegans.html#cb18-27" tabindex="-1"></a>  <span class="at">col =</span> <span class="fu">c</span>(<span class="st">&quot;red&quot;</span>, <span class="st">&quot;blue&quot;</span>, <span class="st">&quot;green&quot;</span>, <span class="st">&quot;purple&quot;</span>),</span>
-<span id="cb18-28"><a href="elegans.html#cb18-28" tabindex="-1"></a>  <span class="at">lty =</span> <span class="dv">1</span>, <span class="at">bty =</span> <span class="st">&quot;n&quot;</span>, <span class="at">cex =</span> <span class="fl">0.8</span></span>
-<span id="cb18-29"><a href="elegans.html#cb18-29" tabindex="-1"></a>)</span></code></pre></div>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="elegans.html#cb26-1" tabindex="-1"></a><span class="co"># Set up the base plot for ethanol with extended x-axis</span></span>
+<span id="cb26-2"><a href="elegans.html#cb26-2" tabindex="-1"></a><span class="fu">plot</span>(</span>
+<span id="cb26-3"><a href="elegans.html#cb26-3" tabindex="-1"></a>  fit_ethanol, <span class="at">type =</span> <span class="st">&quot;all&quot;</span>, <span class="at">log =</span> <span class="st">&quot;x&quot;</span>,</span>
+<span id="cb26-4"><a href="elegans.html#cb26-4" tabindex="-1"></a>  <span class="at">col =</span> <span class="st">&quot;red&quot;</span>, <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">1.5</span>),</span>
+<span id="cb26-5"><a href="elegans.html#cb26-5" tabindex="-1"></a>  <span class="at">xlim =</span> <span class="fu">c</span>(<span class="fl">0.01</span>, <span class="fu">max</span>(tidy_data_without_NA<span class="sc">$</span>compConcentration, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)), </span>
+<span id="cb26-6"><a href="elegans.html#cb26-6" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="st">&quot;Compound concentratie (log)&quot;</span>, <span class="at">ylab =</span> <span class="st">&quot;Gernomaliseerde response&quot;</span>,</span>
+<span id="cb26-7"><a href="elegans.html#cb26-7" tabindex="-1"></a>  <span class="at">main =</span> <span class="st">&quot;Dosis-response curves&quot;</span></span>
+<span id="cb26-8"><a href="elegans.html#cb26-8" tabindex="-1"></a>)</span>
+<span id="cb26-9"><a href="elegans.html#cb26-9" tabindex="-1"></a></span>
+<span id="cb26-10"><a href="elegans.html#cb26-10" tabindex="-1"></a><span class="co"># Add curves for other compounds</span></span>
+<span id="cb26-11"><a href="elegans.html#cb26-11" tabindex="-1"></a><span class="fu">plot</span>(fit_decane, <span class="at">add =</span> <span class="cn">TRUE</span>, <span class="at">col =</span> <span class="st">&quot;blue&quot;</span>, <span class="at">type =</span> <span class="st">&quot;all&quot;</span>)</span>
+<span id="cb26-12"><a href="elegans.html#cb26-12" tabindex="-1"></a><span class="fu">plot</span>(fit_naphthalene, <span class="at">add =</span> <span class="cn">TRUE</span>, <span class="at">col =</span> <span class="st">&quot;green&quot;</span>, <span class="at">type =</span> <span class="st">&quot;all&quot;</span>)</span>
+<span id="cb26-13"><a href="elegans.html#cb26-13" tabindex="-1"></a><span class="fu">plot</span>(fit_dii, <span class="at">add =</span> <span class="cn">TRUE</span>, <span class="at">col =</span> <span class="st">&quot;purple&quot;</span>, <span class="at">type =</span> <span class="st">&quot;all&quot;</span>)</span>
+<span id="cb26-14"><a href="elegans.html#cb26-14" tabindex="-1"></a></span>
+<span id="cb26-15"><a href="elegans.html#cb26-15" tabindex="-1"></a><span class="co"># Create legend labels with IC50 values</span></span>
+<span id="cb26-16"><a href="elegans.html#cb26-16" tabindex="-1"></a>legend_labels <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb26-17"><a href="elegans.html#cb26-17" tabindex="-1"></a>  <span class="fu">paste</span>(<span class="st">&quot;Ethanol (IC50 =&quot;</span>, <span class="fu">round</span>(ethanol_ic50, <span class="dv">2</span>), <span class="st">&quot;)&quot;</span>),</span>
+<span id="cb26-18"><a href="elegans.html#cb26-18" tabindex="-1"></a>  <span class="fu">paste</span>(<span class="st">&quot;Decane (IC50 =&quot;</span>, <span class="fu">round</span>(decane_ic50, <span class="dv">2</span>), <span class="st">&quot;)&quot;</span>),</span>
+<span id="cb26-19"><a href="elegans.html#cb26-19" tabindex="-1"></a>  <span class="fu">paste</span>(<span class="st">&quot;Naphthalene (IC50 =&quot;</span>, <span class="fu">round</span>(naphthalene_ic50, <span class="dv">2</span>), <span class="st">&quot;)&quot;</span>),</span>
+<span id="cb26-20"><a href="elegans.html#cb26-20" tabindex="-1"></a>  <span class="fu">paste</span>(<span class="st">&quot;2,6-diisopropylnaphthalene (IC50 =&quot;</span>, <span class="fu">round</span>(compound_26_ic50, <span class="dv">2</span>), <span class="st">&quot;)&quot;</span>)</span>
+<span id="cb26-21"><a href="elegans.html#cb26-21" tabindex="-1"></a>)</span>
+<span id="cb26-22"><a href="elegans.html#cb26-22" tabindex="-1"></a></span>
+<span id="cb26-23"><a href="elegans.html#cb26-23" tabindex="-1"></a><span class="co"># Add legend</span></span>
+<span id="cb26-24"><a href="elegans.html#cb26-24" tabindex="-1"></a><span class="fu">legend</span>(</span>
+<span id="cb26-25"><a href="elegans.html#cb26-25" tabindex="-1"></a>  <span class="st">&quot;topright&quot;</span>,</span>
+<span id="cb26-26"><a href="elegans.html#cb26-26" tabindex="-1"></a>  <span class="at">legend =</span> legend_labels,</span>
+<span id="cb26-27"><a href="elegans.html#cb26-27" tabindex="-1"></a>  <span class="at">col =</span> <span class="fu">c</span>(<span class="st">&quot;red&quot;</span>, <span class="st">&quot;blue&quot;</span>, <span class="st">&quot;green&quot;</span>, <span class="st">&quot;purple&quot;</span>),</span>
+<span id="cb26-28"><a href="elegans.html#cb26-28" tabindex="-1"></a>  <span class="at">lty =</span> <span class="dv">1</span>, <span class="at">bty =</span> <span class="st">&quot;n&quot;</span>, <span class="at">cex =</span> <span class="fl">0.8</span></span>
+<span id="cb26-29"><a href="elegans.html#cb26-29" tabindex="-1"></a>)</span></code></pre></div>
 <p><img src="figures/plot%20all%20IC50-1.png" width="672" /></p>
 <p><em>Figuur 2: Dosis-response curves resultaten. Met op de y-as het genormaliseerde aantal C.elegans nakomelingen en op de x-as de log<sub>10</sub> van de compound concentratie. De compounds zijn per naam gekleurd en de IC50’s zijn aangegeven in de legenda.</em></p>
 <p>In figuur 2 is te zien dat de IC50 voor ethanol (de positieve controle), 1.19 is. De IC50 waardes voor de andere compounds zijn: 0.12 voor decane, 3.13 voor naphtalene en 0.03 voor 2,6-diisopropylnaphthalene. De relatief lage IC50 waarde van 2,6-diisopropylnaphthalene suggereert dat het een sterke toxiciteit heeft. Terwijl naphthalene een relatief hoge IC50 waarde heeft en dus een lage toxiciteit suggereert.</p>
 </div>
-<div id="conclusie" class="section level2 hasAnchor" number="5.5">
-<h2><span class="header-section-number">5.5</span> Conclusie<a href="elegans.html#conclusie" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="conclusie-1" class="section level2 hasAnchor" number="5.5">
+<h2><span class="header-section-number">5.5</span> Conclusie<a href="elegans.html#conclusie-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>In dit experiment is er gekeken naar het effect van ethanol, decane, naphtalene en 2,6-diisopropylnaphthalene op het aantal nakomelingen van <em>C.elegans</em>. Op basis van het scatterplot bleek dat decane en naphthalene een sterk negatief effect hadden op het aantal nakomelingen van <em>C.elegans</em>. Terwijl de dosis-response curves suggereert dat 2,6-diisopropylnaphthalene het meest negatief effect heeft met een IC50 = 0.03. Er zouden meer analyses uitgevoerd moeten worden om wellicht een duidelijke conclusie te kunnen trekken, zoals een ANOVA test. Het is aan te bevelen om het experiment volledig te herhalen met een uitgebreidere concentratiereeks, inclusief hogere concentraties van de compounds.</p>
 
 </div>

@@ -23,7 +23,7 @@
 <meta name="author" content="Manuel Leeuwerik" />
 
 
-<meta name="date" content="2025-01-05" />
+<meta name="date" content="2025-01-08" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -168,7 +168,10 @@ div.csl-indent {
 <li class="chapter" data-level="3" data-path="scRepertoire.html"><a href="scRepertoire.html"><i class="fa fa-check"></i><b>3</b> Single-cell immune receptor profiling</a>
 <ul>
 <li class="chapter" data-level="3.1" data-path="scRepertoire.html"><a href="scRepertoire.html#planning"><i class="fa fa-check"></i><b>3.1</b> Planning</a></li>
-<li class="chapter" data-level="3.2" data-path="scRepertoire.html"><a href="scRepertoire.html#analyse-op-dataset"><i class="fa fa-check"></i><b>3.2</b> Analyse op dataset</a></li>
+<li class="chapter" data-level="3.2" data-path="scRepertoire.html"><a href="scRepertoire.html#experiment-opzet"><i class="fa fa-check"></i><b>3.2</b> Experiment opzet</a></li>
+<li class="chapter" data-level="3.3" data-path="scRepertoire.html"><a href="scRepertoire.html#data-voorbereiding"><i class="fa fa-check"></i><b>3.3</b> Data voorbereiding</a></li>
+<li class="chapter" data-level="3.4" data-path="scRepertoire.html"><a href="scRepertoire.html#analyse"><i class="fa fa-check"></i><b>3.4</b> Analyse</a></li>
+<li class="chapter" data-level="3.5" data-path="scRepertoire.html"><a href="scRepertoire.html#conclusie"><i class="fa fa-check"></i><b>3.5</b> Conclusie</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="Ga.html"><a href="Ga.html"><i class="fa fa-check"></i><b>4</b> Guerrila analytics</a></li>
 <li class="chapter" data-level="5" data-path="elegans.html"><a href="elegans.html"><i class="fa fa-check"></i><b>5</b> C. elegans plate experiment</a>
@@ -177,7 +180,7 @@ div.csl-indent {
 <li class="chapter" data-level="5.2" data-path="elegans.html"><a href="elegans.html#inspecteren-data-types"><i class="fa fa-check"></i><b>5.2</b> Inspecteren data types</a></li>
 <li class="chapter" data-level="5.3" data-path="elegans.html"><a href="elegans.html#scatterplot"><i class="fa fa-check"></i><b>5.3</b> Scatterplot</a></li>
 <li class="chapter" data-level="5.4" data-path="elegans.html"><a href="elegans.html#dosis-response-curves"><i class="fa fa-check"></i><b>5.4</b> Dosis-response curves</a></li>
-<li class="chapter" data-level="5.5" data-path="elegans.html"><a href="elegans.html#conclusie"><i class="fa fa-check"></i><b>5.5</b> Conclusie</a></li>
+<li class="chapter" data-level="5.5" data-path="elegans.html"><a href="elegans.html#conclusie-1"><i class="fa fa-check"></i><b>5.5</b> Conclusie</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="peer.html"><a href="peer.html"><i class="fa fa-check"></i><b>6</b> Open Peer Review</a></li>
 <li class="chapter" data-level="7" data-path="package.html"><a href="package.html"><i class="fa fa-check"></i><b>7</b> A new R package</a>
@@ -206,14 +209,14 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="scRepertoire" class="section level1 hasAnchor" number="3">
 <h1><span class="header-section-number">3</span> Single-cell immune receptor profiling<a href="scRepertoire.html#scRepertoire" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Vanwege mijn interesse in immunologie ga ik een analyse/package leren voor ‘single-cell immune receptor profiling’. Deze analyse maakt een profiel voor individuele cellen en onderzoekt T-cell receptoren (TCR) en immunoglobulinen (Ig). Hierbij wordt scRNA sequencing data omgezet in onder andere V/D/J libraries. Met behulp van de scRepertoire package kunnen deze V(D)J-segmenten en CDR3-regio’s geanalyseerd worden <span class="citation">(theHumanBorch 2024)</span>. Door de verschillende clonotypes te identificeren, kan men uitspraken doen over immuunresponsen, die vervolgens gekoppeld kunnen worden aan specifieke infecties of vaccinaties <span class="citation">(<span>“Single-<span>Cell Immune Profiling</span>”</span> n.d.)</span>.</p>
-<p>De scRepertoire package is afkomstig van: <em><a href="https://github.com/ncborcherding/scRepertoire">https://github.com/ncborcherding/scRepertoire</a></em> <span class="citation">(theHumanBorch 2024)</span>.</p>
+<p>Vanwege mijn interesse in immunologie ga ik een analyse/package leren voor ‘single-cell immune receptor profiling’. Deze analyse maakt een profiel voor individuele cellen en onderzoekt T-cell receptoren (TCR) en immunoglobulinen (Ig). Hierbij wordt scRNA sequencing data omgezet in onder andere V/D/J libraries. Met behulp van de<code>scRepertoire</code> package kunnen deze V(D)J-segmenten en CDR3-regio’s geanalyseerd worden <span class="citation">(theHumanBorch 2024)</span>. Door de verschillende clonotypes te identificeren, kan men uitspraken doen over immuunresponsen, die vervolgens gekoppeld kunnen worden aan specifieke infecties of vaccinaties <span class="citation">(<span>“Single-<span>Cell Immune Profiling</span>”</span> n.d.)</span>.</p>
+<p>De <code>scRepertoire</code> package is afkomstig van: <em><a href="https://github.com/ncborcherding/scRepertoire">https://github.com/ncborcherding/scRepertoire</a></em> <span class="citation">(theHumanBorch 2024)</span>.</p>
 <p>Om deze package te leren maak ik gebruik van de tutorial ‘Starting work with scRepertoire’: <em><a href="https://www.bioconductor.org/packages/devel/bioc/vignettes/scRepertoire/inst/doc/vignette.html">https://www.bioconductor.org/packages/devel/bioc/vignettes/scRepertoire/inst/doc/vignette.html</a>.</em> <span class="citation">(<span>“Starting Work with <span class="nocase">scRepertoire</span>.”</span> n.d.)</span>.</p>
 <div id="planning" class="section level2 hasAnchor" number="3.1">
 <h2><span class="header-section-number">3.1</span> Planning<a href="scRepertoire.html#planning" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Ik volg de tutorial eerst zoals die er staat, met voorbeeld files. Daarna maak ik gebruik van data afkomstig van een onderzoek op NCBI. Om de analyse context en betekenis te kunnen geven bestudeer ik de (relevante) gebruikte technieken. Met hierbij de vragen: wat is het doel van het gehele onderzoek? Welke deelvraag beantwoord deze analyse van het onderzoek? En hoe is de gebruikte data gegenereerd? Zie onderstaande tabel voor de volledige uitwerking.</p>
 <table>
-<caption><span id="tab:unnamed-chunk-16">Table 3.1: </span>Planning voor analyse met scRepertoire</caption>
+<caption><span id="tab:unnamed-chunk-1">Table 3.1: </span>Planning voor analyse met scRepertoire</caption>
 <colgroup>
 <col width="7%" />
 <col width="83%" />
@@ -270,16 +273,57 @@ div.csl-indent {
 </tbody>
 </table>
 </div>
-<div id="analyse-op-dataset" class="section level2 hasAnchor" number="3.2">
-<h2><span class="header-section-number">3.2</span> Analyse op dataset<a href="scRepertoire.html#analyse-op-dataset" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="experiment-opzet" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Experiment opzet<a href="scRepertoire.html#experiment-opzet" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="scRepertoire.html#cb1-1" tabindex="-1"></a><span class="do">## Installation</span></span>
 <span id="cb1-2"><a href="scRepertoire.html#cb1-2" tabindex="-1"></a><span class="co">#if (!require(&quot;BiocManager&quot;, quietly = TRUE)) install.packages(&quot;BiocManager&quot;)</span></span>
 <span id="cb1-3"><a href="scRepertoire.html#cb1-3" tabindex="-1"></a></span>
 <span id="cb1-4"><a href="scRepertoire.html#cb1-4" tabindex="-1"></a><span class="co">#BiocManager::install(&quot;scRepertoire&quot;)</span></span>
 <span id="cb1-5"><a href="scRepertoire.html#cb1-5" tabindex="-1"></a></span>
 <span id="cb1-6"><a href="scRepertoire.html#cb1-6" tabindex="-1"></a><span class="fu">suppressMessages</span>(<span class="fu">library</span>(scRepertoire))</span></code></pre></div>
-<p>De data is afkomstig van het Nature artikel ‘Duvelisib plus romidepsin in relapsed/ refractory T cell lymphomas: a phase 1b/2a trial’ <span class="citation">(Horwitz et al. 2024)</span>. Samenvatting doel en experiment opzet..</p>
-<p>De gebruikte data zijn twee samples van zogeheten Peripheral Blood Mononuclear Cells (PBMC’s). Afkomstig van de Gene Expression Omnibus (GEO) database. De twee samples zijn <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM8254384">GSM8254384</a> en <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM8254387">GSM8254387</a>. De .csv bestanden zijn gedownload en vervolgens in R geladen.</p>
+<p>De data zijn afkomstig van het Nature artikel ‘Duvelisib plus romidepsin in relapsed/ refractory T cell lymphomas: a phase 1b/2a trial’ <span class="citation">(Horwitz et al. 2024)</span>.
+In de studie werd tijdens klinische fase 1b/2a de combinatie van duvelisib, een PI3K-δγ-remmer, met romidepsine of bortezomib geëvalueerd bij patiënten met recidiverende of refractaire T-cellymfomen (TCL). Oftewel terugkerende of ongevoelige T-cel kanker. Het onderzoek had als doel de veiligheid te beoordelen, de maximaal getolereerde dosis vast te stellen en de werkzaamheid te bepalen. Het bleek dat de maximaal verdraagbare dosis van duvelisib 75 mg, tweemaal daags in combinatie met romidepsine was. In tegenstelling tot 25 mg tweemaal daags in combinatie met bortezomib.</p>
+<p>De meest voorkomende bijwerkingen waren neutropenie (tekort aan neutrofielen) en vermoeidheid bij patiënten behandeld met duvelisib en romidepsine. Onder patiënten met perifere T-cellymfomen (PTCL’s) waren de respons- en volledige responspercentages van duvelisib en romidepsine 55% en 34%, respectievelijk. Voor de behandeling met duvelisib en bortezomib waren dit 34% en 13% respectievelijk. Deze bevindingen ondersteunen de verdere ontwikkeling voor behandeling met de combinatie van PI3K- en histondeacetylase (HDAC)-remmers in T-cellymfomen.</p>
+<p>Voor deze studie werden perifere bloedmononucleaire cellen (PBMC’s) geïsoleerd, ontdooid en gekleurd met een levensvatbaarheidskleurstof (GhostDye 510) en een antilichaam gericht op <em>CD45</em>. Vervolgens werden de cellen gesorteerd op levensvatbaarheid.</p>
+<p>De bibliotheek werd opgezet aan de hand van de 10x Chromium Single Cell Immune Profiling Gel Bead Kit, waarmee single-cell RNA-sequencing (RNA-seq), oppervlakte-proteomics (ADT, Antibody-Derived Tags), en TCR-sequencing mogelijk werd gemaakt. De sequencing is uitgevoerd met Illumina NovaSeq 6000.</p>
+<p>De single-cell data werd verwerkt met behulp van verschillende bioinformatica-tools:</p>
+<ul>
+<li><strong>RNA-Data</strong>: Verwerkt met de Cellranger v6.0.2 “count” workflow, wat resulteerde in genexpressie-tellingen in de vorm van rauwe en genormaliseerde matrixen.</li>
+<li><strong>ADT-Data</strong>: Antibody-Derived Tags (ADT) werden geanalyseerd met de Feature Barcoding module van Cellranger om oppervlakte-proteïne-expressie te meten en cellen te demultiplexeren.</li>
+<li><strong>TCR-Data</strong>: Clonale T-celreceptoren werden geïdentificeerd met behulp van de “vdj” pipeline van Cellranger.</li>
+</ul>
+<p>Alle data zijn gebaseerd op de menselijke referentie-assemblage <em>GRCh38</em> (GENCODE v32/Ensembl 98).</p>
+<p>De ruwe datasets zijn openbaar toegankelijk in de <em>Gene Expression Omnibus (GEO)</em> database en bevatten:</p>
+<ul>
+<li><strong>Ruwe genexpressie-matrixen (RNA-counts)</strong>: Deze bevatten de expressieniveaus van genen per cel.
+<ul>
+<li><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM8254382">GSM8254382</a></li>
+<li><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM8254385">GSM8254385</a></li>
+</ul></li>
+<li><strong>Feature Barcoding-matrixen (ADT-counts)</strong>: Deze bevatten de gemeten oppervlakte-eiwitten per cel.
+<ul>
+<li><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM8254383">GSM8254383</a></li>
+<li><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM8254386">GSM8254386</a></li>
+</ul></li>
+<li><strong>Geannoteerde TCR-data (Filtered contig annotations)</strong>: Clonale T-celreceptor annotaties.
+<ul>
+<li><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM8254384">GSM8254384</a></li>
+<li><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM8254387">GSM8254387</a></li>
+</ul></li>
+<li><strong>Cell-sample annotaties</strong>: Toewijzing van individuele cellen aan specifieke monsters.
+<ul>
+<li><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE266760">GSE266760_SV-1840_SV_LN1_cell_sample_assign.csv</a></li>
+<li><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE266760">GSE266760_SV-1840_SV_LN2_cell_sample_assign.csv</a></li>
+</ul></li>
+<li><strong>Feature Reference-bestanden</strong>:
+<ul>
+<li><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE266760">GSE266760_feature_reference.csv.gz</a></li>
+</ul></li>
+</ul>
+</div>
+<div id="data-voorbereiding" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Data voorbereiding<a href="scRepertoire.html#data-voorbereiding" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>De .csv bestanden zijn gedownload en vervolgens in R geladen met read_csv().</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="scRepertoire.html#cb2-1" tabindex="-1"></a><span class="do">## Data loading</span></span>
 <span id="cb2-2"><a href="scRepertoire.html#cb2-2" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
 <span id="cb2-3"><a href="scRepertoire.html#cb2-3" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
@@ -287,55 +331,273 @@ div.csl-indent {
 <span id="cb2-5"><a href="scRepertoire.html#cb2-5" tabindex="-1"></a>data_lane_1 <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;C:/Users/manue/OneDrive/Documents/Manuel_Leeuwerik_portfolio/data_raw/GSM8254384_SV-1840_SV_LN1_filtered_contig_annotations.csv.gz&quot;</span>)</span>
 <span id="cb2-6"><a href="scRepertoire.html#cb2-6" tabindex="-1"></a>data_lane_2 <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;C:/Users/manue/OneDrive/Documents/Manuel_Leeuwerik_portfolio/data_raw/GSM8254387_SV-1840_SV_LN2_filtered_contig_annotations.csv.gz&quot;</span>)</span>
 <span id="cb2-7"><a href="scRepertoire.html#cb2-7" tabindex="-1"></a></span>
-<span id="cb2-8"><a href="scRepertoire.html#cb2-8" tabindex="-1"></a>data_list <span class="ot">&lt;-</span> <span class="fu">list</span>(data_lane_1, data_lane_2)</span>
-<span id="cb2-9"><a href="scRepertoire.html#cb2-9" tabindex="-1"></a></span>
-<span id="cb2-10"><a href="scRepertoire.html#cb2-10" tabindex="-1"></a>sample_lane_1 <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;C:/Users/manue/OneDrive/Documents/Manuel_Leeuwerik_portfolio/data_raw/GSE266760_SV-1840_SV_LN1_cell_sample_assign.csv.gz&quot;</span>)</span>
-<span id="cb2-11"><a href="scRepertoire.html#cb2-11" tabindex="-1"></a>sample_lane_2 <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;C:/Users/manue/OneDrive/Documents/Manuel_Leeuwerik_portfolio/data_raw/GSE266760_SV-1840_SV_LN2_cell_sample_assign.csv.gz&quot;</span>)</span>
+<span id="cb2-8"><a href="scRepertoire.html#cb2-8" tabindex="-1"></a>sample_lane_1 <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;C:/Users/manue/OneDrive/Documents/Manuel_Leeuwerik_portfolio/data_raw/GSE266760_SV-1840_SV_LN1_cell_sample_assign.csv.gz&quot;</span>)</span>
+<span id="cb2-9"><a href="scRepertoire.html#cb2-9" tabindex="-1"></a>sample_lane_2 <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;C:/Users/manue/OneDrive/Documents/Manuel_Leeuwerik_portfolio/data_raw/GSE266760_SV-1840_SV_LN2_cell_sample_assign.csv.gz&quot;</span>)</span>
+<span id="cb2-10"><a href="scRepertoire.html#cb2-10" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="scRepertoire.html#cb2-11" tabindex="-1"></a>reference <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;C:/Users/manue/OneDrive/Documents/Manuel_Leeuwerik_portfolio/data_raw/GSE266760_feature_reference.csv.gz&quot;</span>)</span>
 <span id="cb2-12"><a href="scRepertoire.html#cb2-12" tabindex="-1"></a></span>
-<span id="cb2-13"><a href="scRepertoire.html#cb2-13" tabindex="-1"></a>reference <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;C:/Users/manue/OneDrive/Documents/Manuel_Leeuwerik_portfolio/data_raw/GSE266760_feature_reference.csv.gz&quot;</span>)</span>
+<span id="cb2-13"><a href="scRepertoire.html#cb2-13" tabindex="-1"></a><span class="fu">Sys.setenv</span>(<span class="at">VROOM_CONNECTION_SIZE =</span> <span class="fl">1e9</span>) <span class="co"># meer buffer</span></span>
 <span id="cb2-14"><a href="scRepertoire.html#cb2-14" tabindex="-1"></a></span>
-<span id="cb2-15"><a href="scRepertoire.html#cb2-15" tabindex="-1"></a><span class="fu">Sys.setenv</span>(<span class="at">VROOM_CONNECTION_SIZE =</span> <span class="fl">1e9</span>) <span class="co"># meer buffer</span></span>
-<span id="cb2-16"><a href="scRepertoire.html#cb2-16" tabindex="-1"></a></span>
-<span id="cb2-17"><a href="scRepertoire.html#cb2-17" tabindex="-1"></a>barcode_lane_1 <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;C:/Users/manue/OneDrive/Documents/Manuel_Leeuwerik_portfolio/data_raw/GSM8254383_SV-1840_SV_LN1_FB_ADT_counts.csv.gz&quot;</span>)</span>
-<span id="cb2-18"><a href="scRepertoire.html#cb2-18" tabindex="-1"></a>barcode_lane_2 <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;C:/Users/manue/OneDrive/Documents/Manuel_Leeuwerik_portfolio/data_raw/GSM8254386_SV-1840_SV_LN2_FB_ADT_counts.csv.gz&quot;</span>)</span></code></pre></div>
-<p>Om de datasets van lane1 en lane2 te combineren wordt de functie combineTCR gebruikt. De output van combineTCR() is een lijst van de data frames. Uitleg over de andere opties..</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="scRepertoire.html#cb3-1" tabindex="-1"></a>combined.TCR <span class="ot">&lt;-</span> <span class="fu">combineTCR</span>(data_list, </span>
-<span id="cb3-2"><a href="scRepertoire.html#cb3-2" tabindex="-1"></a>                           <span class="at">samples =</span> <span class="fu">c</span>(<span class="st">&quot;lane1&quot;</span>, <span class="st">&quot;lane2&quot;</span>),</span>
-<span id="cb3-3"><a href="scRepertoire.html#cb3-3" tabindex="-1"></a>                           <span class="at">removeNA =</span> <span class="cn">FALSE</span>, </span>
-<span id="cb3-4"><a href="scRepertoire.html#cb3-4" tabindex="-1"></a>                           <span class="at">removeMulti =</span> <span class="cn">FALSE</span>, </span>
-<span id="cb3-5"><a href="scRepertoire.html#cb3-5" tabindex="-1"></a>                           <span class="at">filterMulti =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<p>Vervolgens is met de gecombineerde dataset de volgende analyses uitgevoerd..</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="scRepertoire.html#cb4-1" tabindex="-1"></a><span class="fu">clonalQuant</span>(combined.TCR, </span>
-<span id="cb4-2"><a href="scRepertoire.html#cb4-2" tabindex="-1"></a>            <span class="at">cloneCall=</span><span class="st">&quot;strict&quot;</span>, </span>
-<span id="cb4-3"><a href="scRepertoire.html#cb4-3" tabindex="-1"></a>            <span class="at">chain =</span> <span class="st">&quot;both&quot;</span>, </span>
-<span id="cb4-4"><a href="scRepertoire.html#cb4-4" tabindex="-1"></a>            <span class="at">scale =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<span id="cb2-15"><a href="scRepertoire.html#cb2-15" tabindex="-1"></a>barcode_lane_1 <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;C:/Users/manue/OneDrive/Documents/Manuel_Leeuwerik_portfolio/data_raw/GSM8254383_SV-1840_SV_LN1_FB_ADT_counts.csv.gz&quot;</span>)</span>
+<span id="cb2-16"><a href="scRepertoire.html#cb2-16" tabindex="-1"></a>barcode_lane_2 <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;C:/Users/manue/OneDrive/Documents/Manuel_Leeuwerik_portfolio/data_raw/GSM8254386_SV-1840_SV_LN2_FB_ADT_counts.csv.gz&quot;</span>)</span>
+<span id="cb2-17"><a href="scRepertoire.html#cb2-17" tabindex="-1"></a></span>
+<span id="cb2-18"><a href="scRepertoire.html#cb2-18" tabindex="-1"></a></span>
+<span id="cb2-19"><a href="scRepertoire.html#cb2-19" tabindex="-1"></a>RNA_lane_1 <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;C:/Users/manue/OneDrive/Documents/Manuel_Leeuwerik_portfolio/data_raw/GSM8254382_SV-1840_SV_LN1_RNA_counts.csv.gz&quot;</span>)</span>
+<span id="cb2-20"><a href="scRepertoire.html#cb2-20" tabindex="-1"></a>  </span>
+<span id="cb2-21"><a href="scRepertoire.html#cb2-21" tabindex="-1"></a>RNA_lane_2 <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;C:/Users/manue/OneDrive/Documents/Manuel_Leeuwerik_portfolio/data_raw/GSM8254385_SV-1840_SV_LN2_RNA_counts.csv.gz&quot;</span>)</span></code></pre></div>
+<p>De geladen bestanden werden vervolgens bekeken met de functies head() en View(). Het viel op dat de ADT counts en RNA counts qua structuur erg op elkaar lijken. Beide hebben namelijk de cellen als kolom namen en in de eerste kolom metadata. Hoewel de cell-barcodes van RNA- en ADT-data overeenkomen, was er een mismatch tussen de barcodes in de cell-sample annotatie bestanden en de nucleotidesequenties van de data-bestanden. Hierdoor was het niet mogelijk om de metadata van de samples correct aan de data te koppelen.
+Er is verder niets gevonden over het koppelen van de samples aan de data op GEO of de site van <a href="https://www.10xgenomics.com/support/software/cell-ranger/latest/analysis/inputs/cr-feature-ref-csv">10x genomics</a>.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="scRepertoire.html#cb3-1" tabindex="-1"></a><span class="co"># Show the first two rows of each file</span></span>
+<span id="cb3-2"><a href="scRepertoire.html#cb3-2" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">head</span>(data_lane_1, <span class="dv">2</span>))</span>
+<span id="cb3-3"><a href="scRepertoire.html#cb3-3" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="scRepertoire.html#cb3-4" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">head</span>(sample_lane_1, <span class="dv">2</span>))</span>
+<span id="cb3-5"><a href="scRepertoire.html#cb3-5" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="scRepertoire.html#cb3-6" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">head</span>(barcode_lane_1, <span class="dv">2</span>))</span>
+<span id="cb3-7"><a href="scRepertoire.html#cb3-7" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="scRepertoire.html#cb3-8" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">head</span>(RNA_lane_1, <span class="dv">2</span>))</span>
+<span id="cb3-9"><a href="scRepertoire.html#cb3-9" tabindex="-1"></a></span>
+<span id="cb3-10"><a href="scRepertoire.html#cb3-10" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">head</span>(reference, <span class="dv">2</span>))</span></code></pre></div>
+<p>Er is nog geprobeerd om met een matching loop te bepalen of delen van de sequenties van de barcodes van data_lane_1 kolom barcode of sample_lane_1 kolom Hastag.sequence, overeenkwamen met de namen van de cellen (en vice versa). Maar deze kwamen telkens uit op nul.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="scRepertoire.html#cb4-1" tabindex="-1"></a><span class="co"># Extract the column names from barcode_lane_1</span></span>
+<span id="cb4-2"><a href="scRepertoire.html#cb4-2" tabindex="-1"></a>barcode_colnames <span class="ot">&lt;-</span> <span class="fu">colnames</span>(barcode_lane_1)</span>
+<span id="cb4-3"><a href="scRepertoire.html#cb4-3" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="scRepertoire.html#cb4-4" tabindex="-1"></a><span class="co"># Initialize counters for matches </span></span>
+<span id="cb4-5"><a href="scRepertoire.html#cb4-5" tabindex="-1"></a>total_matches <span class="ot">&lt;-</span> <span class="dv">0</span> </span>
+<span id="cb4-6"><a href="scRepertoire.html#cb4-6" tabindex="-1"></a>matching_entries <span class="ot">&lt;-</span> <span class="fu">data.frame</span>()</span>
+<span id="cb4-7"><a href="scRepertoire.html#cb4-7" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="scRepertoire.html#cb4-8" tabindex="-1"></a><span class="co"># Loop through each column name in barcode_colnames</span></span>
+<span id="cb4-9"><a href="scRepertoire.html#cb4-9" tabindex="-1"></a><span class="cf">for</span> (col_name <span class="cf">in</span> barcode_colnames) {</span>
+<span id="cb4-10"><a href="scRepertoire.html#cb4-10" tabindex="-1"></a>  <span class="co"># Check for matches in the &quot;barcode&quot; column of data_lane_1</span></span>
+<span id="cb4-11"><a href="scRepertoire.html#cb4-11" tabindex="-1"></a>  barcode_matches <span class="ot">&lt;-</span> data_lane_1[<span class="fu">grepl</span>(col_name, data_lane_1<span class="sc">$</span>barcode), ]</span>
+<span id="cb4-12"><a href="scRepertoire.html#cb4-12" tabindex="-1"></a>  </span>
+<span id="cb4-13"><a href="scRepertoire.html#cb4-13" tabindex="-1"></a>  <span class="co"># Check for matches in the &quot;Hashtag.sequence&quot; column of sample_lane_1</span></span>
+<span id="cb4-14"><a href="scRepertoire.html#cb4-14" tabindex="-1"></a>  hashtag_matches <span class="ot">&lt;-</span> sample_lane_1[<span class="fu">grepl</span>(col_name, sample_lane_1<span class="sc">$</span>Hashtag.sequence), ]</span>
+<span id="cb4-15"><a href="scRepertoire.html#cb4-15" tabindex="-1"></a>  </span>
+<span id="cb4-16"><a href="scRepertoire.html#cb4-16" tabindex="-1"></a>  <span class="co"># Combine matches from both checks</span></span>
+<span id="cb4-17"><a href="scRepertoire.html#cb4-17" tabindex="-1"></a>  combined_matches <span class="ot">&lt;-</span> <span class="fu">rbind</span>(barcode_matches, hashtag_matches)</span>
+<span id="cb4-18"><a href="scRepertoire.html#cb4-18" tabindex="-1"></a>  </span>
+<span id="cb4-19"><a href="scRepertoire.html#cb4-19" tabindex="-1"></a>  <span class="co"># Remove duplicates if any</span></span>
+<span id="cb4-20"><a href="scRepertoire.html#cb4-20" tabindex="-1"></a>  combined_matches <span class="ot">&lt;-</span> <span class="fu">unique</span>(combined_matches)</span>
+<span id="cb4-21"><a href="scRepertoire.html#cb4-21" tabindex="-1"></a>  </span>
+<span id="cb4-22"><a href="scRepertoire.html#cb4-22" tabindex="-1"></a>  <span class="co"># Update total matches and matching entries</span></span>
+<span id="cb4-23"><a href="scRepertoire.html#cb4-23" tabindex="-1"></a>  total_matches <span class="ot">&lt;-</span> total_matches <span class="sc">+</span> <span class="fu">nrow</span>(combined_matches) </span>
+<span id="cb4-24"><a href="scRepertoire.html#cb4-24" tabindex="-1"></a>  matching_entries <span class="ot">&lt;-</span> <span class="fu">rbind</span>(matching_entries, combined_matches) </span>
+<span id="cb4-25"><a href="scRepertoire.html#cb4-25" tabindex="-1"></a>}</span>
+<span id="cb4-26"><a href="scRepertoire.html#cb4-26" tabindex="-1"></a></span>
+<span id="cb4-27"><a href="scRepertoire.html#cb4-27" tabindex="-1"></a><span class="co"># Print the total number of matches and the matching entries</span></span>
+<span id="cb4-28"><a href="scRepertoire.html#cb4-28" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">&quot;Total Matches:&quot;</span>, total_matches, <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb4-29"><a href="scRepertoire.html#cb4-29" tabindex="-1"></a><span class="fu">print</span>(matching_entries)</span></code></pre></div>
+<p>In het artikel staat het volgende over hoe men de data vervolgens heeft bewerkt: <em>“Processed RNA and ADT matrices were combined into a single Seurat version 4.0.0 object (using the CreateSeuratObject function), into which TCR clonotype information was subsequently incorporated using the scRepertoire version 1.7.2 combineExpression function. Filtering was applied upon the merged data to retain cells with only (1) more than 500 and fewer than 3,000 detected unique RNA features; (2) fewer than 10,000 total RNA molecules; (3) less than 5% mitochondrial RNA reads; and (4) fewer than 2,500 total ADT molecules. RNA and ADT data were normalized using Seurat’s NormalizeData function with ‘LogNormalize’ and ‘CLR’ methods specified for each, respectively.”</em> <span class="citation">(Horwitz et al. 2024)</span>.</p>
+<p>Er is geprobeerd dit zoveel mogelijk na te bootsen. Seurat is geinstaleerd en vervolgens is er een single Seurat object gemaakt met de RNA file en de Feature barcoding file. Eerst is dit geprobeerd met zowel data van lane_1 en lane_2 en deze te combineren. Maar dit bleek teveel data te zijn om telkens te laden en aan te passen. Daarom is er alleen data van lane_1 gebruikt en zijn deze ook nog gefilterd op alleen de eerste 5000 kolommen. Het was nodig om de metadata van de eerste kolom van RNA- en ADT counts als rij namen te zetten.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="scRepertoire.html#cb5-1" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb5-2"><a href="scRepertoire.html#cb5-2" tabindex="-1"></a><span class="fu">library</span>(Matrix)</span>
+<span id="cb5-3"><a href="scRepertoire.html#cb5-3" tabindex="-1"></a><span class="fu">library</span>(Seurat)</span>
+<span id="cb5-4"><a href="scRepertoire.html#cb5-4" tabindex="-1"></a><span class="fu">library</span>(scRepertoire)</span>
+<span id="cb5-5"><a href="scRepertoire.html#cb5-5" tabindex="-1"></a></span>
+<span id="cb5-6"><a href="scRepertoire.html#cb5-6" tabindex="-1"></a><span class="co"># Subset to keep only the first 5000 columns</span></span>
+<span id="cb5-7"><a href="scRepertoire.html#cb5-7" tabindex="-1"></a>selected_RNA <span class="ot">&lt;-</span> RNA_lane_1[, <span class="dv">1</span><span class="sc">:</span><span class="dv">5000</span>] </span>
+<span id="cb5-8"><a href="scRepertoire.html#cb5-8" tabindex="-1"></a>selected_ADT <span class="ot">&lt;-</span> barcode_lane_1[, <span class="dv">1</span><span class="sc">:</span><span class="dv">5000</span>]  </span>
+<span id="cb5-9"><a href="scRepertoire.html#cb5-9" tabindex="-1"></a></span>
+<span id="cb5-10"><a href="scRepertoire.html#cb5-10" tabindex="-1"></a><span class="co"># Convert to data.frame if they are tibbles</span></span>
+<span id="cb5-11"><a href="scRepertoire.html#cb5-11" tabindex="-1"></a>selected_RNA <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(selected_RNA)</span>
+<span id="cb5-12"><a href="scRepertoire.html#cb5-12" tabindex="-1"></a>selected_ADT <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(selected_ADT)</span>
+<span id="cb5-13"><a href="scRepertoire.html#cb5-13" tabindex="-1"></a></span>
+<span id="cb5-14"><a href="scRepertoire.html#cb5-14" tabindex="-1"></a><span class="co"># Move first column to rownames</span></span>
+<span id="cb5-15"><a href="scRepertoire.html#cb5-15" tabindex="-1"></a><span class="fu">rownames</span>(selected_RNA) <span class="ot">&lt;-</span> selected_RNA[, <span class="dv">1</span>]  <span class="co"># Set rownames</span></span>
+<span id="cb5-16"><a href="scRepertoire.html#cb5-16" tabindex="-1"></a>selected_RNA <span class="ot">&lt;-</span> selected_RNA[, <span class="sc">-</span><span class="dv">1</span>]          <span class="co"># Remove the first column</span></span>
+<span id="cb5-17"><a href="scRepertoire.html#cb5-17" tabindex="-1"></a></span>
+<span id="cb5-18"><a href="scRepertoire.html#cb5-18" tabindex="-1"></a><span class="fu">rownames</span>(selected_ADT) <span class="ot">&lt;-</span> selected_ADT[, <span class="dv">1</span>]  <span class="co"># Set rownames</span></span>
+<span id="cb5-19"><a href="scRepertoire.html#cb5-19" tabindex="-1"></a>selected_ADT <span class="ot">&lt;-</span> selected_ADT[, <span class="sc">-</span><span class="dv">1</span>]          <span class="co"># Remove the first column</span></span>
+<span id="cb5-20"><a href="scRepertoire.html#cb5-20" tabindex="-1"></a></span>
+<span id="cb5-21"><a href="scRepertoire.html#cb5-21" tabindex="-1"></a><span class="co"># Convert to matrices for Seurat object creation</span></span>
+<span id="cb5-22"><a href="scRepertoire.html#cb5-22" tabindex="-1"></a>selected_RNA <span class="ot">&lt;-</span> <span class="fu">as.matrix</span>(selected_RNA)</span>
+<span id="cb5-23"><a href="scRepertoire.html#cb5-23" tabindex="-1"></a>selected_ADT <span class="ot">&lt;-</span> <span class="fu">as.matrix</span>(selected_ADT)</span>
+<span id="cb5-24"><a href="scRepertoire.html#cb5-24" tabindex="-1"></a></span>
+<span id="cb5-25"><a href="scRepertoire.html#cb5-25" tabindex="-1"></a><span class="co"># Verify structure</span></span>
+<span id="cb5-26"><a href="scRepertoire.html#cb5-26" tabindex="-1"></a><span class="fu">head</span>(selected_RNA)</span>
+<span id="cb5-27"><a href="scRepertoire.html#cb5-27" tabindex="-1"></a><span class="fu">head</span>(selected_ADT)</span>
+<span id="cb5-28"><a href="scRepertoire.html#cb5-28" tabindex="-1"></a></span>
+<span id="cb5-29"><a href="scRepertoire.html#cb5-29" tabindex="-1"></a><span class="co"># Create Seurat object with the subsetted RNA data</span></span>
+<span id="cb5-30"><a href="scRepertoire.html#cb5-30" tabindex="-1"></a>seurat_obj <span class="ot">&lt;-</span> <span class="fu">CreateSeuratObject</span>(<span class="at">counts =</span> selected_RNA, <span class="at">assay =</span> <span class="st">&quot;RNA&quot;</span>)</span>
+<span id="cb5-31"><a href="scRepertoire.html#cb5-31" tabindex="-1"></a></span>
+<span id="cb5-32"><a href="scRepertoire.html#cb5-32" tabindex="-1"></a><span class="co"># Add the subsetted ADT data as a new assay</span></span>
+<span id="cb5-33"><a href="scRepertoire.html#cb5-33" tabindex="-1"></a>seurat_obj[[<span class="st">&quot;ADT&quot;</span>]] <span class="ot">&lt;-</span> <span class="fu">CreateAssayObject</span>(<span class="at">counts =</span> selected_ADT)</span>
+<span id="cb5-34"><a href="scRepertoire.html#cb5-34" tabindex="-1"></a></span>
+<span id="cb5-35"><a href="scRepertoire.html#cb5-35" tabindex="-1"></a><span class="co"># save checkpoint</span></span>
+<span id="cb5-36"><a href="scRepertoire.html#cb5-36" tabindex="-1"></a><span class="fu">saveRDS</span>(seurat_obj, <span class="at">file =</span> <span class="st">&quot;seurat_object_initial.rds&quot;</span>)</span></code></pre></div>
+<p>Vervolgens is het Seurat object gefilterd zoals gedaan is in de studie en genormalizeerd met LogNormalize (voor RNA) en CLR (voor ADT).</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="scRepertoire.html#cb6-1" tabindex="-1"></a><span class="co"># Read the RDS file</span></span>
+<span id="cb6-2"><a href="scRepertoire.html#cb6-2" tabindex="-1"></a>seurat_obj <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="at">file =</span> <span class="st">&quot;seurat_object_initial.rds&quot;</span>)</span>
+<span id="cb6-3"><a href="scRepertoire.html#cb6-3" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="scRepertoire.html#cb6-4" tabindex="-1"></a><span class="co"># Calculate percentage of mitochondrial genes</span></span>
+<span id="cb6-5"><a href="scRepertoire.html#cb6-5" tabindex="-1"></a><span class="co"># Assuming that mitochondrial genes are prefixed with &quot;MT-&quot;</span></span>
+<span id="cb6-6"><a href="scRepertoire.html#cb6-6" tabindex="-1"></a>seurat_obj[[<span class="st">&quot;percent.mt&quot;</span>]] <span class="ot">&lt;-</span> <span class="fu">PercentageFeatureSet</span>(seurat_obj, <span class="at">pattern =</span> <span class="st">&quot;^MT-&quot;</span>)</span>
+<span id="cb6-7"><a href="scRepertoire.html#cb6-7" tabindex="-1"></a></span>
+<span id="cb6-8"><a href="scRepertoire.html#cb6-8" tabindex="-1"></a><span class="co"># Filtering cells based on specified criteria</span></span>
+<span id="cb6-9"><a href="scRepertoire.html#cb6-9" tabindex="-1"></a>seurat_obj <span class="ot">&lt;-</span> <span class="fu">subset</span>(seurat_obj, </span>
+<span id="cb6-10"><a href="scRepertoire.html#cb6-10" tabindex="-1"></a>                     <span class="at">subset =</span> nFeature_RNA <span class="sc">&gt;</span> <span class="dv">500</span> <span class="sc">&amp;</span> nFeature_RNA <span class="sc">&lt;</span> <span class="dv">3000</span> <span class="sc">&amp;</span> </span>
+<span id="cb6-11"><a href="scRepertoire.html#cb6-11" tabindex="-1"></a>                               nCount_RNA <span class="sc">&lt;</span> <span class="dv">10000</span> <span class="sc">&amp;</span> </span>
+<span id="cb6-12"><a href="scRepertoire.html#cb6-12" tabindex="-1"></a>                               percent.mt <span class="sc">&lt;</span> <span class="dv">5</span> <span class="sc">&amp;</span> </span>
+<span id="cb6-13"><a href="scRepertoire.html#cb6-13" tabindex="-1"></a>                               nCount_ADT <span class="sc">&lt;</span> <span class="dv">2500</span>)</span>
+<span id="cb6-14"><a href="scRepertoire.html#cb6-14" tabindex="-1"></a><span class="co"># Normalize data</span></span>
+<span id="cb6-15"><a href="scRepertoire.html#cb6-15" tabindex="-1"></a>seurat_obj <span class="ot">&lt;-</span> <span class="fu">NormalizeData</span>(seurat_obj, <span class="at">assay =</span> <span class="st">&quot;RNA&quot;</span>, <span class="at">normalization.method =</span> <span class="st">&quot;LogNormalize&quot;</span>)</span>
+<span id="cb6-16"><a href="scRepertoire.html#cb6-16" tabindex="-1"></a>seurat_obj <span class="ot">&lt;-</span> <span class="fu">NormalizeData</span>(seurat_obj, <span class="at">assay =</span> <span class="st">&quot;ADT&quot;</span>, <span class="at">normalization.method =</span> <span class="st">&quot;CLR&quot;</span>)</span>
+<span id="cb6-17"><a href="scRepertoire.html#cb6-17" tabindex="-1"></a></span>
+<span id="cb6-18"><a href="scRepertoire.html#cb6-18" tabindex="-1"></a></span>
+<span id="cb6-19"><a href="scRepertoire.html#cb6-19" tabindex="-1"></a><span class="co"># Save Seurat object</span></span>
+<span id="cb6-20"><a href="scRepertoire.html#cb6-20" tabindex="-1"></a><span class="fu">saveRDS</span>(seurat_obj, <span class="at">file =</span> <span class="st">&quot;Lane_1_seurat_object.rds&quot;</span>)</span></code></pre></div>
+<p>Hierna is geprobeerd om metadata toe te voegen maar vanwege de missende overlap in barcodes/identifiers tussen de sample data/TCR data en de RNA/ADT data was dit niet mogelijk. Zie hieronder code voor twee (van de vele) geprobeerde manieren om metadata toe te voegen.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="scRepertoire.html#cb7-1" tabindex="-1"></a><span class="co">#One</span></span>
+<span id="cb7-2"><a href="scRepertoire.html#cb7-2" tabindex="-1"></a><span class="co"># Must be a list</span></span>
+<span id="cb7-3"><a href="scRepertoire.html#cb7-3" tabindex="-1"></a>data_lane_1_list <span class="ot">&lt;-</span> <span class="fu">list</span>(data_lane_1)</span>
+<span id="cb7-4"><a href="scRepertoire.html#cb7-4" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="scRepertoire.html#cb7-5" tabindex="-1"></a><span class="co"># Combine TCR data with the Seurat object</span></span>
+<span id="cb7-6"><a href="scRepertoire.html#cb7-6" tabindex="-1"></a>seurat_obj <span class="ot">&lt;-</span> <span class="fu">combineExpression</span>(data_lane_1_list, seurat_obj,</span>
+<span id="cb7-7"><a href="scRepertoire.html#cb7-7" tabindex="-1"></a>                                <span class="at">cloneCall=</span><span class="st">&quot;orig.ident&quot;</span>)</span>
+<span id="cb7-8"><a href="scRepertoire.html#cb7-8" tabindex="-1"></a></span>
+<span id="cb7-9"><a href="scRepertoire.html#cb7-9" tabindex="-1"></a></span>
+<span id="cb7-10"><a href="scRepertoire.html#cb7-10" tabindex="-1"></a></span>
+<span id="cb7-11"><a href="scRepertoire.html#cb7-11" tabindex="-1"></a><span class="co"># Check the metadata of the Seurat object</span></span>
+<span id="cb7-12"><a href="scRepertoire.html#cb7-12" tabindex="-1"></a><span class="fu">head</span>(seurat_obj<span class="sc">@</span>meta.data)</span>
+<span id="cb7-13"><a href="scRepertoire.html#cb7-13" tabindex="-1"></a></span>
+<span id="cb7-14"><a href="scRepertoire.html#cb7-14" tabindex="-1"></a><span class="co">#Two </span></span>
+<span id="cb7-15"><a href="scRepertoire.html#cb7-15" tabindex="-1"></a></span>
+<span id="cb7-16"><a href="scRepertoire.html#cb7-16" tabindex="-1"></a><span class="co"># Define the prefix</span></span>
+<span id="cb7-17"><a href="scRepertoire.html#cb7-17" tabindex="-1"></a>prefix <span class="ot">&lt;-</span> <span class="st">&quot;SV-1840_SV_LN1_&quot;</span></span>
+<span id="cb7-18"><a href="scRepertoire.html#cb7-18" tabindex="-1"></a></span>
+<span id="cb7-19"><a href="scRepertoire.html#cb7-19" tabindex="-1"></a><span class="co"># Add the prefix to the barcode column in TCR data</span></span>
+<span id="cb7-20"><a href="scRepertoire.html#cb7-20" tabindex="-1"></a>data_lane_1<span class="sc">$</span>barcode <span class="ot">&lt;-</span> <span class="fu">paste0</span>(prefix, data_lane_1<span class="sc">$</span>barcode)</span>
+<span id="cb7-21"><a href="scRepertoire.html#cb7-21" tabindex="-1"></a></span>
+<span id="cb7-22"><a href="scRepertoire.html#cb7-22" tabindex="-1"></a><span class="co"># Check the modified TCR barcodes</span></span>
+<span id="cb7-23"><a href="scRepertoire.html#cb7-23" tabindex="-1"></a><span class="fu">head</span>(data_lane_1<span class="sc">$</span>barcode)</span>
+<span id="cb7-24"><a href="scRepertoire.html#cb7-24" tabindex="-1"></a></span>
+<span id="cb7-25"><a href="scRepertoire.html#cb7-25" tabindex="-1"></a><span class="co"># Check barcodes in the Seurat object</span></span>
+<span id="cb7-26"><a href="scRepertoire.html#cb7-26" tabindex="-1"></a>seurat_barcodes <span class="ot">&lt;-</span> <span class="fu">colnames</span>(seurat_obj)</span>
+<span id="cb7-27"><a href="scRepertoire.html#cb7-27" tabindex="-1"></a></span>
+<span id="cb7-28"><a href="scRepertoire.html#cb7-28" tabindex="-1"></a><span class="co"># Aggregate TCR data by barcode, keeping the first occurrence</span></span>
+<span id="cb7-29"><a href="scRepertoire.html#cb7-29" tabindex="-1"></a>tcr_metadata <span class="ot">&lt;-</span> data_lane_1 <span class="sc">%&gt;%</span></span>
+<span id="cb7-30"><a href="scRepertoire.html#cb7-30" tabindex="-1"></a>  <span class="fu">group_by</span>(barcode) <span class="sc">%&gt;%</span></span>
+<span id="cb7-31"><a href="scRepertoire.html#cb7-31" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb7-32"><a href="scRepertoire.html#cb7-32" tabindex="-1"></a>    <span class="at">raw_clonotype_id =</span> <span class="fu">first</span>(raw_clonotype_id),  <span class="co"># Keep the first clonotype ID</span></span>
+<span id="cb7-33"><a href="scRepertoire.html#cb7-33" tabindex="-1"></a>    <span class="at">raw_consensus_id =</span> <span class="fu">first</span>(raw_consensus_id),  <span class="co"># Keep the first consensus ID</span></span>
+<span id="cb7-34"><a href="scRepertoire.html#cb7-34" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">&#39;drop&#39;</span>  <span class="co"># Drop the grouping structure</span></span>
+<span id="cb7-35"><a href="scRepertoire.html#cb7-35" tabindex="-1"></a>  )</span>
+<span id="cb7-36"><a href="scRepertoire.html#cb7-36" tabindex="-1"></a></span>
+<span id="cb7-37"><a href="scRepertoire.html#cb7-37" tabindex="-1"></a><span class="co"># Check the structure of the aggregated TCR metadata</span></span>
+<span id="cb7-38"><a href="scRepertoire.html#cb7-38" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">dim</span>(tcr_metadata))  <span class="co"># Should show the number of rows and columns</span></span>
+<span id="cb7-39"><a href="scRepertoire.html#cb7-39" tabindex="-1"></a><span class="fu">head</span>(tcr_metadata)  <span class="co"># Display the first few rows</span></span>
+<span id="cb7-40"><a href="scRepertoire.html#cb7-40" tabindex="-1"></a></span>
+<span id="cb7-41"><a href="scRepertoire.html#cb7-41" tabindex="-1"></a><span class="co"># Set row names of TCR metadata to the barcode</span></span>
+<span id="cb7-42"><a href="scRepertoire.html#cb7-42" tabindex="-1"></a><span class="fu">rownames</span>(tcr_metadata) <span class="ot">&lt;-</span> tcr_metadata<span class="sc">$</span>barcode</span>
+<span id="cb7-43"><a href="scRepertoire.html#cb7-43" tabindex="-1"></a></span>
+<span id="cb7-44"><a href="scRepertoire.html#cb7-44" tabindex="-1"></a><span class="co"># Remove the barcode column as it&#39;s now the row name</span></span>
+<span id="cb7-45"><a href="scRepertoire.html#cb7-45" tabindex="-1"></a>tcr_metadata<span class="sc">$</span>barcode <span class="ot">&lt;-</span> <span class="cn">NULL</span></span>
+<span id="cb7-46"><a href="scRepertoire.html#cb7-46" tabindex="-1"></a></span>
+<span id="cb7-47"><a href="scRepertoire.html#cb7-47" tabindex="-1"></a><span class="co"># Add TCR metadata to the Seurat object</span></span>
+<span id="cb7-48"><a href="scRepertoire.html#cb7-48" tabindex="-1"></a>seurat_obj <span class="ot">&lt;-</span> <span class="fu">AddMetaData</span>(seurat_obj, <span class="at">metadata =</span> tcr_metadata)</span>
+<span id="cb7-49"><a href="scRepertoire.html#cb7-49" tabindex="-1"></a></span>
+<span id="cb7-50"><a href="scRepertoire.html#cb7-50" tabindex="-1"></a><span class="co"># Check the metadata of the Seurat object</span></span>
+<span id="cb7-51"><a href="scRepertoire.html#cb7-51" tabindex="-1"></a><span class="fu">head</span>(seurat_obj<span class="sc">@</span>meta.data)</span></code></pre></div>
+</div>
+<div id="analyse" class="section level2 hasAnchor" number="3.4">
+<h2><span class="header-section-number">3.4</span> Analyse<a href="scRepertoire.html#analyse" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Ondanks dat er geen metadata beschikbaar is voor de datasets, zijn er wel dingen gevisualiseerd. Dit voor een beeldvorming van het gebruik van scRepertoire. Eerst is met Seurat een PCA gedaan, met de functie RunPCA. Hieruit konden wel de top 5 genen van PC1 en PC2 bepaald worden. Voor PC1 zijn dit: CST3, IFI30, FCN1, AIF1 en SPI1. Voor PC2 zijn dit: GP9, CMTM5, TUBB1, GNG11 en MPIG6B. Deze genen hebben dus een hoog verschil in genexpressie tussen de cellen. Dit kan beteken dat ze worden beïnvloed op basis van behandeling.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="scRepertoire.html#cb8-1" tabindex="-1"></a><span class="fu">library</span>(Seurat)</span>
+<span id="cb8-2"><a href="scRepertoire.html#cb8-2" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb8-3"><a href="scRepertoire.html#cb8-3" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="scRepertoire.html#cb8-4" tabindex="-1"></a><span class="co"># Read the Seurat object from the RDS file</span></span>
+<span id="cb8-5"><a href="scRepertoire.html#cb8-5" tabindex="-1"></a>seurat_obj <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="st">&quot;Lane_1_seurat_object.rds&quot;</span>)</span>
+<span id="cb8-6"><a href="scRepertoire.html#cb8-6" tabindex="-1"></a></span>
+<span id="cb8-7"><a href="scRepertoire.html#cb8-7" tabindex="-1"></a><span class="co">#Identify variable features</span></span>
+<span id="cb8-8"><a href="scRepertoire.html#cb8-8" tabindex="-1"></a>seurat_obj <span class="ot">&lt;-</span> <span class="fu">FindVariableFeatures</span>(seurat_obj)</span>
+<span id="cb8-9"><a href="scRepertoire.html#cb8-9" tabindex="-1"></a></span>
+<span id="cb8-10"><a href="scRepertoire.html#cb8-10" tabindex="-1"></a><span class="co">#Scale the data</span></span>
+<span id="cb8-11"><a href="scRepertoire.html#cb8-11" tabindex="-1"></a>seurat_obj <span class="ot">&lt;-</span> <span class="fu">ScaleData</span>(seurat_obj)</span>
+<span id="cb8-12"><a href="scRepertoire.html#cb8-12" tabindex="-1"></a></span>
+<span id="cb8-13"><a href="scRepertoire.html#cb8-13" tabindex="-1"></a><span class="co"># Run PCA</span></span>
+<span id="cb8-14"><a href="scRepertoire.html#cb8-14" tabindex="-1"></a>seurat_obj <span class="ot">&lt;-</span> <span class="fu">RunPCA</span>(seurat_obj, <span class="at">features =</span> <span class="fu">VariableFeatures</span>(seurat_obj))</span>
+<span id="cb8-15"><a href="scRepertoire.html#cb8-15" tabindex="-1"></a></span>
+<span id="cb8-16"><a href="scRepertoire.html#cb8-16" tabindex="-1"></a><span class="co"># Visualize PCA</span></span>
+<span id="cb8-17"><a href="scRepertoire.html#cb8-17" tabindex="-1"></a><span class="fu">DimPlot</span>(seurat_obj, <span class="at">reduction =</span> <span class="st">&quot;pca&quot;</span>)</span></code></pre></div>
+<p><img src="figures/PCA%20seurat-1.png" width="672" /></p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="scRepertoire.html#cb9-1" tabindex="-1"></a><span class="co"># Get PCA loadings</span></span>
+<span id="cb9-2"><a href="scRepertoire.html#cb9-2" tabindex="-1"></a>pca_loadings <span class="ot">&lt;-</span> seurat_obj[[<span class="st">&quot;pca&quot;</span>]]<span class="sc">@</span>feature.loadings</span>
+<span id="cb9-3"><a href="scRepertoire.html#cb9-3" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="scRepertoire.html#cb9-4" tabindex="-1"></a><span class="co"># View the top contributing genes for the first few PCs</span></span>
+<span id="cb9-5"><a href="scRepertoire.html#cb9-5" tabindex="-1"></a>top_genes_pc1 <span class="ot">&lt;-</span> <span class="fu">head</span>(<span class="fu">order</span>(pca_loadings[, <span class="dv">1</span>], <span class="at">decreasing =</span> <span class="cn">TRUE</span>), <span class="dv">5</span>)</span>
+<span id="cb9-6"><a href="scRepertoire.html#cb9-6" tabindex="-1"></a>top_genes_pc2 <span class="ot">&lt;-</span> <span class="fu">head</span>(<span class="fu">order</span>(pca_loadings[, <span class="dv">2</span>], <span class="at">decreasing =</span> <span class="cn">TRUE</span>), <span class="dv">5</span>)</span>
+<span id="cb9-7"><a href="scRepertoire.html#cb9-7" tabindex="-1"></a></span>
+<span id="cb9-8"><a href="scRepertoire.html#cb9-8" tabindex="-1"></a><span class="co">#print(&quot;Top genes for PC1:&quot;)</span></span>
+<span id="cb9-9"><a href="scRepertoire.html#cb9-9" tabindex="-1"></a><span class="co">#print(rownames(pca_loadings)[top_genes_pc1])</span></span>
+<span id="cb9-10"><a href="scRepertoire.html#cb9-10" tabindex="-1"></a></span>
+<span id="cb9-11"><a href="scRepertoire.html#cb9-11" tabindex="-1"></a><span class="co">#print(&quot;Top genes for PC2:&quot;)</span></span>
+<span id="cb9-12"><a href="scRepertoire.html#cb9-12" tabindex="-1"></a><span class="co">#print(rownames(pca_loadings)[top_genes_pc2])</span></span></code></pre></div>
+<p>Om de datasets van lane1 en lane2 (beide de orginele TCR-datasets, niet gefiltered) te combineren werd de functie combineTCR gebruikt. De output van combineTCR() is een lijst van de data frames. Er is gekozen voor de default parameters. Hierdoor worden cellen met NA waardes en met meerdere immuunreceptoren (clonotypes) behouden.</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="scRepertoire.html#cb10-1" tabindex="-1"></a><span class="co"># Making data list</span></span>
+<span id="cb10-2"><a href="scRepertoire.html#cb10-2" tabindex="-1"></a>data_list <span class="ot">&lt;-</span> <span class="fu">list</span>(data_lane_1, data_lane_2) <span class="co"># Voor functies van de scRepertoire</span></span>
+<span id="cb10-3"><a href="scRepertoire.html#cb10-3" tabindex="-1"></a></span>
+<span id="cb10-4"><a href="scRepertoire.html#cb10-4" tabindex="-1"></a><span class="co"># Save the data list to an RDS file</span></span>
+<span id="cb10-5"><a href="scRepertoire.html#cb10-5" tabindex="-1"></a><span class="fu">saveRDS</span>(data_list, <span class="at">file =</span> <span class="st">&quot;data_list.rds&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="scRepertoire.html#cb11-1" tabindex="-1"></a><span class="co"># Loading data list</span></span>
+<span id="cb11-2"><a href="scRepertoire.html#cb11-2" tabindex="-1"></a>data_list <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="st">&quot;data_list.rds&quot;</span>)</span>
+<span id="cb11-3"><a href="scRepertoire.html#cb11-3" tabindex="-1"></a></span>
+<span id="cb11-4"><a href="scRepertoire.html#cb11-4" tabindex="-1"></a><span class="co">#Combining TCR</span></span>
+<span id="cb11-5"><a href="scRepertoire.html#cb11-5" tabindex="-1"></a>combined.TCR <span class="ot">&lt;-</span> <span class="fu">combineTCR</span>(data_list, </span>
+<span id="cb11-6"><a href="scRepertoire.html#cb11-6" tabindex="-1"></a>                           <span class="at">samples =</span> <span class="fu">c</span>(<span class="st">&quot;lane1&quot;</span>, <span class="st">&quot;lane2&quot;</span>),</span>
+<span id="cb11-7"><a href="scRepertoire.html#cb11-7" tabindex="-1"></a>                           <span class="at">removeNA =</span> <span class="cn">FALSE</span>, </span>
+<span id="cb11-8"><a href="scRepertoire.html#cb11-8" tabindex="-1"></a>                           <span class="at">removeMulti =</span> <span class="cn">FALSE</span>, </span>
+<span id="cb11-9"><a href="scRepertoire.html#cb11-9" tabindex="-1"></a>                           <span class="at">filterMulti =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
+<p>Vervolgens zijn, met de gecombineerde dataset, verschillende analyses uitgevoerd. Als eerst is de functie clonalQuant gebruikt. Dit geeft het relatieve percentage van unieke clonotypes weer, geschaald naar de totale grootte van het clonale repertoire. De resultaten toonden aan dat de data van lane 1 relatief veel unieke clonotypes bevat. Dit betekent dat lane 1 een diverser TCR-repertoire heeft terwijl lane 2 wellicht samples bevat die bezig zijn met clonale expansie.</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="scRepertoire.html#cb12-1" tabindex="-1"></a><span class="fu">clonalQuant</span>(combined.TCR, </span>
+<span id="cb12-2"><a href="scRepertoire.html#cb12-2" tabindex="-1"></a>            <span class="at">cloneCall=</span><span class="st">&quot;strict&quot;</span>, </span>
+<span id="cb12-3"><a href="scRepertoire.html#cb12-3" tabindex="-1"></a>            <span class="at">chain =</span> <span class="st">&quot;both&quot;</span>, </span>
+<span id="cb12-4"><a href="scRepertoire.html#cb12-4" tabindex="-1"></a>            <span class="at">scale =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
 <p><img src="figures/clonalQuant-1.png" width="672" /></p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="scRepertoire.html#cb5-1" tabindex="-1"></a><span class="fu">clonalLength</span>(combined.TCR, </span>
-<span id="cb5-2"><a href="scRepertoire.html#cb5-2" tabindex="-1"></a>             <span class="at">cloneCall=</span><span class="st">&quot;aa&quot;</span>, </span>
-<span id="cb5-3"><a href="scRepertoire.html#cb5-3" tabindex="-1"></a>             <span class="at">chain =</span> <span class="st">&quot;TRA&quot;</span>, </span>
-<span id="cb5-4"><a href="scRepertoire.html#cb5-4" tabindex="-1"></a>             <span class="at">scale =</span> <span class="cn">TRUE</span>) </span></code></pre></div>
-<p><img src="figures/clonalLength-1.png" width="672" /></p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="scRepertoire.html#cb6-1" tabindex="-1"></a><span class="fu">clonalCompare</span>(combined.TCR, </span>
-<span id="cb6-2"><a href="scRepertoire.html#cb6-2" tabindex="-1"></a>                  <span class="at">top.clones =</span> <span class="dv">10</span>, </span>
-<span id="cb6-3"><a href="scRepertoire.html#cb6-3" tabindex="-1"></a>                  <span class="at">samples =</span> <span class="fu">c</span>(<span class="st">&quot;lane1&quot;</span>, <span class="st">&quot;lane2&quot;</span>), </span>
-<span id="cb6-4"><a href="scRepertoire.html#cb6-4" tabindex="-1"></a>                  <span class="at">cloneCall=</span><span class="st">&quot;aa&quot;</span>, </span>
-<span id="cb6-5"><a href="scRepertoire.html#cb6-5" tabindex="-1"></a>                  <span class="at">graph =</span> <span class="st">&quot;alluvial&quot;</span>)</span></code></pre></div>
+<p>Hierna is de clonalCompare functie gebruikt om om de clonale diversiteit en de verdeling van T-celreceptoren (TCR) tussen lane 1 en lane 2 te vergelijken. Er is gekozen om de top 10 clonotypes van lane 1 en lane 2 te visualiseren. De top is gebaseerd op de frequentie van de clone per sample. aa betekent dat de aminozuur sequentie van van de CD3 regio’s worden gebruikt in tegenstelling tot de eerder gebruikte strict definitie. De strict definitie neemt ook V, D, J en C genen mee en elke variatie wordt gezien als een nieuw clonotype. Er is gekozen voor aa om dat de functionele relevantie in dit geval belangrijker is dan de exacte sequentie.</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="scRepertoire.html#cb13-1" tabindex="-1"></a><span class="fu">clonalCompare</span>(combined.TCR, </span>
+<span id="cb13-2"><a href="scRepertoire.html#cb13-2" tabindex="-1"></a>                  <span class="at">top.clones =</span> <span class="dv">10</span>, </span>
+<span id="cb13-3"><a href="scRepertoire.html#cb13-3" tabindex="-1"></a>                  <span class="at">samples =</span> <span class="fu">c</span>(<span class="st">&quot;lane1&quot;</span>, <span class="st">&quot;lane2&quot;</span>), </span>
+<span id="cb13-4"><a href="scRepertoire.html#cb13-4" tabindex="-1"></a>                  <span class="at">cloneCall=</span><span class="st">&quot;aa&quot;</span>, </span>
+<span id="cb13-5"><a href="scRepertoire.html#cb13-5" tabindex="-1"></a>                  <span class="at">graph =</span> <span class="st">&quot;alluvial&quot;</span>)</span></code></pre></div>
 <p><img src="figures/clonalCompare-1.png" width="672" /></p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="scRepertoire.html#cb7-1" tabindex="-1"></a><span class="fu">clonalScatter</span>(combined.TCR, </span>
-<span id="cb7-2"><a href="scRepertoire.html#cb7-2" tabindex="-1"></a>              <span class="at">cloneCall =</span><span class="st">&quot;gene&quot;</span>, </span>
-<span id="cb7-3"><a href="scRepertoire.html#cb7-3" tabindex="-1"></a>              <span class="at">x.axis =</span> <span class="st">&quot;lane1&quot;</span>, </span>
-<span id="cb7-4"><a href="scRepertoire.html#cb7-4" tabindex="-1"></a>              <span class="at">y.axis =</span> <span class="st">&quot;lane2&quot;</span>,</span>
-<span id="cb7-5"><a href="scRepertoire.html#cb7-5" tabindex="-1"></a>              <span class="at">dot.size =</span> <span class="st">&quot;total&quot;</span>,</span>
-<span id="cb7-6"><a href="scRepertoire.html#cb7-6" tabindex="-1"></a>              <span class="at">graph =</span> <span class="st">&quot;proportion&quot;</span>)</span></code></pre></div>
+<p>Uit de clonalCompare blijkt dat lane 2 relatief hoge proportie inneemt. Er zijn dus veel meer van dezelfde clonotypes in lane 2 aanwezig dan in lane 1. Dit suggereert dat cellen van lane 2 een actieve immuunsrespons ondergaan.</p>
+<p>Vervolgens is de functie clonalScatter toegepast om de verspreiding en aantallen van unieke clonotypes tussen lane 1 en lane 2 te visualiseren. Er is dit keer gekozen voor de optie gene. Dit maakt dat enkel de VDJC genen van de TCR mee worden genomen. De stippen geeft het aantal clonotypes aan en op de x- en y- as staan de proporties van de clonotypes ten opzichte van het totale clonale repertoire. De classificaties zijn als volgt gedefinieerd:
+Dual.expanded: Clonotypes die in zowel lane 1 als in lane 2, een significante aanwezigheid hebben.
+Lane1/2.expanded: Clonotypes die enkel in lane 1/2 een significante aanwezigheid hebben.
+Lane1/2.singlet: Clonotypes die enkel in lane 1/2 een aanwezigheid hebben, maar in kleine aantallen.</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="scRepertoire.html#cb14-1" tabindex="-1"></a><span class="fu">clonalScatter</span>(combined.TCR, </span>
+<span id="cb14-2"><a href="scRepertoire.html#cb14-2" tabindex="-1"></a>              <span class="at">cloneCall =</span><span class="st">&quot;gene&quot;</span>, </span>
+<span id="cb14-3"><a href="scRepertoire.html#cb14-3" tabindex="-1"></a>              <span class="at">x.axis =</span> <span class="st">&quot;lane1&quot;</span>, </span>
+<span id="cb14-4"><a href="scRepertoire.html#cb14-4" tabindex="-1"></a>              <span class="at">y.axis =</span> <span class="st">&quot;lane2&quot;</span>,</span>
+<span id="cb14-5"><a href="scRepertoire.html#cb14-5" tabindex="-1"></a>              <span class="at">dot.size =</span> <span class="st">&quot;total&quot;</span>,</span>
+<span id="cb14-6"><a href="scRepertoire.html#cb14-6" tabindex="-1"></a>              <span class="at">graph =</span> <span class="st">&quot;proportion&quot;</span>)</span></code></pre></div>
 <p><img src="figures/clonalScatter-1.png" width="672" /></p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="scRepertoire.html#cb8-1" tabindex="-1"></a><span class="fu">clonalProportion</span>(combined.TCR, </span>
-<span id="cb8-2"><a href="scRepertoire.html#cb8-2" tabindex="-1"></a>                 <span class="at">cloneCall =</span> <span class="st">&quot;gene&quot;</span>)</span></code></pre></div>
+<p>Uit de clonalScatter blijkt dat lane 2 een hoog aantal en een hoge proportie aan clonotypes heeft die niet in lane 1 voorkomen. Lane 1 heeft relatief weinig clonotypes (in aantallen en proporties) die niet in lane 2 voorkomen. Dit versterkt de suggestie dat cellen van lane 2 een actieve immuunsrespons ondergaan.</p>
+<p>Met de functie clonalProportion is vervolgens de rangschikking van de clonotypes binnen lane 1 en lane 2 weergegeven. Clonal Indicies betekent de rang. [1:10] zijn bijvoorbeeld de top 10 clonotypes in frequentie, van lane 1 of lane 2. Op de y-as staan de proporties van de rang ten opzichte van het totale clonale repertoire.</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="scRepertoire.html#cb15-1" tabindex="-1"></a><span class="fu">clonalProportion</span>(combined.TCR, </span>
+<span id="cb15-2"><a href="scRepertoire.html#cb15-2" tabindex="-1"></a>                 <span class="at">cloneCall =</span> <span class="st">&quot;gene&quot;</span>)</span></code></pre></div>
 <p><img src="figures/clonalProportion-1.png" width="672" /></p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="scRepertoire.html#cb9-1" tabindex="-1"></a><span class="fu">percentAA</span>(combined.TCR, </span>
-<span id="cb9-2"><a href="scRepertoire.html#cb9-2" tabindex="-1"></a>          <span class="at">chain =</span> <span class="st">&quot;TRB&quot;</span>, </span>
-<span id="cb9-3"><a href="scRepertoire.html#cb9-3" tabindex="-1"></a>          <span class="at">aa.length =</span> <span class="dv">20</span>)</span></code></pre></div>
-<p><img src="figures/percentAA-1.png" width="672" /></p>
-<p>(NB: ik zal de vrije opdracht nog afmaken maar dit lukt helaas niet voor de deadline)</p>
+<p>In de clonalProportion grafiek is te zien dat lane 1 een breed en relatief divers repertoire heeft. De top 10 clonotypes van lane 1 is qua frequentie relatief laag, waardoor de categorie [1001:10000] opgeteld meer bijdraagt aan het totaal repertoire. Terwijl de top 10 clonotypes van lane 2 merendeel van het clonale repertoire is (~75%). Dit wijst erop dat de samples in lane 2 een sterk clonaal geselecteerde immuunrespons vertonen, waarbij enkele clonotypes die domineren.</p>
+<p>Een andere manier om de diversiteit of clonale expensie van de TCR genen te visualiseren is met de functie vizGenes. Hierbij wordt de relatieve frequentie van genen uitgezet in een barplot.
+Er is gekeken naar zowel de TRAV als de TRBV. TRAV is de variabele regio van de alpha keten van de TCR en TRBV is de variabele regio van de beta keten van de TCR.</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="scRepertoire.html#cb16-1" tabindex="-1"></a><span class="fu">vizGenes</span>(combined.TCR, </span>
+<span id="cb16-2"><a href="scRepertoire.html#cb16-2" tabindex="-1"></a>         <span class="at">x.axis =</span> <span class="st">&quot;TRAV&quot;</span>,</span>
+<span id="cb16-3"><a href="scRepertoire.html#cb16-3" tabindex="-1"></a>         <span class="at">y.axis =</span> <span class="cn">NULL</span>,</span>
+<span id="cb16-4"><a href="scRepertoire.html#cb16-4" tabindex="-1"></a>         <span class="at">plot =</span> <span class="st">&quot;barplot&quot;</span>,  </span>
+<span id="cb16-5"><a href="scRepertoire.html#cb16-5" tabindex="-1"></a>         <span class="at">scale =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<p><img src="figures/vizGenes%20TRAV-1.png" width="672" /></p>
+<p>De barplot van TRAV toont aan dat lane 1 een meer diverse TRAV frequentie heeft, zonder dat specifieke genen een significante bijdrage leveren aan het repertoire. Lane 2 laat wel twee specifiek genen zien die veel bijdrage aan het repertoire, dit zijn TRAV4 en TRAV14/DV4.</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="scRepertoire.html#cb17-1" tabindex="-1"></a><span class="fu">vizGenes</span>(combined.TCR, </span>
+<span id="cb17-2"><a href="scRepertoire.html#cb17-2" tabindex="-1"></a>         <span class="at">x.axis =</span> <span class="st">&quot;TRBV&quot;</span>,</span>
+<span id="cb17-3"><a href="scRepertoire.html#cb17-3" tabindex="-1"></a>         <span class="at">y.axis =</span> <span class="cn">NULL</span>,</span>
+<span id="cb17-4"><a href="scRepertoire.html#cb17-4" tabindex="-1"></a>         <span class="at">plot =</span> <span class="st">&quot;barplot&quot;</span>,  </span>
+<span id="cb17-5"><a href="scRepertoire.html#cb17-5" tabindex="-1"></a>         <span class="at">scale =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<p><img src="figures/vizGenes%20TRBV-1.png" width="672" /></p>
+<p>De barplot van TRBV toont aan dat lane 1 een meer diverse TRBV frequentie heeft, zonder dat specifieke genen een significante bijdrage leveren aan het repertoire. Lane 2 laat weer twee specifiek genen zien die veel bijdrage aan het repertoire, dit zijn TRBV7-6 en TRBV10-2.</p>
+</div>
+<div id="conclusie" class="section level2 hasAnchor" number="3.5">
+<h2><span class="header-section-number">3.5</span> Conclusie<a href="scRepertoire.html#conclusie" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In conclusie biedt de <code>scRepertoire</code> package een breed scala aan plots en analyses voor het visualiseren en analyseren van TCR/BCR-data. Omdat het koppelen van de metadata aan de RNA/ADT/TCR data niet is gelukt kunnen er geen uitspraken worden gedaan over de inhoud van het experiment. Desondanks kan op basis van de verschillende plots worden geconcludeerd dat de cellen afkomstig van lane 1 een breed en relatief divers TCR-repertoire hebben. Terwijl de cellen afkomstig van lane 2 een veel lagere diversiteit vertonen en bepaalde clonotypes in hoge frequenties voorkomen. Dit suggereert dat sommige cellen van lane 2 clonale expansie ondergaan.</p>
 
 </div>
 </div>
